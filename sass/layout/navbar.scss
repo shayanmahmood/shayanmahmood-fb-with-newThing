@@ -126,14 +126,13 @@
 }
 
 .user-select {
-    border: 3px solid violet;
     width: 20rem;
     height: 100%;
     margin-left: 1rem;
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: repeat(4, 25%);
-    &--profile-box {
+    &--menu-box {
         border-radius: 50%;
         background-color: #3a3b3c;
         width: 4rem;
@@ -142,5 +141,72 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        &--icon {
+            fill: #E4E6EB;
+            width: 2rem;
+            height: 2rem;
+        }
     }
 }
+
+.menu-con {
+    background-color: #323436;
+    width: 53rem;
+    height: 55rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 4.6REM;
+    right: 1.5Rem;
+    z-index: 100;
+    border: 1PX solid grey;
+    & {
+        scrollbar-width: auto;
+        scrollbar-color: transparent transparent
+    }
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: grey;
+        border-radius: 10px;
+        border: 3px solid transparent;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    &--grid {
+        width: 95%;
+        height: 100%;
+        margin-left: 2rem;
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+    &--name {
+        text-align: center;
+        display: inline-block;
+        color: #e4e6eb;
+        font-size: 2.4rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+.social-con {}
