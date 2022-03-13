@@ -51,7 +51,7 @@
 
 .icon-box {
     width: 53.7rem;
-    margin-left: 5.8rem;
+    margin-left: 9rem;
     height: 4rem;
     display: grid;
     grid-template-rows: 100%;
@@ -94,7 +94,7 @@
     -o-border-radius: 25px;
     width: 9.5rem;
     height: 3.1rem;
-    margin-left: 6.5rem;
+    margin-left: 8.4rem;
     display: flex;
     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -111,7 +111,7 @@
     }
     &--circle {
         fill: transparent;
-        padding-left: 0.2rem;
+        padding-left: 0.3rem;
         padding-top: 0.1rem;
         &--name {
             font-family: 'Segoe UI', sans-serif;
@@ -120,7 +120,27 @@
             text-overflow: ellipsis;
             color: #E4E6EB;
             padding-left: 1rem;
-            padding-top: 0.4rem;
+            padding-top: 0.6rem;
         }
+    }
+}
+
+.user-select {
+    border: 3px solid violet;
+    width: 20rem;
+    height: 100%;
+    margin-left: 1rem;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(4, 25%);
+    &--profile-box {
+        border-radius: 50%;
+        background-color: #3a3b3c;
+        width: 4rem;
+        height: 4rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
     }
 }
