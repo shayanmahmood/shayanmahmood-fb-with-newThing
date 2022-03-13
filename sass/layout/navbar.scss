@@ -6,13 +6,13 @@
     overflow: hidden;
     align-items: center;
     justify-items: center;
-    padding-top: 0.6%;
     &-search-box {
         width: 24.2%;
         height: 5rem;
         display: grid;
         grid-template-rows: 100%;
         grid-template-columns: 20% 70%;
+        padding-top: 0.4%;
         &--logo {
             width: 4rem;
             height: 4rem;
@@ -41,9 +41,86 @@
                 &--icon {
                     position: absolute;
                     fill: #A7B1AC;
-                    left: 3rem;
+                    left: 8rem;
+                    top: 2rem;
                 }
             }
+        }
+    }
+}
+
+.icon-box {
+    width: 53.7rem;
+    margin-left: 5.8rem;
+    height: 4rem;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(5, 20%);
+    &-con {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+            background-color: #4d4f50;
+            transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -webkit-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -moz-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -ms-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -o-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        &--icon {
+            fill: #b0b3b8;
+        }
+    }
+}
+
+.porfile-box {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    width: 9.5rem;
+    height: 3.1rem;
+    margin-left: 6.5rem;
+    display: flex;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+        transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        background-color: #4d4f50;
+    }
+    &--circle {
+        fill: transparent;
+        padding-left: 0.2rem;
+        padding-top: 0.1rem;
+        &--name {
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            text-overflow: ellipsis;
+            color: #E4E6EB;
+            padding-left: 1rem;
+            padding-top: 0.4rem;
         }
     }
 }

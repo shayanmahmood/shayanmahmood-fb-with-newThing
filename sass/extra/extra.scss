@@ -1,0 +1,11 @@
+.active {
+    fill: #2374e1 !important;
+}
+
+.active-bottom {
+    border-bottom: 2px solid #2374e1;
+    border-bottom-left-radius: 0%;
+    &:hover {
+        background-color: transparent;
+    }
+}
