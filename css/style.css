@@ -195,7 +195,19 @@
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-  margin-top: 1.2rem; }
+  margin-top: 1.2rem;
+  overflow: scroll; }
+  .social-con::-webkit-scrollbar {
+    width: .8em; }
+  .social-con::-webkit-scrollbar, .social-con::-webkit-scrollbar-thumb {
+    overflow: visible;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px; }
+  .social-con::-webkit-scrollbar-thumb {
+    background: #666768; }
   .social-con--social-name {
     color: #E4E6EB;
     font-size: 1.6rem;
@@ -315,3 +327,13 @@ body {
 .hide-me {
   visibility: hidden;
   display: none; }
+
+.divider {
+  background-color: rgba(128, 128, 128, 0.4);
+  height: 0.1rem;
+  width: 45%;
+  position: absolute;
+  z-index: 1000;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  position: absolute; }

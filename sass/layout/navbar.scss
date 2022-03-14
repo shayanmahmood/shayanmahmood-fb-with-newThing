@@ -220,6 +220,22 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     margin-top: 1.2rem;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        width: .8em;
+    }
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-thumb {
+        overflow: visible;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #666768;
+    }
     &--social-name {
         color: #E4E6EB;
         font-size: 1.6rem;

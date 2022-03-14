@@ -14,3 +14,14 @@
     visibility: hidden;
     display: none;
 }
+
+.divider {
+    background-color: rgba(128, 128, 128, 0.4);
+    height: 0.1rem;
+    width: 45%;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    position: absolute;
+}
