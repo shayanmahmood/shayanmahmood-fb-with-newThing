@@ -667,6 +667,30 @@
     right: 2.5Rem;
     z-index: 100;
     border: 1PX solid grey;
+    &--search-con {
+        &--search-bar {
+            top: -2.5rem;
+            display: inline;
+            position: relative;
+            margin-top: -5rem;
+            margin-left: 1rem;
+            background-color: #3A3B3C;
+            height: 3.3rem;
+            width: 93%;
+            outline: none;
+            border: none;
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+            padding: 1rem;
+            padding-left: 3.5rem;
+            color: #E4E6EB;
+            font-size: 1.5rem;
+            &--icon {}
+        }
+    }
     &--top-grid {
         grid-template-columns: 60% repeat(4, 10%);
         grid-template-rows: 100%;
@@ -677,7 +701,7 @@
         height: 10%;
         &--icon-box {
             top: -3.5rem;
-            left: 19rem;
+            left: 21rem;
             position: relative;
             &--icon {
                 margin-left: 1rem;
