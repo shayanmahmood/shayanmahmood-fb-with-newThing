@@ -43,6 +43,9 @@
                     fill: #A7B1AC;
                     left: 8rem;
                     top: 2rem;
+                     :hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -135,6 +138,30 @@
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: repeat(4, 25%);
+    &--notification {
+        border-radius: 50%;
+        background-color: #3a3b3c;
+        width: 4rem;
+        height: 4rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        &--icon {
+            fill: #E4E6EB;
+            width: 2rem;
+            height: 2rem;
+             :hover {
+                cursor: pointer;
+            }
+        }
+    }
     &--messenger-box {
         border-radius: 50%;
         background-color: #3a3b3c;
@@ -667,6 +694,7 @@
     right: 2.5Rem;
     z-index: 100;
     border: 1PX solid grey;
+    visibility: hidden;
     &--search-con {
         &--search-bar {
             top: -2.5rem;
@@ -699,6 +727,9 @@
                 position: absolute;
                 z-index: 10000000000000;
                 margin-top: -1.5rem;
+                 :hover {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -717,6 +748,9 @@
             &--icon {
                 margin-left: 1rem;
                 -webkit-filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%);
+                 :hover {
+                    cursor: pointer;
+                }
             }
         }
         &--name {
@@ -789,6 +823,114 @@
                         font-size: 1.2rem;
                         font-family: 'Roboto', sans-serif;
                         margin-left: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.messenger-con--loader-con {
+    margin-top: 9.7rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    &--header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        &--img {
+            left: 2rem;
+            margin-top: 3rem;
+            height: 5.5rem;
+            width: 5.5rem;
+            background: #656871;
+            border-radius: 50%;
+            position: absolute;
+            overflow: hidden;
+            display: block;
+            &::before {
+                border-radius: 1rem;
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                background-image: linear-gradient(to right, #656871 0%, #888b94 20%, #656871 40%, #656871 100%);
+                background-repeat: no-repeat;
+                background-size: 450px 400px;
+                animation: shimmer 4s linear infinite;
+                background-size: 650px 600px;
+                -webkit-animation: shimmer 4s linear infinite;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+            }
+            &--details {
+                &--name {
+                    left: 8rem;
+                    margin-top: 3.5rem;
+                    height: 1.5rem;
+                    width: 14rem;
+                    background: #656871;
+                    border-radius: 1rem;
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-block;
+                    -webkit-border-radius: 1rem;
+                    -moz-border-radius: 1rem;
+                    -ms-border-radius: 1rem;
+                    -o-border-radius: 1rem;
+                    &::before {
+                        border-radius: 1rem;
+                        position: absolute;
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        background-image: linear-gradient(to right, #656871 0%, #888b94 20%, #656871 40%, #656871 100%);
+                        background-repeat: no-repeat;
+                        background-size: 450px 400px;
+                        animation: shimmer 4s linear infinite;
+                        background-size: 650px 600px;
+                        -webkit-animation: shimmer 4s linear infinite;
+                        -webkit-border-radius: 1rem;
+                        -moz-border-radius: 1rem;
+                        -ms-border-radius: 1rem;
+                        -o-border-radius: 1rem;
+                    }
+                }
+                &--about {
+                    left: 8rem;
+                    margin-top: 0.2rem;
+                    height: 1.5rem;
+                    width: 22rem;
+                    background: #656871;
+                    border-radius: 1rem;
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-block;
+                    -webkit-border-radius: 1rem;
+                    -moz-border-radius: 1rem;
+                    -ms-border-radius: 1rem;
+                    -o-border-radius: 1rem;
+                    &::before {
+                        border-radius: 1rem;
+                        position: absolute;
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        background-image: linear-gradient(to right, #656871 0%, #888b94 20%, #656871 40%, #656871 100%);
+                        background-repeat: no-repeat;
+                        background-size: 450px 400px;
+                        animation: shimmer 4s linear infinite;
+                        background-size: 650px 600px;
+                        -webkit-animation: shimmer 4s linear infinite;
+                        -webkit-border-radius: 1rem;
+                        -moz-border-radius: 1rem;
+                        -ms-border-radius: 1rem;
+                        -o-border-radius: 1rem;
                     }
                 }
             }

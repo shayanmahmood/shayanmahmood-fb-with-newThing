@@ -42,6 +42,8 @@
           fill: #A7B1AC;
           left: 8rem;
           top: 2rem; }
+          .nav-search-box--logo--search-box--icon :hover {
+            cursor: pointer; }
 
 .icon-box {
   width: 53.7rem;
@@ -120,6 +122,27 @@
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: repeat(4, 25%); }
+  .user-select--notification {
+    border-radius: 50%;
+    background-color: #3a3b3c;
+    width: 4rem;
+    height: 4rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 0.5rem; }
+    .user-select--notification--icon {
+      fill: #E4E6EB;
+      width: 2rem;
+      height: 2rem; }
+      .user-select--notification--icon :hover {
+        cursor: pointer; }
   .user-select--messenger-box {
     border-radius: 50%;
     background-color: #3a3b3c;
@@ -589,7 +612,8 @@
   top: 4.6REM;
   right: 2.5Rem;
   z-index: 100;
-  border: 1PX solid grey; }
+  border: 1PX solid grey;
+  visibility: hidden; }
   .messenger-con--search-con--search-bar {
     top: -2.5rem;
     display: inline;
@@ -620,6 +644,8 @@
       position: absolute;
       z-index: 10000000000000;
       margin-top: -1.5rem; }
+      .messenger-con--search-con--search-bar--icon :hover {
+        cursor: pointer; }
   .messenger-con--top-grid {
     grid-template-columns: 60% repeat(4, 10%);
     grid-template-rows: 100%;
@@ -635,6 +661,8 @@
       .messenger-con--top-grid--icon-box--icon {
         margin-left: 1rem;
         -webkit-filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%); }
+        .messenger-con--top-grid--icon-box--icon :hover {
+          cursor: pointer; }
     .messenger-con--top-grid--name {
       font-size: 2.5rem;
       color: #E4E6EB;
@@ -701,6 +729,104 @@
             font-family: 'Roboto', sans-serif;
             margin-left: 4rem; }
 
+.messenger-con--loader-con {
+  margin-top: 9.7rem;
+  display: flex;
+  align-items: center;
+  justify-items: center; }
+  .messenger-con--loader-con--header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center; }
+    .messenger-con--loader-con--header--img {
+      left: 2rem;
+      margin-top: 3rem;
+      height: 5.5rem;
+      width: 5.5rem;
+      background: #656871;
+      border-radius: 50%;
+      position: absolute;
+      overflow: hidden;
+      display: block; }
+      .messenger-con--loader-con--header--img::before {
+        border-radius: 1rem;
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right, #656871 0%, #888b94 20%, #656871 40%, #656871 100%);
+        background-repeat: no-repeat;
+        background-size: 450px 400px;
+        animation: shimmer 4s linear infinite;
+        background-size: 650px 600px;
+        -webkit-animation: shimmer 4s linear infinite;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem; }
+      .messenger-con--loader-con--header--img--details--name {
+        left: 8rem;
+        margin-top: 3.5rem;
+        height: 1.5rem;
+        width: 14rem;
+        background: #656871;
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem; }
+        .messenger-con--loader-con--header--img--details--name::before {
+          border-radius: 1rem;
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          background-image: linear-gradient(to right, #656871 0%, #888b94 20%, #656871 40%, #656871 100%);
+          background-repeat: no-repeat;
+          background-size: 450px 400px;
+          animation: shimmer 4s linear infinite;
+          background-size: 650px 600px;
+          -webkit-animation: shimmer 4s linear infinite;
+          -webkit-border-radius: 1rem;
+          -moz-border-radius: 1rem;
+          -ms-border-radius: 1rem;
+          -o-border-radius: 1rem; }
+      .messenger-con--loader-con--header--img--details--about {
+        left: 8rem;
+        margin-top: 0.2rem;
+        height: 1.5rem;
+        width: 22rem;
+        background: #656871;
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem; }
+        .messenger-con--loader-con--header--img--details--about::before {
+          border-radius: 1rem;
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          background-image: linear-gradient(to right, #656871 0%, #888b94 20%, #656871 40%, #656871 100%);
+          background-repeat: no-repeat;
+          background-size: 450px 400px;
+          animation: shimmer 4s linear infinite;
+          background-size: 650px 600px;
+          -webkit-animation: shimmer 4s linear infinite;
+          -webkit-border-radius: 1rem;
+          -moz-border-radius: 1rem;
+          -ms-border-radius: 1rem;
+          -o-border-radius: 1rem; }
+
 *,
 *::after,
 *::before {
@@ -757,6 +883,15 @@ body {
 .top-prefix {
   top: 45rem; }
 
+.margin-top-prefixer {
+  margin-top: 1.7rem; }
+  .margin-top-prefixer--two {
+    margin-top: 3.5rem; }
+  .margin-top-prefixer--three {
+    margin-top: 5.5rem; }
+  .margin-top-prefixer--four {
+    margin-top: 7rem; }
+
 @keyframes shimmer {
   0% {
     background-position: -450px 0; }
@@ -764,4 +899,7 @@ body {
     background-position: 450px 0; } }
 
 #open1:checked ~ .menu-con {
+  visibility: visible; }
+
+#open2:checked ~ .messenger-con {
   visibility: visible; }

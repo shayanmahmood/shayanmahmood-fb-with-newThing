@@ -29,3 +29,16 @@
 .top-prefix {
     top: 45rem;
 }
+
+.margin-top-prefixer {
+    margin-top: 1.7rem;
+    &--two {
+        margin-top: 3.5rem;
+    }
+    &--three {
+        margin-top: 5.5rem;
+    }
+    &--four {
+        margin-top: 7rem;
+    }
+}
