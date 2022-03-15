@@ -672,11 +672,11 @@
             top: -2.5rem;
             display: inline;
             position: relative;
-            margin-top: -5rem;
-            margin-left: 1rem;
+            margin-top: 0rem;
+            margin-left: 2rem;
             background-color: #3A3B3C;
-            height: 3.3rem;
-            width: 93%;
+            height: 3.5rem;
+            width: 88%;
             outline: none;
             border: none;
             border-radius: 25px;
@@ -688,7 +688,18 @@
             padding-left: 3.5rem;
             color: #E4E6EB;
             font-size: 1.5rem;
-            &--icon {}
+            &::placeholder {
+                color: #e4e6eb;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.4rem;
+            }
+            &--icon {
+                fill: #E4E6EB;
+                margin-left: 3.5rem;
+                position: absolute;
+                z-index: 10000000000000;
+                margin-top: -1.5rem;
+            }
         }
     }
     &--top-grid {
