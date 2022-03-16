@@ -138,6 +138,30 @@
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: repeat(4, 25%);
+    &--profile {
+        border-radius: 50%;
+        background-color: #3a3b3c;
+        width: 4rem;
+        height: 4rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        &--icon {
+            fill: #E4E6EB;
+            width: 2rem;
+            height: 2rem;
+             :hover {
+                cursor: pointer;
+            }
+        }
+    }
     &--notification {
         border-radius: 50%;
         background-color: #3a3b3c;
@@ -954,6 +978,7 @@
     right: 2.5Rem;
     z-index: 100;
     border: 1PX solid grey;
+    visibility: hidden;
     & {
         scrollbar-width: auto;
         scrollbar-color: transparent transparent
@@ -1215,10 +1240,98 @@
         &--text {
             color: #E4E6EB;
             font-size: 1.4rem;
-            width: 20rem;
+            width: 27rem;
             margin-left: 2rem;
             margin-top: 2rem;
             font-family: 'Roboto', sans-serif;
+            &--time {
+                font-size: 1.2rem;
+                color: #2E89FF;
+            }
+        }
+    }
+}
+
+.profile-con {
+    width: 36rem;
+    height: 40rem;
+    overflow: hidden;
+    background-color: #242526;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 4.6REM;
+    right: 2.5Rem;
+    z-index: 100;
+    border: 1PX solid grey;
+    &--author-con {
+        margin-top: 1.5rem;
+        display: flex;
+        position: relative;
+        width: 95%;
+        height: 7rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+            transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -webkit-transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -moz-transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -ms-transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -o-transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            background-color: #4d4f50;
+        }
+        &--img {
+            margin-left: 1.5rem;
+            margin-top: 0.3rem;
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            &--caption {
+                color: #e4e6eb;
+                font-size: 1.5rem;
+                font-family: "Game of Squids";
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+                margin-left: 1rem;
+                margin-top: 2rem;
+                &--see {
+                    font-size: 1.3rem;
+                    font-family: 'Segoe UI', sans-serif;
+                    font-weight: 600;
+                    margin-top: 1.8rem;
+                    color: #B0b3b8;
+                    margin-top: 3.5rem;
+                    margin-left: -12rem;
+                    &--divider {
+                        background-color: rgba(128, 128, 128, 0.4);
+                        height: 0.1rem;
+                        width: 45%;
+                        position: absolute;
+                        z-index: 1000;
+                        margin-top: 2rem;
+                        margin-left: 2rem;
+                        position: absolute;
+                    }
+                }
+            }
         }
     }
 }
