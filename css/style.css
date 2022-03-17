@@ -57,6 +57,9 @@
           @media only screen and (max-width: 1100px) {
             .nav-search-box--logo--search-box--icon {
               left: 7rem; } }
+          @media only screen and (max-width: 1000px) {
+            .nav-search-box--logo--search-box--icon {
+              left: 6.2rem; } }
           .nav-search-box--logo--search-box--icon :hover {
             cursor: pointer; }
 
@@ -70,6 +73,9 @@
   @media only screen and (max-width: 1100px) {
     .icon-box {
       margin-left: -3rem; } }
+  @media only screen and (max-width: 1000px) {
+    .icon-box {
+      margin-left: 0rem; } }
   .icon-box-con {
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -113,6 +119,12 @@
   -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  @media only screen and (max-width: 1150px) {
+    .porfile-box {
+      margin-left: 1rem; } }
+  @media only screen and (max-width: 1100px) {
+    .porfile-box {
+      display: none; } }
   .porfile-box:hover {
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -140,6 +152,9 @@
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: repeat(4, 25%); }
+  @media only screen and (max-width: 1100px) {
+    .user-select {
+      margin-left: 12rem; } }
   .user-select--profile {
     border-radius: 50%;
     background-color: #3a3b3c;
@@ -1495,7 +1510,3 @@ body {
 
 #open4:checked ~ .profile-con {
   visibility: visible; }
-
-@media only screen and (max-width: 1150px) {
-  .porfile-box {
-    margin-left: 1rem; } }
