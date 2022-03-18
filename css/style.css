@@ -5,7 +5,8 @@
   display: flex;
   overflow: hidden;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  display: none; }
   .nav-search-box {
     width: 24.2%;
     height: 5rem;
