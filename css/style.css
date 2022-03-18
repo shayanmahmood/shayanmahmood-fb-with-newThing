@@ -45,6 +45,9 @@
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
             margin-left: 0.5rem; } }
+        @media only screen and (max-width: 900px) {
+          .nav-search-box--logo--search-box {
+            margin-left: 2rem; } }
         .nav-search-box--logo--search-box::placeholder {
           color: #A7B1AC;
           font-family: 'Roboto', sans-serif;
@@ -60,6 +63,19 @@
           @media only screen and (max-width: 1000px) {
             .nav-search-box--logo--search-box--icon {
               left: 6.2rem; } }
+          @media only screen and (max-width: 900px) {
+            .nav-search-box--logo--search-box--icon {
+              left: 6.8rem;
+              top: 1.8rem; } }
+          @media only screen and (max-width: 850px) {
+            .nav-search-box--logo--search-box--icon {
+              left: 6.5rem; } }
+          @media only screen and (max-width: 800px) {
+            .nav-search-box--logo--search-box--icon {
+              left: 6.5rem; } }
+          @media only screen and (max-width: 750px) {
+            .nav-search-box--logo--search-box--icon {
+              left: 6.3rem; } }
           .nav-search-box--logo--search-box--icon :hover {
             cursor: pointer; }
 
@@ -76,6 +92,15 @@
   @media only screen and (max-width: 1000px) {
     .icon-box {
       margin-left: 0rem; } }
+  @media only screen and (max-width: 900px) {
+    .icon-box {
+      margin-left: 0rem; } }
+  @media only screen and (max-width: 800px) {
+    .icon-box {
+      width: 40.7rem; } }
+  @media only screen and (max-width: 700px) {
+    .icon-box {
+      margin-left: 3rem; } }
   .icon-box-con {
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -155,6 +180,9 @@
   @media only screen and (max-width: 1100px) {
     .user-select {
       margin-left: 12rem; } }
+  @media only screen and (max-width: 900px) {
+    .user-select {
+      margin-left: 8rem; } }
   .user-select--profile {
     border-radius: 50%;
     background-color: #3a3b3c;

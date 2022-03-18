@@ -47,6 +47,11 @@
                                         margin-left: 0.5rem;
                                     }
                                 }
+                                @media only screen and (max-width:900px) {
+                                    & {
+                                        margin-left: 2rem;
+                                    }
+                                }
                                 &::placeholder {
                                     color: #A7B1AC;
                                     font-family: 'Roboto', sans-serif;
@@ -65,6 +70,27 @@
                                     @media only screen and (max-width:1000px) {
                                         & {
                                             left: 6.2rem;
+                                        }
+                                    }
+                                    @media only screen and (max-width:900px) {
+                                        & {
+                                            left: 6.8rem;
+                                            top: 1.8rem;
+                                        }
+                                    }
+                                    @media only screen and (max-width:850px) {
+                                        & {
+                                            left: 6.5rem;
+                                        }
+                                    }
+                                    @media only screen and (max-width:800px) {
+                                        & {
+                                            left: 6.5rem;
+                                        }
+                                    }
+                                    @media only screen and (max-width:750px) {
+                                        & {
+                                            left: 6.3rem;
                                         }
                                     }
                                      :hover {
@@ -91,6 +117,21 @@
                     @media only screen and (max-width:1000px) {
                         & {
                             margin-left: 0rem;
+                        }
+                    }
+                    @media only screen and (max-width:900px) {
+                        & {
+                            margin-left: 0rem
+                        }
+                    }
+                    @media only screen and (max-width:800px) {
+                        & {
+                            width: 40.7rem;
+                        }
+                    }
+                    @media only screen and (max-width:700px) {
+                        & {
+                            margin-left: 3rem;
                         }
                     }
                     &-con {
@@ -185,6 +226,11 @@
                     @media only screen and (max-width: 1100px) {
                         & {
                             margin-left: 12rem;
+                        }
+                    }
+                    @media only screen and (max-width:900px) {
+                        & {
+                            margin-left: 8rem;
                         }
                     }
                     &--profile {
