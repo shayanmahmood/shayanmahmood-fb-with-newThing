@@ -46,3 +46,15 @@
 .link {
     color: #2e89ff !important;
 }
+
+.top-prefixer-sidebar {
+    margin-top: 1.5rem !important;
+}
+
+.border-round {
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
