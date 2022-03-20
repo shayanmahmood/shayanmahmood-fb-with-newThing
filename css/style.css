@@ -1658,3 +1658,11 @@ body {
 
 .res-active {
   fill: #2374e1 !important; }
+
+.backbone {
+  width: 100vw;
+  height: 91.5vh;
+  background-color: red;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 22% 56% 22%; }
