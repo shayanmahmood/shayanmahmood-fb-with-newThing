@@ -5,8 +5,11 @@
   display: flex;
   overflow: hidden;
   align-items: center;
-  justify-items: center;
-  visibility: hidden; }
+  justify-items: center; }
+  @media only screen and (max-width: 425px) {
+    .nav {
+      display: none;
+      visibility: hidden; } }
   .nav-search-box {
     width: 24.2%;
     height: 5rem;
@@ -49,6 +52,9 @@
         @media only screen and (max-width: 900px) {
           .nav-search-box--logo--search-box {
             margin-left: 2rem; } }
+        @media only screen and (max-width: 700px) {
+          .nav-search-box--logo--search-box {
+            margin-left: 2.7rem; } }
         .nav-search-box--logo--search-box::placeholder {
           color: #A7B1AC;
           font-family: 'Roboto', sans-serif;
@@ -77,6 +83,12 @@
           @media only screen and (max-width: 750px) {
             .nav-search-box--logo--search-box--icon {
               left: 6.3rem; } }
+          @media only screen and (max-width: 650px) {
+            .nav-search-box--logo--search-box--icon {
+              margin-left: 0.6rem; } }
+          @media only screen and (max-width: 650px) {
+            .nav-search-box--logo--search-box--icon {
+              margin-left: 0.2rem; } }
           .nav-search-box--logo--search-box--icon :hover {
             cursor: pointer; }
 
@@ -102,6 +114,12 @@
   @media only screen and (max-width: 700px) {
     .icon-box {
       margin-left: 3rem; } }
+  @media only screen and (max-width: 550px) {
+    .icon-box {
+      margin-left: -1rem; } }
+  @media only screen and (max-width: 450px) {
+    .icon-box {
+      width: 33.7rem; } }
   .icon-box-con {
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -184,6 +202,9 @@
   @media only screen and (max-width: 900px) {
     .user-select {
       margin-left: 8rem; } }
+  @media only screen and (max-width: 650px) {
+    .user-select {
+      display: none; } }
   .user-select--profile {
     border-radius: 50%;
     background-color: #3a3b3c;
@@ -199,6 +220,9 @@
     align-content: center;
     justify-content: center;
     margin-top: 0.5rem; }
+    @media only screen and (max-width: 700px) {
+      .user-select--profile {
+        margin-left: 0.5rem; } }
     .user-select--profile--icon {
       fill: #E4E6EB;
       width: 2rem;
@@ -220,6 +244,9 @@
     align-content: center;
     justify-content: center;
     margin-top: 0.5rem; }
+    @media only screen and (max-width: 700px) {
+      .user-select--notification {
+        margin-left: 0.5rem; } }
     .user-select--notification--icon {
       fill: #E4E6EB;
       width: 2rem;
@@ -241,6 +268,9 @@
     align-content: center;
     justify-content: center;
     margin-top: 0.5rem; }
+    @media only screen and (max-width: 700px) {
+      .user-select--messenger-box {
+        margin-left: 0.5rem; } }
     .user-select--messenger-box--icon {
       fill: #E4E6EB;
       width: 2rem;
@@ -1542,15 +1572,22 @@ body {
 
 .nav-responsive {
   width: 100vw;
-  height: 13vh;
+  height: 14vh;
   background-color: #242526;
   display: grid;
   grid-template-rows: repeat(2, 50%);
-  grid-template-columns: 100%; }
+  grid-template-columns: 100%;
+  visibility: hidden;
+  display: none; }
+  @media only screen and (max-width: 425px) {
+    .nav-responsive {
+      display: grid;
+      visibility: visible; } }
   .nav-responsive--icon-con {
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: repeat(6, 16.6%); }
+    grid-template-columns: repeat(6, 16.6%);
+    margin-bottom: 0.5rem; }
     .nav-responsive--icon-con--icon-box {
       display: flex;
       align-items: flex-end;
@@ -1582,6 +1619,12 @@ body {
       align-content: center;
       justify-content: center;
       margin-left: 0rem; }
+      @media only screen and (max-width: 350px) {
+        .nav-responsive--logo-con--messenger-circle {
+          margin-left: 0.5rem; } }
+      @media only screen and (max-width: 300px) {
+        .nav-responsive--logo-con--messenger-circle {
+          margin-left: 0.4rem; } }
       .nav-responsive--logo-con--messenger-circle--icon {
         fill: #fff; }
     .nav-responsive--logo-con--search-circle {
@@ -1600,11 +1643,18 @@ body {
       align-content: center;
       justify-content: center;
       margin-left: 0.5rem; }
+      @media only screen and (max-width: 300px) {
+        .nav-responsive--logo-con--search-circle {
+          margin-left: 0rem; } }
       .nav-responsive--logo-con--search-circle--icon {
         fill: #fff; }
     .nav-responsive--logo-con--logo {
       width: 16rem;
       height: 5rem; }
+      @media only screen and (max-width: 350px) {
+        .nav-responsive--logo-con--logo {
+          width: 13rem;
+          height: 4rem; } }
 
 .res-active {
   fill: #2374e1 !important; }
