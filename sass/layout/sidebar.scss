@@ -92,11 +92,21 @@
                     font-weight: bolder;
                 }
             }
+            &--heading-primary {
+                color: #b0b3b8;
+                font-weight: 600;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.4rem;
+                margin-top: 0.5rem;
+                margin-left: -17rem;
+            }
         }
         &--divider {
             background-color: rgba(128, 128, 128, 0.4);
             height: 0.1rem;
-            width: 5rem;
+            width: 28rem;
+            margin-top: 0.5rem;
+            margin-left: 1.5rem;
         }
     }
 }

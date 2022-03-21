@@ -57,6 +57,13 @@
     -moz-border-radius: 50% !important;
     -ms-border-radius: 50% !important;
     -o-border-radius: 50% !important;
+    &-small {
+        border-radius: 0.7rem !important;
+        -webkit-border-radius: 0.7rem !important;
+        -moz-border-radius: 0.7rem !important;
+        -ms-border-radius: 0.7rem !important;
+        -o-border-radius: 0.7rem !important;
+    }
 }
 
 .small-arrrow {
