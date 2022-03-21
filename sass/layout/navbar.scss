@@ -371,9 +371,6 @@
                         align-content: center;
                         justify-content: center;
                         margin-top: 0.5rem;
-                        @media only screen and (max-width: 700px) {
-                            & {}
-                        }
                         &--icon {
                             fill: #E4E6EB;
                             width: 2rem;

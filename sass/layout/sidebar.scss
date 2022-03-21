@@ -3,6 +3,28 @@
     height: 100%;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    overflow: scroll;
+    overflow-x: hidden;
+    & {
+        scrollbar-width: auto;
+        scrollbar-color: transparent transparent
+    }
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: grey;
+        border-radius: 10px;
+        border: 3px solid transparent;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
     &--flex {
         display: flex;
         align-items: center;
@@ -41,10 +63,27 @@
                 -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
                 -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
             }
+            &--circle {
+                width: 3.1rem;
+                height: 3.1rem;
+                background-color: #242526;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                align-content: center;
+                justify-content: center;
+                margin-left: 1rem;
+            }
             &--img {
                 width: 3.1rem;
                 height: 3.1rem;
-                margin-left: 1.5rem;
+                margin-left: 1.6rem;
+                fill: #E4E6EB;
                 &--name {
                     font-family: 'Roboto', sans-serif;
                     margin-left: 0.4rem;
@@ -53,6 +92,11 @@
                     font-weight: bolder;
                 }
             }
+        }
+        &--divider {
+            background-color: rgba(128, 128, 128, 0.4);
+            height: 0.1rem;
+            width: 5rem;
         }
     }
 }
