@@ -1497,22 +1497,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: #18191A;
-  /* Chrome, Edge, and Safari */ }
-  body {
-    scrollbar-width: auto;
-    scrollbar-color: transparent transparent; }
-  body::-webkit-scrollbar {
-    width: 5px; }
-  body::-webkit-scrollbar-track {
-    background: transparent; }
-  body::-webkit-scrollbar-thumb {
-    background-color: grey;
-    border-radius: 10px;
-    border: 3px solid transparent;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; }
+  overflow: hidden; }
 
 .active {
   fill: #2374e1 !important; }
@@ -1573,6 +1558,9 @@ body {
   height: 1.7rem !important;
   position: absolute;
   left: 0.5rem; }
+
+.icon-left-prefixer {
+  margin-left: 2.5rem; }
 
 @keyframes shimmer {
   0% {
@@ -1686,7 +1674,8 @@ body {
   height: 91.5vh;
   display: grid;
   grid-template-rows: 100%;
-  grid-template-columns: 22% 56% 22%; }
+  grid-template-columns: 22% 56% 22%;
+  overflow: hidden; }
 
 .sidebar-con {
   width: 100%;
@@ -1786,3 +1775,138 @@ body {
       width: 28rem;
       margin-top: 0.5rem;
       margin-left: 1.5rem; }
+
+.active-con {
+  width: 100%;
+  height: 100%;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* Chrome, Edge, and Safari */ }
+  .active-con {
+    scrollbar-width: auto;
+    scrollbar-color: transparent transparent; }
+  .active-con::-webkit-scrollbar {
+    width: 5px; }
+  .active-con::-webkit-scrollbar-track {
+    background: transparent; }
+  .active-con::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
+  .active-con--contacts-con {
+    width: 106%;
+    height: 5rem;
+    display: flex;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    align-items: center; }
+    .active-con--contacts-con--heading {
+      color: #b0b3b8;
+      font-size: 1.6rem;
+      font-weight: 600;
+      font-family: 'Roboto', sans-serif;
+      margin-left: 1.5rem; }
+    .active-con--contacts-con--icon-box {
+      display: flex;
+      margin-left: 8.7rem; }
+      .active-con--contacts-con--icon-box--icon {
+        fill: #b0b3b8;
+        display: inline-block; }
+  .active-con--flex-con {
+    margin-top: -1.5rem;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    /* Chrome, Edge, and Safari */ }
+    .active-con--flex-con {
+      scrollbar-width: auto;
+      scrollbar-color: transparent transparent; }
+    .active-con--flex-con::-webkit-scrollbar {
+      width: 5px; }
+    .active-con--flex-con::-webkit-scrollbar-track {
+      background: transparent; }
+    .active-con--flex-con::-webkit-scrollbar-thumb {
+      background-color: grey;
+      border-radius: 10px;
+      border: 3px solid transparent;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px; }
+    .active-con--flex-con--flex {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column; }
+      .active-con--flex-con--flex:not(:first-child) {
+        margin-top: 0 !important; }
+      .active-con--flex-con--flex--box {
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+        border-radius: 1rem;
+        width: 100%;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        grid-gap: 0.3rem;
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+        .active-con--flex-con--flex--box:hover {
+          background-color: rgba(77, 79, 80, 0.5);
+          transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+        .active-con--flex-con--flex--box--img {
+          width: 3.1rem;
+          height: 3.1rem;
+          margin-left: 1.6rem;
+          fill: #E4E6EB;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%; }
+          .active-con--flex-con--flex--box--img--name {
+            font-family: 'Roboto', sans-serif;
+            margin-left: 0.4rem;
+            font-size: 1.4rem;
+            color: #E4E6EB;
+            font-weight: bolder; }
+            .active-con--flex-con--flex--box--img--name--live {
+              position: relative;
+              /*left: 3rem;
+                            */
+              padding: 0rem 0.5rem;
+              font-size: 0.9rem;
+              color: #31a12c;
+              height: auto;
+              width: auto;
+              border: 1px solid grey;
+              border-radius: 1rem;
+              -webkit-border-radius: 1rem;
+              -moz-border-radius: 1rem;
+              -ms-border-radius: 1rem;
+              -o-border-radius: 1rem;
+              margin-top: 2.2rem;
+              margin-left: -11rem;
+              background-color: rgba(0, 100, 0, 0.863); }
