@@ -1,0 +1,25 @@
+.main-con--story-con {
+    width: 100%;
+    height: 45%;
+    border: 1px solid red;
+    &--grid {
+        width: 81.4%;
+        height: 77%;
+        margin-left: 8rem;
+        margin-top: 2.7rem;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(5, 18%);
+        grid-gap: 1rem;
+        &--box {
+            width: 100%;
+            height: 100%;
+            background-color: #242526;
+            border-radius: 0.8rem;
+            -webkit-border-radius: 0.8rem;
+            -moz-border-radius: 0.8rem;
+            -ms-border-radius: 0.8rem;
+            -o-border-radius: 0.8rem;
+        }
+    }
+}
