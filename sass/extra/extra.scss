@@ -95,11 +95,14 @@
 @keyframes color-change {
     0% {
         border-color: #f4d419;
+        margin-left: 1rem;
     }
     50% {
+        margin-left: 5rem;
         background-color: #2374e1;
     }
     100% {
+        margin-left: 1rem;
         background-color: #f4d419;
     }
 }
