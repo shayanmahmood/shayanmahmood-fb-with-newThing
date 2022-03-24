@@ -77,3 +77,29 @@
 .icon-left-prefixer {
     margin-left: 2.5rem;
 }
+
+.Color-change {
+    border-width: 5px !important;
+    width: 4.5rem !important;
+    height: 4.5rem !important;
+    border-color: blue;
+    animation: color-change 2s linear 2s infinite alternate;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation: color-change 2s linear 2s infinite alternate;
+}
+
+@keyframes color-change {
+    0% {
+        border-color: #f4d419;
+    }
+    50% {
+        background-color: #2374e1;
+    }
+    100% {
+        background-color: #f4d419;
+    }
+}
