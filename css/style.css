@@ -2227,3 +2227,20 @@ body {
             color: #B0B3B8;
             font-family: 'Roboto', sans-serif;
             font-weight: bold; }
+      .main-con--mind-section--grid--search-con--divider {
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-top: 6rem;
+        margin-left: 1.4rem;
+        height: 0.1rem;
+        width: 90%;
+        position: absolute;
+        z-index: 100; }
+    .main-con--mind-section--grid--chose-section {
+      margin-top: 0.5rem;
+      width: 90%;
+      height: 4.5rem;
+      margin-left: 1.5rem;
+      border: 2px solid red;
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: repeat(3, 33.3%); }
