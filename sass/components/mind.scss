@@ -73,10 +73,43 @@
             width: 90%;
             height: 4.5rem;
             margin-left: 1.5rem;
-            border: 2px solid red;
             display: grid;
             grid-template-rows: 100%;
             grid-template-columns: repeat(3, 33.3%);
+            &--live {
+                border-radius: 0.8rem;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                align-content: center;
+                justify-content: center;
+                transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -webkit-border-radius: 0.8rem;
+                -moz-border-radius: 0.8rem;
+                -ms-border-radius: 0.8rem;
+                -o-border-radius: 0.8rem;
+                &:hover {
+                    background-color: rgba(77, 79, 80, 0.5);
+                    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &--icon {
+                    &--name {
+                        font-size: 1.3rem;
+                        color: #B0B3B8;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold;
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
         }
     }
 }

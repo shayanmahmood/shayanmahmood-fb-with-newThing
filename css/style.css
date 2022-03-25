@@ -2025,12 +2025,12 @@ body {
           justify-content: center;
           margin-left: 3.5rem;
           margin-top: -2rem;
-          position: absolute;
+          position: relative;
           outline: 4px solid #242526; }
           .main-con--story-con--grid--box--img--plus-circle--icon {
             color: white; }
             .main-con--story-con--grid--box--img--plus-circle--icon--name {
-              margin-top: 2rem;
+              margin-top: 1rem;
               font-size: 1.2rem;
               font-family: 'Roboto', sans-serif;
               color: #E4E6EB;
@@ -2074,7 +2074,7 @@ body {
       .main-con--story-con--grid--normal-box--profile-circle {
         margin-top: -19rem;
         margin-left: 1rem;
-        position: absolute;
+        position: relative;
         z-index: 1000;
         border: 3px solid #2e89ff;
         width: 3.7rem;
@@ -2101,8 +2101,8 @@ body {
             font-family: 'Roboto', sans-serif;
             color: #E4E6EB;
             font-weight: bolder;
-            position: absolute;
-            margin-top: -2.8rem;
+            position: relative;
+            margin-top: 12rem;
             margin-left: 2.8rem; }
       .main-con--story-con--grid--normal-box--loader-con {
         overflow: hidden;
@@ -2129,11 +2129,11 @@ body {
             width: 45px;
             background: #656871;
             border-radius: 50%;
-            position: absolute;
+            position: relative;
             overflow: hidden;
             display: block;
             margin-top: -13rem;
-            margin-left: 6rem; }
+            margin-left: 1rem; }
             .main-con--story-con--grid--normal-box--loader-con--header--img:before {
               -webkit-border-radius: 50%;
               -moz-border-radius: 50%;
@@ -2143,7 +2143,7 @@ body {
               -moz-border-radius: 50%;
               -ms-border-radius: 50%;
               -o-border-radius: 50%;
-              position: absolute;
+              position: relative;
               content: "";
               height: 100%;
               width: 100%;
@@ -2162,8 +2162,7 @@ body {
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-        position: absolute;
-        margin-top: 8rem;
+        margin-top: -13rem;
         margin-left: 59rem; }
         .main-con--story-con--grid--normal-box--arrow-circle--icon {
           margin-top: 0.9rem;
@@ -2240,7 +2239,103 @@ body {
       width: 90%;
       height: 4.5rem;
       margin-left: 1.5rem;
-      border: 2px solid red;
       display: grid;
       grid-template-rows: 100%;
       grid-template-columns: repeat(3, 33.3%); }
+      .main-con--mind-section--grid--chose-section--live {
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem; }
+        .main-con--mind-section--grid--chose-section--live:hover {
+          background-color: rgba(77, 79, 80, 0.5);
+          transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+        .main-con--mind-section--grid--chose-section--live--icon--name {
+          font-size: 1.3rem;
+          color: #B0B3B8;
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          margin-left: 0.5rem; }
+
+.active-line {
+  width: 67%;
+  height: 10%;
+  background-color: #242526;
+  margin-left: 4rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  margin-left: 12rem;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 30% repeat(6, 11%);
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 0rem; }
+  .active-line--btn {
+    width: 14.2rem;
+    height: 4rem;
+    border: 0.5px solid #4599FF;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border-radius: 2rem;
+    position: relative;
+    left: -0.2rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .active-line--btn:hover {
+      background-color: rgba(77, 79, 80, 0.9);
+      transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -webkit-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -moz-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -ms-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -o-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .active-line--btn--icon--name {
+      font-size: 1.4rem;
+      color: #4599FF;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      margin-left: 0.5em; }
+  .active-line--img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; }
+
+.post-con {
+  width: 100%;
+  height: 100%;
+  border: 2px solid green; }
