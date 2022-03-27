@@ -9,7 +9,29 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./icons/favicon/facebook.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/10c6a50922.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/10c6a50922.js" crossorigin="anonymous"></script>
+    <script src="./js/function.js"></script>
 </head>
+<script>
+    const likeBtn = document.querySelector(".like__btn");
+    let likeIcon = document.querySelector("#icon"),
+        count = document.querySelector("#count");
+
+    let clicked = false;
+
+
+    likeBtn.addEventListener("click", () => {
+        if (!clicked) {
+            clicked = true;
+            likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`;
+            count.textContent++;
+        } else {
+            clicked = false;
+            likeIcon.innerHTML = `<i class="far fa-thumbs-up"></i>`;
+            count.textContent--;
+        }
+    });
+</script>
 
 <body>
 
@@ -943,7 +965,861 @@
                             <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
                                 width="18" style="user-select: auto;">
                             <span class="post-con--reaction--reacted-con--reacted--icon--count">You and 1.1M others</span>
-                            <!-- <span class="post-con--reaction--reacted-con--share">2.5K</span> -->
+                            <span class="post-con--reaction--reacted-con--share">2.5K Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/user/user-11-.jpg" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">Smash Code</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time" style="margin-left: -8rem;">Yesterday at 08:56am</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/post-3.png" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">ANA and 1.1k others</span>
+                            <span class="post-con--reaction--reacted-con--share">1.5K Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/user/n0tificati0n-img-10.jfif" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">Nimo Jerry</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time" style="    margin-left: -7rem">Yesterday at 03:56am</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/post-2.webp" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">MIa and 234 others</span>
+                            <span class="post-con--reaction--reacted-con--share">243 Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/user/user-37.jpg" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">Me</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time" style="    margin-left: -2.3rem;
+                            ">Monday at 12:56am</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/post-7.webp" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">Amili and 111k others</span>
+                            <span class="post-con--reaction--reacted-con--share">2.2K Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/user/user-32.jpg" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">JOhN</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time" style="    margin-left: -3.7rem;
+                            ">Saturday at 10:56am</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/post-4.webp" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">DjJ and 1.1M others</span>
+                            <span class="post-con--reaction--reacted-con--share">2.5K Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/user/user-11-.jpg" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">Smash code</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time" style="margin-left: -7.7rem;">wednesday at 01:26pm</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/Green Teal Geometric Modern Computer Programmer Code Editor Quotes for Instagram Post.png" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">You and 6.1M others</span>
+                            <span class="post-con--reaction--reacted-con--share">6.5M Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/user/user-37.jpg" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">Me</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time" style="    margin-left: -2.3rem;">Monday at 06:38Pm</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/2.png" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">You and 1.1k others</span>
+                            <span class="post-con--reaction--reacted-con--share">0.5K Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/user/n0tificati0n-img-6.png" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">VanilLA</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time">friday at 12:56am</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/post-5.webp" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">Zoey and 1.1M others</span>
+                            <span class="post-con--reaction--reacted-con--share">2.3K Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/user/n0tificati0n-img-7.jpg" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">SOphia</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time">Saturday at 12:56am</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/1.png" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">You and 7.1M others</span>
+                            <span class="post-con--reaction--reacted-con--share">9.5K Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post-con--box">
+                    <div class="post-con--box--header">
+                        <div class="post-con--box--header--img-con">
+                            <img src="./img/author/download.png" alt="" class="post-con--box--header--img-con--img">
+                            <p class="post-con--box--header--img-con--img--name-con--name">Shayan</p>
+                            <a href="" class="post-con--box--header--img-con--img--name-con--time">Yesterday at 12:56am</a>
+                        </div>
+                    </div>
+                    <div class="post-con--main">
+                        <img src="./img/FB-POST/post 10.webp" alt="" class="post-con--main--img">
+                    </div>
+                    <div class="post-con--reaction">
+                        <div class="post-con--reaction--reacted-con">
+                            <img class="post-con--reaction--reacted-con--reacted--icon" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                                width="18" style="user-select: auto;">
+                            <span class="post-con--reaction--reacted-con--reacted--icon--count">You and 1.1M others</span>
+                            <span class="post-con--reaction--reacted-con--share">2.5K Shares</span>
+                        </div>
+                        <div class="post-con--reaction-con">
+
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/E2BXhjYXUP-.png');background-position:0 -222px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+
+
+
+
+                                <!-- <svg version="1.1" id="Layer_1" class="post-con--reaction-con--box--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <g> -->
+                                <!-- <path d="M160,224H53.333C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 -->
+                                <!-- c29.397,0,53.333-23.936,53.333-53.333V234.667C170.667,228.779,165.888,224,160,224z"/> -->
+                                <!-- <path d="M512,304c0-12.821-5.099-24.768-13.867-33.6c9.963-10.901,15.04-25.536,13.632-40.725 -->
+                                <!-- c-2.496-27.115-26.944-48.341-55.637-48.341H324.373c6.507-19.819,16.96-56.149,16.96-85.333c0-46.272-39.317-85.333-64-85.333 -->
+                                <!-- c-22.165,0-37.995,12.459-38.677,12.992c-2.539,2.027-3.989,5.099-3.989,8.341v72.32l-47.957,103.893 -->
+                                <!-- c-1.472,3.221-1.28,6.955,0.555,9.984c3.136,5.184,4.736,10.731,4.736,16.448v213.333c0,5.141-0.597,10.368-1.835,16.021 -->
+                                <!-- c-1.259,5.739,2.347,11.413,8.064,12.693c9.365,2.112,18.539,3.285,25.771,3.285h195.819c23.232,0,43.563-15.659,48.32-37.269 -->
+                                <!-- c2.453-11.115,1.003-22.336-3.84-32.043c15.765-7.936,26.368-24.192,26.368-42.688c0-7.531-1.728-14.784-5.013-21.333 -->
+                                <!-- C501.397,338.731,512,322.496,512,304z"/> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- <g> -->
+                                <!-- </g> -->
+                                <!-- </svg> -->
+                                <span class="post-con--reaction-con--box--icon--name">like</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -184px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>                                <span class="post-con--reaction-con--box--icon--name">Comment</span>
+                            </div>
+                            <div class="post-con--reaction-con--box">
+                                <i data-visualcompletion="css-img" class="post-con--reaction-con--box--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/qjoyuEm7Z_Z.png&quot;); background-position: 0px -241px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                <span class="post-con--reaction-con--box--icon--name">Share</span>
+                            </div>
+                            <div class="post-con--divider"></div>
                         </div>
                     </div>
                 </div>
