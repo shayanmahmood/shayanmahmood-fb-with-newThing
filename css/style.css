@@ -1974,6 +1974,9 @@ body {
 .main-con--story-con {
   width: 100%;
   height: 45%; }
+  @media only screen and (max-width: 1280px) {
+    .main-con--story-con {
+      width: 105%; } }
   .main-con--story-con--grid {
     width: 81.4%;
     height: 80%;
@@ -1983,6 +1986,14 @@ body {
     grid-template-rows: 100%;
     grid-template-columns: repeat(5, 18%);
     grid-gap: 1rem; }
+    @media only screen and (max-width: 1230px) {
+      .main-con--story-con--grid {
+        width: 85.4%;
+        margin-left: 5rem; } }
+    @media only screen and (max-width: 1200px) {
+      .main-con--story-con--grid {
+        width: 87.4%;
+        margin-left: 3rem; } }
     .main-con--story-con--grid--box {
       text-align: center;
       overflow: hidden;
@@ -2193,6 +2204,21 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   margin-top: -2rem; }
+  @media only screen and (max-width: 1200px) {
+    .main-con--mind-section {
+      width: 75%;
+      height: 21%;
+      height: 12rem;
+      background-color: #242526;
+      position: relative;
+      margin-left: 4rem;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      margin-left: 9rem;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      margin-top: -2rem; } }
   .main-con--mind-section--grid {
     width: 100%;
     height: 100%;
@@ -2232,6 +2258,14 @@ body {
           color: #E4E6EB;
           font-size: 1.7rem;
           margin-top: 1rem; }
+          @media only screen and (max-width: 1230px) {
+            .main-con--mind-section--grid--search-con--img--search-box {
+              margin-left: 0%;
+              width: 36rem; } }
+          @media only screen and (max-width: 1200px) {
+            .main-con--mind-section--grid--search-con--img--search-box {
+              margin-left: -1.2rem;
+              width: 40rem; } }
           .main-con--mind-section--grid--search-con--img--search-box::placeholder {
             font-size: 1.7rem;
             color: #B0B3B8;
@@ -2452,6 +2486,13 @@ body {
         font-family: 'Roboto', sans-serif;
         margin-left: 28rem;
         margin-top: 1rem; }
+        @media only screen and (max-width: 1350px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 23rem;
+            margin-top: 1.1rem; } }
+        @media only screen and (max-width: 1220px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 20rem; } }
   .post-con--divider {
     background-color: rgba(128, 128, 128, 0.4);
     height: 0.1rem;
