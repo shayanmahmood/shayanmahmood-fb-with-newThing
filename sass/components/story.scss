@@ -27,6 +27,12 @@
                 margin-left: 3rem;
             }
         }
+        @media only screen and (max-width:1500px) {
+            & {
+                width: 90.4%;
+                margin-left: 1.5rem;
+            }
+        }
         &--box {
             text-align: center;
             overflow: hidden;
@@ -183,6 +189,11 @@
                 display: flex;
                 align-items: center;
                 justify-items: center;
+                @media only screen and (max-width: 1150px) {
+                    & {
+                        width: 115%;
+                    }
+                }
                 &--header {
                     display: flex;
                     justify-content: center;
@@ -233,6 +244,11 @@
                 -o-border-radius: 50%;
                 margin-top: -13rem;
                 margin-left: 59rem;
+                @media only screen and (max-width: 11150px) {
+                    & {
+                        margin-left: 57rem;
+                    }
+                }
                 &--icon {
                     margin-top: 0.9rem;
                     margin-left: 1rem;

@@ -1819,6 +1819,9 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   /* Chrome, Edge, and Safari */ }
+  @media only screen and (max-width: 1100px) {
+    .active-con {
+      visibility: hidden; } }
   .active-con {
     scrollbar-width: auto;
     scrollbar-color: transparent transparent; }
@@ -1994,6 +1997,10 @@ body {
       .main-con--story-con--grid {
         width: 87.4%;
         margin-left: 3rem; } }
+    @media only screen and (max-width: 1500px) {
+      .main-con--story-con--grid {
+        width: 90.4%;
+        margin-left: 1.5rem; } }
     .main-con--story-con--grid--box {
       text-align: center;
       overflow: hidden;
@@ -2139,6 +2146,9 @@ body {
         display: flex;
         align-items: center;
         justify-items: center; }
+        @media only screen and (max-width: 1150px) {
+          .main-con--story-con--grid--normal-box--loader-con {
+            width: 115%; } }
         .main-con--story-con--grid--normal-box--loader-con--header {
           display: flex;
           justify-content: center;
@@ -2185,6 +2195,9 @@ body {
         -o-border-radius: 50%;
         margin-top: -13rem;
         margin-left: 59rem; }
+        @media only screen and (max-width: 11150px) {
+          .main-con--story-con--grid--normal-box--arrow-circle {
+            margin-left: 57rem; } }
         .main-con--story-con--grid--normal-box--arrow-circle--icon {
           margin-top: 0.9rem;
           margin-left: 1rem;
@@ -2337,6 +2350,27 @@ body {
   align-content: center;
   justify-content: center;
   grid-gap: 0rem; }
+  @media only screen and (max-width: 1200px) {
+    .active-line {
+      width: 75%;
+      height: 10%;
+      background-color: #242526;
+      margin-left: 4rem;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      margin-left: 9rem;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: 30% repeat(6, 11%);
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      justify-content: center;
+      grid-gap: 0rem; } }
   .active-line--btn {
     width: 14.2rem;
     height: 4rem;
@@ -2401,6 +2435,23 @@ body {
     grid-template-columns: 100%;
     margin-left: 13rem;
     grid-template-rows: 10% 78% 12%; }
+    @media only screen and (max-width: 1200px) {
+      .post-con--box {
+        overflow: hidden;
+        width: 75%;
+        height: 63.5rem;
+        background-color: #242526;
+        margin-left: 6rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 9rem;
+        grid-template-rows: 10% 78% 12%; } }
     .post-con--box--header {
       width: 100%;
       height: 100%;
@@ -2493,6 +2544,12 @@ body {
         @media only screen and (max-width: 1220px) {
           .post-con--reaction--reacted-con--share {
             margin-left: 20rem; } }
+        @media only screen and (max-width: 1190px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 25rem; } }
+        @media only screen and (max-width: 1150px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 22rem; } }
   .post-con--divider {
     background-color: rgba(128, 128, 128, 0.4);
     height: 0.1rem;

@@ -18,6 +18,29 @@
     align-content: center;
     justify-content: center;
     grid-gap: 0rem;
+    @media only screen and (max-width: 1200px) {
+        & {
+            width: 75%;
+            height: 10%;
+            background-color: #242526;
+            margin-left: 4rem;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            margin-left: 9rem;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            margin-top: 1.5rem;
+            display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 30% repeat(6, 11%);
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+            justify-content: center;
+            grid-gap: 0rem;
+        }
+    }
     &--btn {
         width: 14.2rem;
         height: 4rem;
