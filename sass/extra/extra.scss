@@ -117,3 +117,12 @@
     border: none;
     cursor: pointer;
 }
+
+.respo--prefixer {
+    @media only screen and (max-width: 1500px) {
+        & {
+            width: 90.4%;
+            margin-left: 1.5rem;
+        }
+    }
+}
