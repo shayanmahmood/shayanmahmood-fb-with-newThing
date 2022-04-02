@@ -41,6 +41,18 @@
             grid-gap: 0rem;
         }
     }
+    @media only screen and (max-width :1000px) {
+        & {
+            margin-left: 5rem;
+            width: 85%;
+        }
+    }
+    @media only screen and (max-width:930px) {
+        & {
+            width: 90%;
+            margin-left: 3rem;
+        }
+    }
     &--btn {
         width: 14.2rem;
         height: 4rem;

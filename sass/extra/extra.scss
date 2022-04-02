@@ -126,3 +126,12 @@
         }
     }
 }
+
+.hide-me-res-sm {
+    @media only screen and (max-width: 1000px) {
+        & {
+            visibility: hidden;
+            display: none;
+        }
+    }
+}

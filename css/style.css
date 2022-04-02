@@ -1602,6 +1602,11 @@ body {
     width: 90.4%;
     margin-left: 1.5rem; } }
 
+@media only screen and (max-width: 1000px) {
+  .hide-me-res-sm {
+    visibility: hidden;
+    display: none; } }
+
 @keyframes shimmer {
   0% {
     background-position: -550px 0; }
@@ -1725,6 +1730,9 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   /* Chrome, Edge, and Safari */ }
+  @media only screen and (max-width: 1100px) {
+    .sidebar-con {
+      width: 125%; } }
   .sidebar-con {
     scrollbar-width: auto;
     scrollbar-color: transparent transparent; }
@@ -1963,6 +1971,14 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   /* Chrome, Edge, and Safari */ }
+  @media only screen and (max-width: 1150px) {
+    .main-con {
+      grid-column: 2 / 4;
+      width: 80%;
+      margin-left: 12rem; } }
+  @media only screen and (max-width: 1000px) {
+    .main-con {
+      margin-left: 10rem; } }
   .main-con {
     scrollbar-width: auto;
     scrollbar-color: transparent transparent; }
@@ -2002,6 +2018,13 @@ body {
       .main-con--story-con--grid {
         width: 87.4%;
         margin-left: 3rem; } }
+    @media only screen and (max-width: 1000px) {
+      .main-con--story-con--grid {
+        width: 107.4%;
+        margin-left: 3rem; } }
+    @media only screen and (max-width: 930px) {
+      .main-con--story-con--grid {
+        width: 109%; } }
     .main-con--story-con--grid--box {
       text-align: center;
       overflow: hidden;
@@ -2196,13 +2219,35 @@ body {
         -o-border-radius: 50%;
         margin-top: -13rem;
         margin-left: 59rem; }
-        @media only screen and (max-width: 11150px) {
-          .main-con--story-con--grid--normal-box--arrow-circle {
-            margin-left: 57rem; } }
         .main-con--story-con--grid--normal-box--arrow-circle--icon {
           margin-top: 0.9rem;
           margin-left: 1rem;
           fill: #B0B3B8; }
+
+@media only screen and (max-width: 1500px) {
+  .mobile-res-arrow {
+    margin-left: 65rem; } }
+
+@media only screen and (max-width: 1400px) {
+  .mobile-res-arrow {
+    margin-left: 61rem; } }
+
+@media only screen and (max-width: 1300px) {
+  .mobile-res-arrow {
+    margin-left: 57rem; } }
+
+@media only screen and (max-width: 1200px) {
+  .mobile-res-arrow {
+    margin-left: 59rem; } }
+
+@media only screen and (max-width: 1100px) {
+  .mobile-res-arrow {
+    margin-left: 60rem; } }
+
+@media only screen and (max-width: 1000px) {
+  .mobile-res-arrow {
+    position: absolute;
+    margin-left: 20rem; } }
 
 .main-con--mind-section {
   width: 67%;
@@ -2233,6 +2278,25 @@ body {
       -ms-border-radius: 8px;
       -o-border-radius: 8px;
       margin-top: -2rem; } }
+  @media only screen and (max-width: 1000px) {
+    .main-con--mind-section {
+      width: 85%;
+      height: 21%;
+      height: 12rem;
+      background-color: #242526;
+      position: relative;
+      margin-left: 4rem;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      margin-left: 5rem;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      margin-top: -2rem; } }
+  @media only screen and (max-width: 930px) {
+    .main-con--mind-section {
+      width: 90%;
+      margin-left: 2.5rem; } }
   .main-con--mind-section--grid {
     width: 100%;
     height: 100%;
@@ -2372,6 +2436,14 @@ body {
       align-content: center;
       justify-content: center;
       grid-gap: 0rem; } }
+  @media only screen and (max-width: 1000px) {
+    .active-line {
+      margin-left: 5rem;
+      width: 85%; } }
+  @media only screen and (max-width: 930px) {
+    .active-line {
+      width: 90%;
+      margin-left: 3rem; } }
   .active-line--btn {
     width: 14.2rem;
     height: 4rem;
@@ -2453,6 +2525,14 @@ body {
         grid-template-columns: 100%;
         margin-left: 9rem;
         grid-template-rows: 10% 78% 12%; } }
+    @media only screen and (max-width: 1000px) {
+      .post-con--box {
+        margin-left: 5rem;
+        width: 85%; } }
+    @media only screen and (max-width: 930px) {
+      .post-con--box {
+        width: 90%;
+        margin-left: 3rem; } }
     .post-con--box--header {
       width: 100%;
       height: 100%;
@@ -2551,6 +2631,9 @@ body {
         @media only screen and (max-width: 1150px) {
           .post-con--reaction--reacted-con--share {
             margin-left: 22rem; } }
+        @media only screen and (max-width: 1100px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 27rem; } }
   .post-con--divider {
     background-color: rgba(128, 128, 128, 0.4);
     height: 0.1rem;
