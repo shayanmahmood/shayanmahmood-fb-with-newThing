@@ -173,6 +173,11 @@
                         margin-left: 27rem;
                     }
                 }
+                @media only screen and (max-width:880px) {
+                    & {
+                        margin-left: 25rem;
+                    }
+                }
             }
         }
     }

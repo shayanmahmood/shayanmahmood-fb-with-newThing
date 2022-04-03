@@ -1979,6 +1979,9 @@ body {
   @media only screen and (max-width: 1000px) {
     .main-con {
       margin-left: 10rem; } }
+  @media only screen and (max-width: 880px) {
+    .main-con {
+      margin-left: 8.5rem; } }
   .main-con {
     scrollbar-width: auto;
     scrollbar-color: transparent transparent; }
@@ -2634,6 +2637,9 @@ body {
         @media only screen and (max-width: 1100px) {
           .post-con--reaction--reacted-con--share {
             margin-left: 27rem; } }
+        @media only screen and (max-width: 880px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 25rem; } }
   .post-con--divider {
     background-color: rgba(128, 128, 128, 0.4);
     height: 0.1rem;
