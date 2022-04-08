@@ -1612,6 +1612,11 @@ body {
     visibility: hidden;
     display: none; } }
 
+@media only screen and (max-width: 790px) {
+  .res-hide-me-vsm {
+    visibility: hidden;
+    display: none; } }
+
 @keyframes shimmer {
   0% {
     background-position: -550px 0; }
