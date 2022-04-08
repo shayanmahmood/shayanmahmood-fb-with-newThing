@@ -53,6 +53,12 @@
             margin-left: 3rem;
         }
     }
+    @media only screen and (max-width:840px) {
+        &{
+            width: 95%;
+    margin-left: 1.3rem;
+        }
+    }
     &--btn {
         width: 14.2rem;
         height: 4rem;

@@ -52,6 +52,12 @@
             margin-left: 2.5rem;
         }
     }
+    @media only screen and (max-width:840px) {
+        &{
+            width: 95%;
+    margin-left: 1.3rem;
+        }
+    }
     &--grid {
         width: 100%;
         height: 100%;

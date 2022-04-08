@@ -1607,6 +1607,11 @@ body {
     visibility: hidden;
     display: none; } }
 
+@media only screen and (max-width: 840px) {
+  .hide-me-res--sm {
+    visibility: hidden;
+    display: none; } }
+
 @keyframes shimmer {
   0% {
     background-position: -550px 0; }
@@ -2028,6 +2033,14 @@ body {
     @media only screen and (max-width: 930px) {
       .main-con--story-con--grid {
         width: 109%; } }
+    @media only screen and (max-width: 840px) {
+      .main-con--story-con--grid {
+        width: 115%;
+        margin-left: 1rem; } }
+    @media only screen and (max-width: 790px) {
+      .main-con--story-con--grid {
+        grid-template-columns: repeat(5, 23%);
+        margin-left: 2rem; } }
     .main-con--story-con--grid--box {
       text-align: center;
       overflow: hidden;
@@ -2300,6 +2313,10 @@ body {
     .main-con--mind-section {
       width: 90%;
       margin-left: 2.5rem; } }
+  @media only screen and (max-width: 840px) {
+    .main-con--mind-section {
+      width: 95%;
+      margin-left: 1.3rem; } }
   .main-con--mind-section--grid {
     width: 100%;
     height: 100%;
@@ -2447,6 +2464,10 @@ body {
     .active-line {
       width: 90%;
       margin-left: 3rem; } }
+  @media only screen and (max-width: 840px) {
+    .active-line {
+      width: 95%;
+      margin-left: 1.3rem; } }
   .active-line--btn {
     width: 14.2rem;
     height: 4rem;
@@ -2536,6 +2557,10 @@ body {
       .post-con--box {
         width: 90%;
         margin-left: 3rem; } }
+    @media only screen and (max-width: 840px) {
+      .post-con--box {
+        width: 95%;
+        margin-left: 1.3rem; } }
     .post-con--box--header {
       width: 100%;
       height: 100%;
