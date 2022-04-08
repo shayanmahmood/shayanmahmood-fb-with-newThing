@@ -6,6 +6,11 @@
             width: 105%;
         }
     }
+    @media only screen  and (max-width:790px){
+&{
+    width: 85%;
+}
+ }
     &--grid {
         width: 81.4%;
         height: 80%;
@@ -48,9 +53,12 @@
         @media only screen and (max-width:790px) {
             &{
         grid-template-columns: repeat(5, 23%);
-                margin-left: 2rem;
+                margin-left: 0rem;
+            width: 115%;
             }
+
         }
+
         &--box {
             text-align: center;
             overflow: hidden;

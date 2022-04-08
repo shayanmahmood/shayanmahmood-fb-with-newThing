@@ -142,13 +142,18 @@
             display: none;
         }
     }
+    @media only screen and (max-width:790px) {
+        &{
+            visibility: visible;
+            display: block;
+        }
+    }
 }
 
 .res-hide-me-vsm{
     @media only screen and (max-width:790px) {
         &{
             visibility: hidden;
-            display: none;
         }
     }
 }

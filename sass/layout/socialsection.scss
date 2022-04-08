@@ -22,6 +22,12 @@
             margin-left: 8.5rem;
         }
     }
+    @media only screen and (max-width:790px) {
+        &{
+            width: 95%;
+            margin-left: -6.5rem;
+        }
+    }
     & {
         scrollbar-width: auto;
         scrollbar-color: transparent transparent

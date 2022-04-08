@@ -1613,9 +1613,13 @@ body {
     display: none; } }
 
 @media only screen and (max-width: 790px) {
+  .hide-me-res--sm {
+    visibility: visible;
+    display: block; } }
+
+@media only screen and (max-width: 790px) {
   .res-hide-me-vsm {
-    visibility: hidden;
-    display: none; } }
+    visibility: hidden; } }
 
 @keyframes shimmer {
   0% {
@@ -1992,6 +1996,10 @@ body {
   @media only screen and (max-width: 880px) {
     .main-con {
       margin-left: 8.5rem; } }
+  @media only screen and (max-width: 790px) {
+    .main-con {
+      width: 95%;
+      margin-left: -6.5rem; } }
   .main-con {
     scrollbar-width: auto;
     scrollbar-color: transparent transparent; }
@@ -2014,6 +2022,9 @@ body {
   @media only screen and (max-width: 1280px) {
     .main-con--story-con {
       width: 105%; } }
+  @media only screen and (max-width: 790px) {
+    .main-con--story-con {
+      width: 85%; } }
   .main-con--story-con--grid {
     width: 81.4%;
     height: 80%;
@@ -2045,7 +2056,8 @@ body {
     @media only screen and (max-width: 790px) {
       .main-con--story-con--grid {
         grid-template-columns: repeat(5, 23%);
-        margin-left: 2rem; } }
+        margin-left: 0rem;
+        width: 115%; } }
     .main-con--story-con--grid--box {
       text-align: center;
       overflow: hidden;
