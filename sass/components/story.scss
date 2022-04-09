@@ -58,6 +58,11 @@
             }
 
         }
+        @media only screen and (max-width:650px) {
+            &{
+                width: 115%;
+            }
+        }
 
         &--box {
             text-align: center;

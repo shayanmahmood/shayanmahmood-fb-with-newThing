@@ -28,6 +28,12 @@
             margin-left: -6.5rem;
         }
     }
+    @media only screen  and (max-width:650px){
+        &{
+            width: 110%;
+    margin-left: -10rem;
+        }
+    }
     & {
         scrollbar-width: auto;
         scrollbar-color: transparent transparent

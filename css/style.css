@@ -2000,6 +2000,10 @@ body {
     .main-con {
       width: 95%;
       margin-left: -6.5rem; } }
+  @media only screen and (max-width: 650px) {
+    .main-con {
+      width: 110%;
+      margin-left: -10rem; } }
   .main-con {
     scrollbar-width: auto;
     scrollbar-color: transparent transparent; }
@@ -2057,6 +2061,9 @@ body {
       .main-con--story-con--grid {
         grid-template-columns: repeat(5, 23%);
         margin-left: 0rem;
+        width: 115%; } }
+    @media only screen and (max-width: 650px) {
+      .main-con--story-con--grid {
         width: 115%; } }
     .main-con--story-con--grid--box {
       text-align: center;
@@ -2381,6 +2388,15 @@ body {
             .main-con--mind-section--grid--search-con--img--search-box {
               margin-left: -1.2rem;
               width: 40rem; } }
+          @media only screen and (max-width: 750px) {
+            .main-con--mind-section--grid--search-con--img--search-box {
+              width: 43rem; } }
+          @media only screen and (max-width: 750px) {
+            .main-con--mind-section--grid--search-con--img--search-box {
+              width: 41rem; } }
+          @media only screen and (max-width: 690px) {
+            .main-con--mind-section--grid--search-con--img--search-box {
+              width: 39rem; } }
           .main-con--mind-section--grid--search-con--img--search-box::placeholder {
             font-size: 1.7rem;
             color: #B0B3B8;
@@ -2682,6 +2698,18 @@ body {
         @media only screen and (max-width: 880px) {
           .post-con--reaction--reacted-con--share {
             margin-left: 25rem; } }
+        @media only screen and (max-width: 790px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 30rem; } }
+        @media only screen and (max-width: 750px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 27rem; } }
+        @media only screen and (max-width: 750px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 25rem; } }
+        @media only screen and (max-width: 690px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 23rem; } }
   .post-con--divider {
     background-color: rgba(128, 128, 128, 0.4);
     height: 0.1rem;

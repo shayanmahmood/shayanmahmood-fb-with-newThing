@@ -184,7 +184,27 @@
                         margin-left: 25rem;
                     }
                 }
+                @media only screen  and (max-width:790px){
+                 &{   margin-left: 30rem;
+                 }
+                }
+                @media only screen and (max-width:750px) {
+                    &{
+                        margin-left: 27rem;
+                    }
+                }
+                @media only screen  and (max-width:750px){
+                    &{
+                        margin-left: 25rem;
+                    }
+                }
+                @media only screen  and (max-width:690px){
+                    &{
+                        margin-left: 23rem;
+                                       }
+                }
             }
+           
         }
     }
     &--divider {

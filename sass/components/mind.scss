@@ -109,6 +109,21 @@
                             width: 40rem;
                         }
                     }
+                    @media only screen  and (max-width:750px){
+                        &{
+                            width: 43rem;
+                        }
+                    }
+                    @media only screen  and (max-width:750px){
+                        &{
+                            width: 41rem;
+                        }
+                    }
+                    @media only screen  and (max-width:690px){
+                        &{
+                          width: 39rem;
+                        }
+                    }
                     &::placeholder {
                         font-size: 1.7rem;
                         color: #B0B3B8;
