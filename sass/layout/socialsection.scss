@@ -23,15 +23,31 @@
         }
     }
     @media only screen and (max-width:790px) {
-        &{
+        & {
             width: 95%;
             margin-left: -6.5rem;
         }
     }
-    @media only screen  and (max-width:650px){
-        &{
+    @media only screen and (max-width:650px) {
+        & {
             width: 110%;
-    margin-left: -10rem;
+            margin-left: -10rem;
+        }
+    }
+    @media only screen and (max-width:550px) {
+        & {
+            margin-left: -8.5rem;
+        }
+    }
+    @media only screen and (max-width:530px) {
+        & {
+            width: 120%;
+            margin-left: -10rem;
+        }
+    }
+    @media only screen and (max-width:500px) {
+        & {
+            margin-left: -9.5rem;
         }
     }
     & {

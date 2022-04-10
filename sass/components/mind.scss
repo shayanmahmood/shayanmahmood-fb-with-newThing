@@ -53,9 +53,15 @@
         }
     }
     @media only screen and (max-width:840px) {
-        &{
+        & {
             width: 95%;
-    margin-left: 1.3rem;
+            margin-left: 1.3rem;
+        }
+    }
+    @media only screen and (max-width:600px) {
+        & {
+            width: 98%;
+            margin-left: 0.5rem;
         }
     }
     &--grid {
@@ -109,19 +115,25 @@
                             width: 40rem;
                         }
                     }
-                    @media only screen  and (max-width:750px){
-                        &{
+                    @media only screen and (max-width:750px) {
+                        & {
                             width: 43rem;
                         }
                     }
-                    @media only screen  and (max-width:750px){
-                        &{
+                    @media only screen and (max-width:750px) {
+                        & {
                             width: 41rem;
                         }
                     }
-                    @media only screen  and (max-width:690px){
-                        &{
-                          width: 39rem;
+                    @media only screen and (max-width:690px) {
+                        & {
+                            width: 39rem;
+                        }
+                    }
+                    @media only screen and (max-width:500px) {
+                        & {
+                            width: 36rem;
+                            margin-left: -0.5rem;
                         }
                     }
                     &::placeholder {

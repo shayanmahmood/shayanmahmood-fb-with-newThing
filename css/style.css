@@ -1617,8 +1617,13 @@ body {
     visibility: visible;
     display: block; } }
 
+@media only screen and (max-width: 450px) {
+  .hide-me-res--sm {
+    visibility: hidden;
+    display: none; } }
+
 @media only screen and (max-width: 790px) {
-  .res-hide-me-vsm {
+  .hide-me-res--sm .res-hide-me-vsm {
     visibility: hidden; } }
 
 @keyframes shimmer {
@@ -1734,7 +1739,8 @@ body {
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 22% 56% 22%;
-  overflow: hidden; }
+  overflow: hidden;
+  visibility: hidden; }
 
 .sidebar-con {
   width: 100%;
@@ -2004,6 +2010,16 @@ body {
     .main-con {
       width: 110%;
       margin-left: -10rem; } }
+  @media only screen and (max-width: 550px) {
+    .main-con {
+      margin-left: -8.5rem; } }
+  @media only screen and (max-width: 530px) {
+    .main-con {
+      width: 120%;
+      margin-left: -10rem; } }
+  @media only screen and (max-width: 500px) {
+    .main-con {
+      margin-left: -9.5rem; } }
   .main-con {
     scrollbar-width: auto;
     scrollbar-color: transparent transparent; }
@@ -2289,6 +2305,11 @@ body {
     position: absolute;
     margin-left: 20rem; } }
 
+@media only screen and (max-width: 990px) {
+  .mobile-res-arrow {
+    visibility: hidden;
+    display: none; } }
+
 .main-con--mind-section {
   width: 67%;
   height: 21%;
@@ -2341,6 +2362,10 @@ body {
     .main-con--mind-section {
       width: 95%;
       margin-left: 1.3rem; } }
+  @media only screen and (max-width: 600px) {
+    .main-con--mind-section {
+      width: 98%;
+      margin-left: 0.5rem; } }
   .main-con--mind-section--grid {
     width: 100%;
     height: 100%;
@@ -2397,6 +2422,10 @@ body {
           @media only screen and (max-width: 690px) {
             .main-con--mind-section--grid--search-con--img--search-box {
               width: 39rem; } }
+          @media only screen and (max-width: 500px) {
+            .main-con--mind-section--grid--search-con--img--search-box {
+              width: 36rem;
+              margin-left: -0.5rem; } }
           .main-con--mind-section--grid--search-con--img--search-box::placeholder {
             font-size: 1.7rem;
             color: #B0B3B8;
@@ -2501,6 +2530,10 @@ body {
     .active-line {
       width: 95%;
       margin-left: 1.3rem; } }
+  @media only screen and (max-width: 600px) {
+    .active-line {
+      width: 98%;
+      margin-left: 0.5rem; } }
   .active-line--btn {
     width: 14.2rem;
     height: 4rem;
@@ -2594,6 +2627,10 @@ body {
       .post-con--box {
         width: 95%;
         margin-left: 1.3rem; } }
+    @media only screen and (max-width: 600px) {
+      .post-con--box {
+        width: 98%;
+        margin-left: 0.5rem; } }
     .post-con--box--header {
       width: 100%;
       height: 100%;
@@ -2710,6 +2747,21 @@ body {
         @media only screen and (max-width: 690px) {
           .post-con--reaction--reacted-con--share {
             margin-left: 23rem; } }
+        @media only screen and (max-width: 650px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 28rem; } }
+        @media only screen and (max-width: 580px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 23rem; } }
+        @media only screen and (max-width: 550px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 21rem; } }
+        @media only screen and (max-width: 530px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 23rem; } }
+        @media only screen and (max-width: 500px) {
+          .post-con--reaction--reacted-con--share {
+            margin-left: 21rem; } }
   .post-con--divider {
     background-color: rgba(128, 128, 128, 0.4);
     height: 0.1rem;

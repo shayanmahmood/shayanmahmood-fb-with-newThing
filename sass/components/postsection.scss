@@ -51,9 +51,15 @@
             }
         }
         @media only screen and (max-width:840px) {
-            &{
+            & {
                 width: 95%;
-    margin-left: 1.3rem;
+                margin-left: 1.3rem;
+            }
+        }
+        @media only screen and (max-width:600px) {
+            & {
+                width: 98%;
+                margin-left: 0.5rem;
             }
         }
         &--header {
@@ -184,27 +190,52 @@
                         margin-left: 25rem;
                     }
                 }
-                @media only screen  and (max-width:790px){
-                 &{   margin-left: 30rem;
-                 }
+                @media only screen and (max-width:790px) {
+                    & {
+                        margin-left: 30rem;
+                    }
                 }
                 @media only screen and (max-width:750px) {
-                    &{
+                    & {
                         margin-left: 27rem;
                     }
                 }
-                @media only screen  and (max-width:750px){
-                    &{
+                @media only screen and (max-width:750px) {
+                    & {
                         margin-left: 25rem;
                     }
                 }
-                @media only screen  and (max-width:690px){
-                    &{
+                @media only screen and (max-width:690px) {
+                    & {
                         margin-left: 23rem;
-                                       }
+                    }
+                }
+                @media only screen and (max-width:650px) {
+                    & {
+                        margin-left: 28rem;
+                    }
+                }
+                @media only screen and (max-width:580px) {
+                    & {
+                        margin-left: 23rem;
+                    }
+                }
+                @media only screen and (max-width:550px) {
+                    & {
+                        margin-left: 21rem;
+                    }
+                }
+                @media only screen and (max-width:530px) {
+                    & {
+                        margin-left: 23rem;
+                    }
+                }
+                @media only screen and (max-width:500px) {
+                    & {
+                        margin-left: 21rem;
+                    }
                 }
             }
-           
         }
     }
     &--divider {
