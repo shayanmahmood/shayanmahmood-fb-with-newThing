@@ -1,0 +1,30 @@
+.nav-responsive--bottom {
+    width: 100vw;
+    height: 10vh;
+    background-color: #242526;
+    display: grid;
+    grid-template-rows: repeat(1, 100%);
+    grid-template-columns: 100%;
+    position: fixed;
+    bottom: 0%;
+    &--icon-con {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(6, 16.6%);
+        margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+        &--icon-box {
+            display: flex;
+            align-items: flex-end;
+            justify-items: center;
+            align-content: center;
+            justify-content: center;
+            border-bottom: #2374e1;
+            &--icon {
+                height: 2.8rem;
+                width: 2.8rem;
+                fill: #b0b3b8;
+            }
+        }
+    }
+}

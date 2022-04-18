@@ -6,7 +6,7 @@
   overflow: hidden;
   align-items: center;
   justify-items: center; }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 450px) {
     .nav {
       display: none;
       visibility: hidden; } }
@@ -1646,37 +1646,22 @@ body {
 
 .nav-responsive {
   width: 100vw;
-  height: 14vh;
+  height: 10vh;
   background-color: #242526;
   display: grid;
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: repeat(1, 100%);
   grid-template-columns: 100%;
   visibility: hidden;
   display: none; }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 450px) {
     .nav-responsive {
       display: grid;
       visibility: visible; } }
-  .nav-responsive--icon-con {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: repeat(6, 16.6%);
-    margin-bottom: 0.5rem; }
-    .nav-responsive--icon-con--icon-box {
-      display: flex;
-      align-items: flex-end;
-      justify-items: center;
-      align-content: center;
-      justify-content: center;
-      border-bottom: #2374e1; }
-      .nav-responsive--icon-con--icon-box--icon {
-        height: 2.8rem;
-        width: 2.8rem;
-        fill: #b0b3b8; }
   .nav-responsive--logo-con {
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 80% repeat(2, 10%); }
+    grid-template-columns: 80% repeat(2, 10%);
+    margin-top: 0.4rem; }
     .nav-responsive--logo-con--messenger-circle {
       background-color: #3a3b3c;
       width: 3rem;
@@ -1729,6 +1714,33 @@ body {
         .nav-responsive--logo-con--logo {
           width: 13rem;
           height: 4rem; } }
+
+.nav-responsive--bottom {
+  width: 100vw;
+  height: 10vh;
+  background-color: #242526;
+  display: grid;
+  grid-template-rows: repeat(1, 100%);
+  grid-template-columns: 100%;
+  position: fixed;
+  bottom: 0%; }
+  .nav-responsive--bottom--icon-con {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(6, 16.6%);
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem; }
+    .nav-responsive--bottom--icon-con--icon-box {
+      display: flex;
+      align-items: flex-end;
+      justify-items: center;
+      align-content: center;
+      justify-content: center;
+      border-bottom: #2374e1; }
+      .nav-responsive--bottom--icon-con--icon-box--icon {
+        height: 2.8rem;
+        width: 2.8rem;
+        fill: #b0b3b8; }
 
 .res-active {
   fill: #2374e1 !important; }

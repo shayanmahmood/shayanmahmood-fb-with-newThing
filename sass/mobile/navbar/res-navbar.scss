@@ -1,41 +1,23 @@
 .nav-responsive {
     width: 100vw;
-    height: 14vh;
+    height: 10vh;
     background-color: #242526;
     display: grid;
-    grid-template-rows: repeat(2, 50%);
+    grid-template-rows: repeat(1, 100%);
     grid-template-columns: 100%;
     visibility: hidden;
     display: none;
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 450px) {
         & {
             display: grid;
             visibility: visible;
-        }
-    }
-    &--icon-con {
-        display: grid;
-        grid-template-rows: 100%;
-        grid-template-columns: repeat(6, 16.6%);
-        margin-bottom: 0.5rem;
-        &--icon-box {
-            display: flex;
-            align-items: flex-end;
-            justify-items: center;
-            align-content: center;
-            justify-content: center;
-            border-bottom: #2374e1;
-            &--icon {
-                height: 2.8rem;
-                width: 2.8rem;
-                fill: #b0b3b8;
-            }
         }
     }
     &--logo-con {
         display: grid;
         grid-template-rows: 100%;
         grid-template-columns: 80% repeat(2, 10%);
+        margin-top: 0.4rem;
         &--messenger-circle {
             background-color: #3a3b3c;
             width: 3rem;
