@@ -1,0 +1,11 @@
+.res-story-con{
+    width: 100vw;
+    height: 18rem;
+    border:2px solid blue;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(5,20%);
+   &--story-box{
+
+   }
+}
