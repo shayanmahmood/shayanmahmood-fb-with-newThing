@@ -3084,5 +3084,59 @@ body {
       height: 35rem;
       background-color: green;
       display: grid;
-      grid-template-rows: 10% 78% 12%;
+      grid-template-rows: 14% 73% 13%;
       grid-template-columns: 100%; }
+      .res-post-con--grid--post--header {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 15% 60% 25%;
+        background-color: red; }
+        .res-post-con--grid--post--header--img-con {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-items: center;
+          justify-content: center; }
+          .res-post-con--grid--post--header--img-con--img {
+            margin-top: -0.2rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            object-fit: cover;
+            border-radius: 50%; }
+        .res-post-con--grid--post--header--name-con {
+          width: 100%;
+          height: 100%;
+          border: 2px solid green; }
+          .res-post-con--grid--post--header--name-con--name {
+            font-size: 1.4rem;
+            color: #e3e6eb;
+            font-weight: bold;
+            font-family: 'Roboto';
+            margin-top: 0.6rem; }
+            .res-post-con--grid--post--header--name-con--name--time {
+              color: #b0b3b8;
+              font-size: 1.2rem;
+              margin-top: 0.3rem; }
+        .res-post-con--grid--post--header--options {
+          width: 100%;
+          height: 100%;
+          background-color: gold;
+          display: grid;
+          grid-template-rows: 100%;
+          grid-template-columns: repeat(2, 50%);
+          align-items: center;
+          justify-items: center;
+          align-content: center;
+          justify-content: center; }
+      .res-post-con--grid--post--main {
+        width: 100%;
+        height: 100%;
+        background-color: blue; }
+      .res-post-con--grid--post--footer {
+        width: 100%;
+        height: 100%;
+        background-color: orange; }
