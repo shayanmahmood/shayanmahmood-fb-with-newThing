@@ -3070,7 +3070,6 @@ body {
 .res-post-con {
   width: 100vw;
   height: 100vh;
-  border: 2px solid red;
   margin-top: 0.5rem;
   overflow-y: scroll; }
   .res-post-con--grid {
@@ -3082,14 +3081,13 @@ body {
     .res-post-con--grid--post {
       width: 97%;
       margin-left: 0.5rem;
-      height: 35rem;
-      background-color: green;
+      height: 44rem;
+      background-color: #242526;
       display: grid;
-      grid-template-rows: 14% 73% 13%;
+      grid-template-rows: 14% 67% 19%;
       grid-template-columns: 100%;
       border-radius: 0.8rem; }
       .res-post-con--grid--post--header {
-        margin-top: 0.5rem;
         width: 100%;
         height: 100%;
         display: grid;
@@ -3116,8 +3114,8 @@ body {
             font-size: 1.4rem;
             color: #e3e6eb;
             font-weight: bold;
-            font-family: 'Roboto';
-            margin-top: 0.6rem; }
+            font-family: "Roboto";
+            margin-top: 1rem; }
             .res-post-con--grid--post--header--name-con--name--time {
               color: #b0b3b8;
               font-size: 1.2rem;
@@ -3128,11 +3126,48 @@ body {
           display: grid;
           grid-template-rows: 100%;
           grid-template-columns: repeat(2, 50%);
-          padding-top: 0.7rem;
+          padding-top: 1rem;
           padding-left: 1rem; }
       .res-post-con--grid--post--main {
         width: 100%;
         height: 100%; }
+        .res-post-con--grid--post--main--img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+          .res-post-con--grid--post--main--img--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
       .res-post-con--grid--post--footer {
+        border: 2px solid red;
         width: 100%;
         height: 100%; }
+        .res-post-con--grid--post--footer--grid {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: grid;
+          grid-template-rows: repeat(2, 50%);
+          grid-template-columns: 100%; }
+          .res-post-con--grid--post--footer--grid--reacted-con {
+            display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 6% 80%;
+            padding-top: 0.8rem; }
+            .res-post-con--grid--post--footer--grid--reacted-con--txt {
+              margin-left: 0.3rem;
+              margin-top: -0.2rem;
+              display: flex;
+              align-items: center;
+              align-content: center;
+              font-family: "Roboto";
+              font-weight: bold;
+              font-size: 1.3rem;
+              color: #e3e6eb; }
+          .res-post-con--grid--post--footer--grid--divider {
+            background-color: rgba(128, 128, 128, 0.4);
+            height: 0.1rem;
+            width: 95%;
+            margin-left: 0.8rem;
+            margin-top: 0.2rem; }
