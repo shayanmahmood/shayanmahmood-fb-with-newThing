@@ -10,6 +10,12 @@
             width: 125%;
         }
     }
+    @media only screen and (max-width:790px) {
+        &{
+            visibility: hidden;
+            display: none;
+        }
+    }
     & {
         scrollbar-width: auto;
         scrollbar-color: transparent transparent
