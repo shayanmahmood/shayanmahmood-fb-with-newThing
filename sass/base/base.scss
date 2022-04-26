@@ -13,10 +13,11 @@ html {
 body {
     box-sizing: border-box;
     background-color: #18191A;
-    overflow: hidden;
+overflow-x: hidden;
     @media only screen and (max-width:450px) {
         &{
             overflow-y: scroll;
+            overflow: scroll;
         }
     }
     // & {

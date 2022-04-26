@@ -5,7 +5,14 @@
     display: grid;
     grid-template-rows: repeat(1, 100%);
     grid-template-columns: 100%;
-    bottom: 0%;
+    visibility: hidden;
+    display: none;
+    @media only screen and (max-width: 450px) {
+        & {
+            display:grid;
+            visibility: visible;
+        }
+    }
     &--icon-con {
         display: grid;
         grid-template-rows: 100%;

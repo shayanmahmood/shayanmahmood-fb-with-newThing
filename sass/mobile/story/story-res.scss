@@ -1,9 +1,16 @@
 .res-story-con {
     margin-top: 0.5rem;
     width: 100vw;
-    height: 18rem;
+    height: 21rem;
     background-color: #242526;
-
+display: none;
+visibility: hidden;
+@media only screen and (max-width:450px) {
+    &{
+        display: block;
+        visibility: visible;
+    }
+}
     &--grid {
         padding-top: 0.4rem;
         padding-left: 0.5rem;

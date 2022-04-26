@@ -1,4 +1,12 @@
 .res-story-con {
+    display: none;
+    visibility: hidden;
+    @media only screen and (max-width:450px) {
+        &{
+            visibility: visible;
+            display: block;
+        }
+    }
     &--grid {
         grid-gap: 0.7rem;
         &--normal-box {

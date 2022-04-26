@@ -1,4 +1,6 @@
                 .nav {
+                    position: relative;
+
                     background-color: #242526;
                     width: 100vw;
                     height: 8.5vh;
@@ -69,7 +71,7 @@
                                     font-size: 1.6rem;
                                 }
                                 &--icon {
-                                    position: absolute;
+                        position: absolute;
                                     fill: #A7B1AC;
                                     left: 8rem;
                                     top: 2rem;

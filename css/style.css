@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   background-color: #242526;
   width: 100vw;
   height: 8.5vh;
@@ -1497,10 +1498,11 @@ html {
 body {
   box-sizing: border-box;
   background-color: #18191A;
-  overflow: hidden; }
+  overflow-x: hidden; }
   @media only screen and (max-width: 450px) {
     body {
-      overflow-y: scroll; } }
+      overflow-y: scroll;
+      overflow: scroll; } }
 
 .active {
   fill: #2374e1 !important; }
@@ -1725,7 +1727,12 @@ body {
   display: grid;
   grid-template-rows: repeat(1, 100%);
   grid-template-columns: 100%;
-  bottom: 0%; }
+  visibility: hidden;
+  display: none; }
+  @media only screen and (max-width: 450px) {
+    .nav-responsive--bottom {
+      display: grid;
+      visibility: visible; } }
   .nav-responsive--bottom--icon-con {
     display: grid;
     grid-template-rows: 100%;
@@ -1762,9 +1769,11 @@ body {
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 22% 56% 22%;
-  overflow: hidden;
-  visibility: hidden;
-  display: none; }
+  overflow: hidden; }
+  @media only screen and (max-width: 450px) {
+    .backbone {
+      display: none;
+      visibility: hidden; } }
 
 .sidebar-con {
   width: 100%;
@@ -2849,8 +2858,14 @@ body {
 .res-story-con {
   margin-top: 0.5rem;
   width: 100vw;
-  height: 18rem;
-  background-color: #242526; }
+  height: 21rem;
+  background-color: #242526;
+  display: none;
+  visibility: hidden; }
+  @media only screen and (max-width: 450px) {
+    .res-story-con {
+      display: block;
+      visibility: visible; } }
   .res-story-con--grid {
     padding-top: 0.4rem;
     padding-left: 0.5rem;
@@ -2905,38 +2920,45 @@ body {
             width: 2rem;
             height: 2rem; }
 
-.res-story-con--grid {
-  grid-gap: 0.7rem; }
-  .res-story-con--grid--normal-box {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.8rem;
-    overflow: hidden;
-    background-image: url("../img/group-story/user-3-story.webp");
-    background-size: cover;
-    display: grid;
-    grid-template-rows: 25% repeat(2, 40%);
-    grid-template-columns: 100%; }
-    .res-story-con--grid--normal-box--profile-circle {
-      width: 4rem;
-      height: 4rem;
-      border-radius: 50%;
-      border: 3px solid #ffdf00;
-      margin-top: 0.5rem;
-      margin-left: 0.5rem; }
-      .res-story-con--grid--normal-box--profile-circle--img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%; }
-    .res-story-con--grid--normal-box--user-name {
-      grid-row: 3 / 4;
-      color: #fff;
-      font-weight: bold;
-      font-family: 'Roboto';
-      font-size: 1.3rem;
-      text-align: center;
-      margin-top: 2.7rem; }
+.res-story-con {
+  display: none;
+  visibility: hidden; }
+  @media only screen and (max-width: 450px) {
+    .res-story-con {
+      visibility: visible;
+      display: block; } }
+  .res-story-con--grid {
+    grid-gap: 0.7rem; }
+    .res-story-con--grid--normal-box {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.8rem;
+      overflow: hidden;
+      background-image: url("../img/group-story/user-3-story.webp");
+      background-size: cover;
+      display: grid;
+      grid-template-rows: 25% repeat(2, 40%);
+      grid-template-columns: 100%; }
+      .res-story-con--grid--normal-box--profile-circle {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 3px solid #ffdf00;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem; }
+        .res-story-con--grid--normal-box--profile-circle--img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%; }
+      .res-story-con--grid--normal-box--user-name {
+        grid-row: 3 / 4;
+        color: #fff;
+        font-weight: bold;
+        font-family: 'Roboto';
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 2.7rem; }
 
 .res-mind-con {
   width: 100vw;
@@ -2944,7 +2966,13 @@ body {
   background-color: #242526;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(2, 50%); }
+  grid-template-rows: repeat(2, 50%);
+  display: none;
+  visibility: hidden; }
+  @media only screen and (max-width: 450px) {
+    .res-mind-con {
+      display: grid;
+      visibility: visible; } }
   .res-mind-con--whatinmind {
     width: 100%;
     height: 100%;
@@ -3071,7 +3099,13 @@ body {
   width: 100vw;
   height: 100vh;
   margin-top: 0.5rem;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  visibility: hidden;
+  display: none; }
+  @media only screen and (max-width: 450px) {
+    .res-post-con {
+      display: inline;
+      visibility: visible; } }
   .res-post-con--grid {
     width: 100%;
     height: auto;
@@ -3079,8 +3113,9 @@ body {
     flex-direction: column;
     overflow: scroll; }
     .res-post-con--grid--post {
-      width: 97%;
-      margin-left: 0.5rem;
+      margin-top: 1rem;
+      width: 96%;
+      margin-left: 0.7rem;
       height: 44rem;
       background-color: #242526;
       display: grid;
@@ -3140,7 +3175,6 @@ body {
             height: 100%;
             object-fit: cover; }
       .res-post-con--grid--post--footer {
-        border: 2px solid red;
         width: 100%;
         height: 100%; }
         .res-post-con--grid--post--footer--grid {
@@ -3156,14 +3190,14 @@ body {
             grid-template-columns: 6% 80%;
             padding-top: 0.8rem; }
             .res-post-con--grid--post--footer--grid--reacted-con--txt {
-              margin-left: 0.3rem;
+              margin-left: 1rem;
               margin-top: -0.2rem;
               display: flex;
               align-items: center;
               align-content: center;
               font-family: "Roboto";
               font-weight: bold;
-              font-size: 1.3rem;
+              font-size: 1.4rem;
               color: #e3e6eb; }
           .res-post-con--grid--post--footer--grid--divider {
             background-color: rgba(128, 128, 128, 0.4);
@@ -3183,7 +3217,6 @@ body {
               .res-post-con--grid--post--footer--grid--reaction--grid--like-con {
                 width: 100%;
                 height: 100%;
-                background-color: goldenrod;
                 display: flex;
                 align-items: center;
                 align-content: center;
@@ -3191,8 +3224,8 @@ body {
                 justify-content: center;
                 padding-right: 1.5rem; }
                 .res-post-con--grid--post--footer--grid--reaction--grid--like-con--txt {
-                  color: #e3e6eb;
+                  color: #b0b3b8;
                   font-size: 1.5rem;
                   font-weight: bold;
-                  font-family: 'Roboto';
+                  font-family: "Roboto";
                   margin-left: 0.5rem; }

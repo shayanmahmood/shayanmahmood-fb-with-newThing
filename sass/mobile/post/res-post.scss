@@ -3,7 +3,14 @@
     height: 100vh;
     margin-top: 0.5rem;
     overflow-y: scroll;
-
+    visibility: hidden;
+    display: none;
+    @media only screen and (max-width: 450px) {
+        & {
+            display:inline;
+            visibility: visible;
+        }
+    }
     &--grid {
         width: 100%;
         height: auto;
@@ -12,8 +19,9 @@
         overflow: scroll;
 
         &--post {
-            width: 97%;
-            margin-left: 0.5rem;
+margin-top: 1rem;
+            width: 96%;
+            margin-left: 0.7rem;
             height: 44rem;
             background-color: #242526;
             display: grid;
@@ -94,7 +102,6 @@
             }
 
             &--footer {
-                border: 2px solid red;
                 width: 100%;
                 height: 100%;
 
@@ -116,14 +123,14 @@
                         }
 
                         &--txt {
-                            margin-left: 0.3rem;
+                            margin-left: 1rem;
                             margin-top: -0.2rem;
                             display: flex;
                             align-items: center;
                             align-content: center;
                             font-family: "Roboto";
                             font-weight: bold;
-                            font-size: 1.3rem;
+                            font-size: 1.4rem;
                             color: #e3e6eb;
                         }
                     }
@@ -139,29 +146,31 @@
                     &--reaction {
                         width: 100%;
                         height: 100%;
+
                         &--grid {
                             width: 100%;
                             height: 100%;
                             display: grid;
                             grid-template-rows: 100%;
                             grid-template-columns: repeat(3, 33.3%);
-                            &--like-con{
+
+                            &--like-con {
                                 width: 100%;
                                 height: 100%;
-                                background-color: goldenrod;
                                 display: flex;
                                 align-items: center;
                                 align-content: center;
                                 justify-items: center;
                                 justify-content: center;
-padding-right:1.5rem;    
-&--txt{
-    color: #e3e6eb;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Roboto';
-    margin-left: 0.5rem;
-}        
+                                padding-right: 1.5rem;
+
+                                &--txt {
+                                    color: #b0b3b8;
+                                    font-size: 1.5rem;
+                                    font-weight: bold;
+                                    font-family: "Roboto";
+                                    margin-left: 0.5rem;
+                                }
                             }
                         }
                     }
