@@ -1,21 +1,24 @@
-@import"layout/navbar.scss";
-@import"base/base.scss";
-@import "base/variables.scss";
-@import"extra/extra.scss";
-@import"animation/animation.scss";
-@import"function/function.scss";
-@import"mobile/navbar/res-navbar.scss";
-@import"mobile/navbar/res-navbar-bottom.scss";
-@import"mobile/res-extra.scss";
-@import"layout/backbone.scss";
-@import"layout/sidebar.scss";
-@import"layout/activebar.scss";
-@import"layout/socialsection.scss";
-@import"components/story.scss";
-@import"components/mind.scss";
-@import"components/activeline.scss";
-@import"components/postsection.scss";
-@import"mobile/story/story-res.scss";
-@import"mobile/story/res-story-normal-box.scss";
-@import"mobile/mind/res-mind.scss";
-@import"mobile/post/res-post.scss";
+@import "./home/layout/navbar.scss";
+@import "./home/base/base.scss";
+@import "./home/base/variables.scss";
+@import "./home/extra/extra.scss";
+@import "./home/animation/animation.scss";
+@import "./home/function/function.scss";
+@import "./home/mobile/navbar/res-navbar.scss";
+@import "./home/mobile/navbar/res-navbar-bottom.scss";
+@import "./home/mobile/res-extra.scss";
+@import "./home/layout/backbone.scss";
+@import "./home/layout/sidebar.scss";
+@import "./home/layout/activebar.scss";
+@import "./home/layout/socialsection.scss";
+@import "./home/components/story.scss";
+@import "./home/components/mind.scss";
+@import "./home/components/activeline.scss";
+@import "./home/components/postsection.scss";
+@import "./home/mobile/story/story-res.scss";
+@import "./home/mobile/story/res-story-normal-box.scss";
+@import "./home/mobile/mind/res-mind.scss";
+@import "./home/mobile/post/res-post.scss";
+
+// groups pages links
+@import"./group/base/base.scss"
