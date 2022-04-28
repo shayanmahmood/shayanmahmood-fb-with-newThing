@@ -4,11 +4,15 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "node-sass": "node-sass sass/main.scss css/style.css -w"
+        "node-sass": "node-sass sass/main.scss css/style.css -w",
+        "node-sass--shop":"node-sass sass/main-market.scss css/shop.css -w"
     },
     "author": "shayan",
     "license": "ISC",
     "devDependencies": {
         "node-sass": "^7.0.1"
     }
+
 }
+
+

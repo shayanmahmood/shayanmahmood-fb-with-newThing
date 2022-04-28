@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #18191A;
+    overflow-x: hidden;
+    @media only screen and (max-width:450px) {
+        &{
+            overflow: hidden;
+        }
+    }
+}
+
+
