@@ -3,12 +3,19 @@
     }
     
     .active-bottom {
-        border-bottom: 2px solid #2374e1;
-        border-bottom-left-radius: 0%;
+        // border-bottom: 2px solid #2374e1;
+        // border-bottom-left-radius: 0%;
         &:hover {
             cursor: pointer;
             background-color: transparent;
         }
+    }
+    .active-bottom-line{
+        position: absolute;
+        width: 10.5rem;
+        height: 0.3rem;
+        background-color: #2374e1;
+        margin-top: 5rem;
     }
     
     .hide-me {

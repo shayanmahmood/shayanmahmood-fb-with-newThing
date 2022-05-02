@@ -285,16 +285,16 @@
 }
 
 .mobile-res-arrow {
-    @media only screen and (max-width: 1500px) {
-        & {
-            margin-left: 65rem;
-        }
-    }
-    @media only screen and (max-width:1400px) {
-        & {
-            margin-left: 61rem;
-        }
-    }
+    // @media only screen and (max-width: 1500px) {
+    //     & {
+    //         margin-left: 65rem;
+    //     }
+    // }
+    // @media only screen and (max-width:1400px) {
+    //     & {
+    //         margin-left: 61rem;
+    //     }
+    // }
     @media only screen and (max-width:1300px) {
         margin-left: 57rem;
     }

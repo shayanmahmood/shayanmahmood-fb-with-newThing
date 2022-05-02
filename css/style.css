@@ -1521,12 +1521,16 @@ body {
 .active {
   fill: #2374e1 !important; }
 
-.active-bottom {
-  border-bottom: 2px solid #2374e1;
-  border-bottom-left-radius: 0%; }
-  .active-bottom:hover {
-    cursor: pointer;
-    background-color: transparent; }
+.active-bottom:hover {
+  cursor: pointer;
+  background-color: transparent; }
+
+.active-bottom-line {
+  position: absolute;
+  width: 10.5rem;
+  height: 0.3rem;
+  background-color: #2374e1;
+  margin-top: 5rem; }
 
 .hide-me {
   visibility: hidden;
@@ -2330,14 +2334,6 @@ body {
           margin-top: 0.9rem;
           margin-left: 1rem;
           fill: #B0B3B8; }
-
-@media only screen and (max-width: 1500px) {
-  .mobile-res-arrow {
-    margin-left: 65rem; } }
-
-@media only screen and (max-width: 1400px) {
-  .mobile-res-arrow {
-    margin-left: 61rem; } }
 
 @media only screen and (max-width: 1300px) {
   .mobile-res-arrow {
