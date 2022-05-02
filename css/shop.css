@@ -10,7 +10,27 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #18191A; }
+  background-color: #18191A;
+  overflow-x: hidden;
+  /* Chrome, Edge, and Safari */ }
+  body {
+    scrollbar-width: auto;
+    scrollbar-color: transparent transparent; }
+  body::-webkit-scrollbar {
+    width: 5px; }
+  body::-webkit-scrollbar-track {
+    background: transparent; }
+  body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
+  @media only screen and (max-width: 450px) {
+    body {
+      overflow: hidden; } }
 
 #open1:checked ~ .menu-con {
   visibility: visible; }
@@ -23,3 +43,8 @@ body {
 
 #open4:checked ~ .profile-con {
   visibility: visible; }
+
+.main-con {
+  width: 100vw;
+  height: 91.5vh;
+  background-color: red; }
