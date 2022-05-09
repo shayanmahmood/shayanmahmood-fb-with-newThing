@@ -20,24 +20,24 @@ overflow-x: hidden;
             overflow: scroll;
         }
     }
-    // & {
-    // scrollbar-width: auto;
-    // scrollbar-color: transparent transparent
-    // }
-    // /* Chrome, Edge, and Safari */
-    // &::-webkit-scrollbar {
-    // width: 5px;
-    // }
-    // &::-webkit-scrollbar-track {
-    // background: transparent;
-    // }
-    // &::-webkit-scrollbar-thumb {
-    // background-color: grey;
-    // border-radius: 10px;
-    // border: 3px solid transparent;
-    // -webkit-border-radius: 10px;
-    // -moz-border-radius: 10px;
-    // -ms-border-radius: 10px;
-    // -o-border-radius: 10px;
-    // }
+    & {
+    scrollbar-width: auto;
+    scrollbar-color: transparent transparent
+    }
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+    width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+    background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    }
 }

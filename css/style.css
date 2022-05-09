@@ -1512,11 +1512,27 @@ html {
 body {
   box-sizing: border-box;
   background-color: #18191A;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /* Chrome, Edge, and Safari */ }
   @media only screen and (max-width: 450px) {
     body {
       overflow-y: scroll;
       overflow: scroll; } }
+  body {
+    scrollbar-width: auto;
+    scrollbar-color: transparent transparent; }
+  body::-webkit-scrollbar {
+    width: 5px; }
+  body::-webkit-scrollbar-track {
+    background: transparent; }
+  body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
 
 .active {
   fill: #2374e1 !important; }
@@ -2933,7 +2949,24 @@ body {
     grid-template-rows: 100%;
     grid-template-columns: repeat(4, 25%);
     overflow-x: scroll;
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    /* Chrome, Edge, and Safari */ }
+    .res-story-con--grid {
+      scrollbar-width: auto;
+      scrollbar-color: transparent transparent; }
+    .res-story-con--grid::-webkit-scrollbar {
+      width: 3px;
+      height: 3px; }
+    .res-story-con--grid::-webkit-scrollbar-track {
+      background: transparent; }
+    .res-story-con--grid::-webkit-scrollbar-thumb {
+      background-color: grey;
+      border-radius: 10px;
+      border: 3px solid transparent;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px; }
     .res-story-con--grid--story-box {
       width: 100%;
       height: 100%;
@@ -3155,7 +3188,7 @@ body {
 
 .res-post-con {
   width: 100vw;
-  height: 100vh;
+  height: 400vh;
   margin-top: 0.5rem;
   overflow-y: scroll;
   visibility: hidden;
@@ -3166,10 +3199,26 @@ body {
       visibility: visible; } }
   .res-post-con--grid {
     width: 100%;
-    height: auto;
+    height: 50rem;
     display: flex;
     flex-direction: column;
-    overflow: scroll; }
+    overflow: scroll !important;
+    /* Chrome, Edge, and Safari */ }
+    .res-post-con--grid {
+      scrollbar-width: auto;
+      scrollbar-color: transparent transparent; }
+    .res-post-con--grid::-webkit-scrollbar {
+      width: 0px; }
+    .res-post-con--grid::-webkit-scrollbar-track {
+      background: transparent; }
+    .res-post-con--grid::-webkit-scrollbar-thumb {
+      background-color: grey;
+      border-radius: 10px;
+      border: 3px solid transparent;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px; }
     .res-post-con--grid--post {
       margin-top: 1rem;
       width: 96%;
@@ -3300,7 +3349,23 @@ html {
 body {
   box-sizing: border-box;
   background-color: #18191A;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /* Chrome, Edge, and Safari */ }
+  body {
+    scrollbar-width: auto;
+    scrollbar-color: transparent transparent; }
+  body::-webkit-scrollbar {
+    width: 5px; }
+  body::-webkit-scrollbar-track {
+    background: transparent; }
+  body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
   @media only screen and (max-width: 450px) {
     body {
       overflow: hidden; } }

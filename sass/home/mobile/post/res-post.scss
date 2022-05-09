@@ -1,6 +1,6 @@
 .res-post-con {
     width: 100vw;
-    height: 100vh;
+    height: 400vh;
     margin-top: 0.5rem;
     overflow-y: scroll;
     visibility: hidden;
@@ -13,11 +13,30 @@
     }
     &--grid {
         width: 100%;
-        height: auto;
+        height: 50rem;
         display: flex;
         flex-direction: column;
-        overflow: scroll;
-
+        overflow: scroll !important;
+        & {
+            scrollbar-width: auto;
+            scrollbar-color: transparent transparent
+            }
+            /* Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
+            width: 0px;
+            }
+            &::-webkit-scrollbar-track {
+            background: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+            background-color: grey;
+            border-radius: 10px;
+            border: 3px solid transparent;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            }
         &--post {
 margin-top: 1rem;
             width: 96%;
