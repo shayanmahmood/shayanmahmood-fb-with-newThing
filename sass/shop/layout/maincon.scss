@@ -1,5 +1,17 @@
-.main-con{
+.main-con {
     width: 100vw;
     height: 91.5vh;
     background-color: red;
+
+    &--grid {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 26.5% 73.4%;
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        &--ox{
+            border: 2px solid red;
+        }
+    }
 }

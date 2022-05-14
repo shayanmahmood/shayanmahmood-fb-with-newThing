@@ -48,3 +48,12 @@ body {
   width: 100vw;
   height: 91.5vh;
   background-color: red; }
+  .main-con--grid {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 26.5% 73.4%;
+    width: 100%;
+    height: 100%;
+    background-color: green; }
+    .main-con--grid--ox {
+      border: 2px solid red; }
