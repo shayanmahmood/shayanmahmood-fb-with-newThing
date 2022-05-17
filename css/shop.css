@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   background-color: #18191A;
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: 'Roboto', sans-serif;
   /* Chrome, Edge, and Safari */ }
   body {
@@ -48,7 +49,7 @@ body {
 .main-con {
   width: 100vw;
   height: 91.5vh;
-  background-color: red; }
+  overflow-y: hidden; }
   .main-con--grid {
     display: grid;
     grid-template-rows: 100%;
@@ -56,26 +57,27 @@ body {
     width: 100%;
     height: 100%;
     background-color: green; }
-    .main-con--grid--ox {
-      border: 2px solid red; }
 
 .main-con--grid--sidebar {
   background-color: #242526;
   width: 100%;
   height: 100%;
-  border-top: 1px solid rgba(128, 128, 128, 0.4); }
+  border-top: 1px solid rgba(128, 128, 128, 0.4);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 17% 83%; }
   .main-con--grid--sidebar--fixed-part {
     width: 100%;
     height: 10rem;
     background-color: #242526;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(2, 50%); }
+    grid-template-rows: repeat(2, 50%);
+    margin-top: 0.6rem; }
     .main-con--grid--sidebar--fixed-part--heading-part {
-      border: 2px solid blue;
       display: grid;
       grid-template-rows: 100%;
-      grid-template-columns: 88% 12%;
+      grid-template-columns: 84% 16%;
       align-items: center;
       justify-items: start;
       align-content: center;
@@ -99,25 +101,39 @@ body {
         .main-con--grid--sidebar--fixed-part--heading-part--setting-part--icon {
           -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg); }
     .main-con--grid--sidebar--fixed-part--search-part {
-      border: 3px solid blue;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
       display: grid;
       align-items: center;
       justify-items: start;
       align-content: center;
-      justify-content: center; }
+      justify-content: center;
+      margin-top: -1.5rem;
+      margin-left: -1.2rem; }
       .main-con--grid--sidebar--fixed-part--search-part--search {
         width: 32.8rem;
         height: 3.6rem;
         border-radius: 5rem;
         background-color: rgba(255, 255, 255, 0.1);
         outline: none;
-        border: none; }
-        .main-con--grid--sidebar--fixed-part--search-part--search ::placeholder {
+        border: none;
+        padding-left: 3.1rem;
+        color: #e4e6eb;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        padding-top: 0.1rem; }
+        .main-con--grid--sidebar--fixed-part--search-part--search::placeholder {
+          font-family: "Roboto", sans-serif;
           color: #b0b3b8;
-          font-size: 1.5rem; }
+          font-size: 1.6rem; }
         .main-con--grid--sidebar--fixed-part--search-part--search--icon {
           position: absolute;
           width: 1.6rem;
           height: 3.6rem;
           fill: #b0b3b8;
-          margin-left: 1.2rem; }
+          margin-left: 1.7rem; }
+  .main-con--grid--sidebar--main-part {
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    overflow-y: scroll !important;
+    overflow-x: hidden; }
