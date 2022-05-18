@@ -133,15 +133,14 @@ body {
           margin-left: 1.7rem; }
     .main-con--grid--sidebar--fixed-part--divider {
       background-color: rgba(255, 255, 255, 0.1);
-      width: 90%;
+      width: 93%;
       height: 0.1rem;
       position: absolute;
       margin-top: 9.5rem;
-      margin-left: 1.3rem; }
+      margin-left: 0.8rem; }
   .main-con--grid--sidebar--main-part {
     width: 100%;
     height: 100%;
-    border: 1px solid greenyellow;
     overflow-y: scroll !important;
     overflow-x: hidden; }
     .main-con--grid--sidebar--main-part {
@@ -163,12 +162,94 @@ body {
 .main-con--grid--sidebar--main-part--listening-part {
   width: 100%;
   height: 32rem;
-  border: 1px solid #0000ff;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(6, 16.6%);
-  padding-left: 0.5rem; }
+  padding-left: 0.8rem; }
   .main-con--grid--sidebar--main-part--listening-part--active-box {
-    width: 100%;
-    height: 98%;
-    background-color: rgba(255, 255, 255, 0.1); }
+    border-radius: 1rem;
+    width: 97%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 15% 85%; }
+    .main-con--grid--sidebar--main-part--listening-part--active-box--icon-con {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      align-items: center;
+      align-content: center;
+      justify-items: center;
+      justify-content: center; }
+      .main-con--grid--sidebar--main-part--listening-part--active-box--icon-con--circle {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        width: 3.4rem;
+        height: 3.4rem;
+        border-radius: 50%;
+        background-color: #1877f2; }
+        .main-con--grid--sidebar--main-part--listening-part--active-box--icon-con--circle--icon {
+          -webkit-filter: invert(100%); }
+    .main-con--grid--sidebar--main-part--listening-part--active-box--txt-con {
+      display: grid;
+      align-items: center;
+      align-content: center; }
+      .main-con--grid--sidebar--main-part--listening-part--active-box--txt-con--txt {
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+        color: #e4e6eb;
+        font-weight: bold; }
+  .main-con--grid--sidebar--main-part--listening-part--normal-box {
+    border-radius: 1rem;
+    width: 97%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 15% 85%;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .main-con--grid--sidebar--main-part--listening-part--normal-box--icon-con {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      align-items: center;
+      align-content: center;
+      justify-items: center;
+      justify-content: center; }
+      .main-con--grid--sidebar--main-part--listening-part--normal-box--icon-con--circle {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        width: 3.4rem;
+        height: 3.4rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1); }
+        .main-con--grid--sidebar--main-part--listening-part--normal-box--icon-con--circle--icon {
+          -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg); }
+    .main-con--grid--sidebar--main-part--listening-part--normal-box--txt-con {
+      display: grid;
+      align-items: center;
+      align-content: center; }
+      .main-con--grid--sidebar--main-part--listening-part--normal-box--txt-con--txt {
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+        color: #e4e6eb;
+        font-weight: bold; }
+    .main-con--grid--sidebar--main-part--listening-part--normal-box:hover {
+      cursor: pointer;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
