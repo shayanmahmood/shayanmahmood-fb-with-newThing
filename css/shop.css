@@ -65,7 +65,8 @@ body {
   border-top: 1px solid rgba(128, 128, 128, 0.4);
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 17% 83%; }
+  grid-template-rows: 17% 83%;
+  position: relative; }
   .main-con--grid--sidebar--fixed-part {
     width: 100%;
     height: 10rem;
@@ -101,7 +102,6 @@ body {
         .main-con--grid--sidebar--fixed-part--heading-part--setting-part--icon {
           -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg); }
     .main-con--grid--sidebar--fixed-part--search-part {
-      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
       display: grid;
       align-items: center;
       justify-items: start;
@@ -131,9 +131,31 @@ body {
           height: 3.6rem;
           fill: #b0b3b8;
           margin-left: 1.7rem; }
+    .main-con--grid--sidebar--fixed-part--divider {
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 90%;
+      height: 0.1rem;
+      position: absolute;
+      margin-top: 9.5rem;
+      margin-left: 1.3rem; }
   .main-con--grid--sidebar--main-part {
     width: 100%;
     height: 100%;
-    background-color: greenyellow;
+    border: 1px solid greenyellow;
     overflow-y: scroll !important;
     overflow-x: hidden; }
+    .main-con--grid--sidebar--main-part {
+      scrollbar-width: auto;
+      scrollbar-color: transparent transparent; }
+    .main-con--grid--sidebar--main-part::-webkit-scrollbar {
+      width: 5px; }
+    .main-con--grid--sidebar--main-part::-webkit-scrollbar-track {
+      background: transparent; }
+    .main-con--grid--sidebar--main-part::-webkit-scrollbar-thumb {
+      background-color: grey;
+      border-radius: 10px;
+      border: 3px solid transparent;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px; }
