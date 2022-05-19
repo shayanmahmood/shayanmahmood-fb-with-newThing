@@ -1,0 +1,13 @@
+.main-con--grid--sidebar--categories {
+    width: 100%;
+    height: 100%;
+    border: 1px dotted red;
+
+    &--heading {
+        font-size: 1.7rem;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        color: #e4e6e8;
+        margin-left: 0.8rem;
+    }
+}
