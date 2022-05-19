@@ -164,9 +164,8 @@ body {
   height: 32rem;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(6, 14%) 16%;
-  padding-left: 0.8rem;
-  border: 1px solid green; }
+  grid-template-rows: repeat(6, 14%) 14% 2%;
+  padding-left: 0.6rem; }
   .main-con--grid--sidebar--main-part--listening-part--active-box {
     border-radius: 1rem;
     width: 97%;
@@ -259,3 +258,29 @@ body {
       -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
       -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
       -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .main-con--grid--sidebar--main-part--listening-part--normal-box--drop {
+      grid-template-columns: 15% 80% 5%; }
+      .main-con--grid--sidebar--main-part--listening-part--normal-box--drop--con {
+        -webkit-filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%); }
+  .main-con--grid--sidebar--main-part--listening-part--create {
+    width: 97%;
+    height: 90%;
+    background-color: rgba(45, 136, 255, 0.2);
+    border-radius: 0.6rem;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center; }
+    .main-con--grid--sidebar--main-part--listening-part--create--txt {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2d88ff; }
+  .main-con--grid--sidebar--main-part--listening-part--divider {
+    background-color: rgba(128, 128, 128, 0.4);
+    width: 93%;
+    height: 0.1rem;
+    margin-top: 0.3rem;
+    margin-left: 0.8rem; }
