@@ -41,6 +41,60 @@
                 font-weight: 400;
                 font-size: 1.5rem;
                 font-family: 'Roboto', sans-serif;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #2e89ff;
+
+                }
+            }
+        }
+    }
+
+    // 4.8
+    &--product-con {
+        width: 100%;
+        height: 100%;
+        margin-top: 0.3rem;
+        overflow: hidden;
+
+        &--grid {
+            width: 94.2%;
+            height: 100%;
+            margin-left: 2.5rem;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(5, 38.3rem);
+            overflow: scroll;
+            & {
+                scrollbar-width: auto;
+                scrollbar-color: transparent transparent
+                }
+                /* Chrome, Edge, and Safari */
+                &::-webkit-scrollbar {
+                width: 0px;
+                }
+                &::-webkit-scrollbar-track {
+                background: transparent;
+                }
+                &::-webkit-scrollbar-thumb {
+                background-color: grey;
+                border-radius: 10px;
+                border: 3px solid transparent;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                }
+            &--box {
+                border: 2px solid #2e89ff;
+                display: grid;
+                grid-template-rows: 100%;
+                grid-template-columns: repeat(3,32.3%);
+                grid-gap: 1.4rem;
+                &--sub-box{
+                    border: 2px solid fuchsia;
+                }
             }
         }
     }
