@@ -497,10 +497,41 @@ body {
         -ms-border-radius: 10px;
         -o-border-radius: 10px; }
       .main-con--grid--product--product-con--grid--box {
-        border: 2px solid #2e89ff;
         display: grid;
         grid-template-rows: 100%;
         grid-template-columns: repeat(3, 32.3%);
-        grid-gap: 1.4rem; }
+        grid-gap: 1.4rem;
+        overflow: hidden; }
         .main-con--grid--product--product-con--grid--box--sub-box {
-          border: 2px solid fuchsia; }
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: 80.5% 19.5%;
+          overflow: hidden; }
+          .main-con--grid--product--product-con--grid--box--sub-box--img-con {
+            border-radius: 0.6rem;
+            width: 100%;
+            height: 100%; }
+            .main-con--grid--product--product-con--grid--box--sub-box--img-con--img {
+              border-radius: 0.6rem;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          .main-con--grid--product--product-con--grid--box--sub-box--txt-con {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 39% 24% 34%; }
+            .main-con--grid--product--product-con--grid--box--sub-box--txt-con--txt {
+              font-size: 1.7rem;
+              font-weight: 600;
+              margin-top: 1rem;
+              color: #e4e6eb; }
+              .main-con--grid--product--product-con--grid--box--sub-box--txt-con--txt--name {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #e4e6eb;
+                margin-top: 0.3rem; }
+                .main-con--grid--product--product-con--grid--box--sub-box--txt-con--txt--name--author {
+                  font-size: 1.3rem;
+                  font-weight: 400;
+                  color: #b0b3b8;
+                  margin-top: 0.5rem; }

@@ -66,18 +66,22 @@
             grid-template-columns: 100%;
             grid-template-rows: repeat(5, 38.3rem);
             overflow: scroll;
+
             & {
                 scrollbar-width: auto;
                 scrollbar-color: transparent transparent
-                }
-                /* Chrome, Edge, and Safari */
-                &::-webkit-scrollbar {
+            }
+
+            /* Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
                 width: 0px;
-                }
-                &::-webkit-scrollbar-track {
+            }
+
+            &::-webkit-scrollbar-track {
                 background: transparent;
-                }
-                &::-webkit-scrollbar-thumb {
+            }
+
+            &::-webkit-scrollbar-thumb {
                 background-color: grey;
                 border-radius: 10px;
                 border: 3px solid transparent;
@@ -85,15 +89,59 @@
                 -moz-border-radius: 10px;
                 -ms-border-radius: 10px;
                 -o-border-radius: 10px;
-                }
+            }
+
             &--box {
-                border: 2px solid #2e89ff;
                 display: grid;
                 grid-template-rows: 100%;
-                grid-template-columns: repeat(3,32.3%);
+                grid-template-columns: repeat(3, 32.3%);
                 grid-gap: 1.4rem;
-                &--sub-box{
-                    border: 2px solid fuchsia;
+                overflow: hidden;
+
+                &--sub-box {
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 80.5% 19.5%;
+                    overflow: hidden;
+
+                    &--img-con {
+                        border-radius: 0.6rem;
+                        width: 100%;
+                        height: 100%;
+
+                        &--img {
+                            border-radius: 0.6rem;
+
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &--txt-con {
+                           display: grid;
+                           grid-template-columns:100%;
+                           grid-template-rows:39% 24% 34%;
+                           &--txt{
+                               font-size: 1.7rem;
+                               font-weight: 600;
+                               margin-top: 1rem;
+                               color: #e4e6eb;
+                               &--name{
+                                   font-size: 1.5rem;
+                                   font-weight: 400;
+                                   color: #e4e6eb;
+                                   margin-top: 0.3rem ;
+                                   &--author{
+                                       font-size: 1.3rem;
+                                       font-weight: 400;
+                                       color: #b0b3b8;
+                                       margin-top: 0.5rem;
+                                   }
+
+                               }
+                           }
+                    }
                 }
             }
         }
