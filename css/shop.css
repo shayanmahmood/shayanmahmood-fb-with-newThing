@@ -429,3 +429,9 @@ body {
         -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
         -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
         -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+.main-con--grid--product {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border: 2px solid green; }
