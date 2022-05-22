@@ -57,6 +57,7 @@
         height: 100%;
         margin-top: 0.3rem;
         overflow: hidden;
+        padding-bottom: 6rem;
 
         &--grid {
             width: 94.2%;
@@ -119,28 +120,31 @@
                     }
 
                     &--txt-con {
-                           display: grid;
-                           grid-template-columns:100%;
-                           grid-template-rows:39% 24% 34%;
-                           &--txt{
-                               font-size: 1.7rem;
-                               font-weight: 600;
-                               margin-top: 1rem;
-                               color: #e4e6eb;
-                               &--name{
-                                   font-size: 1.5rem;
-                                   font-weight: 400;
-                                   color: #e4e6eb;
-                                   margin-top: 0.3rem ;
-                                   &--author{
-                                       font-size: 1.3rem;
-                                       font-weight: 400;
-                                       color: #b0b3b8;
-                                       margin-top: 0.5rem;
-                                   }
+                        display: grid;
+                        grid-template-columns: 100%;
+                        grid-template-rows: 39% 24% 34%;
 
-                               }
-                           }
+                        &--txt {
+                            font-size: 1.7rem;
+                            font-weight: 600;
+                            margin-top: 0.5rem;
+                            color: #e4e6eb;
+
+                            &--name {
+                                font-size: 1.5rem;
+                                font-weight: 400;
+                                color: #e4e6eb;
+                                margin-top: 0rem;
+
+                                &--author {
+                                    font-size: 1.3rem;
+                                    font-weight: 400;
+                                    color: #b0b3b8;
+                                    margin-top: 0.3rem;
+                                }
+
+                            }
+                        }
                     }
                 }
             }

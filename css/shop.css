@@ -50,6 +50,9 @@ body {
   width: 100vw;
   height: 91.5vh;
   overflow-y: hidden; }
+  @media only screen and (max-width: 1150px) {
+    .main-con {
+      margin-left: 0rem; } }
   .main-con--grid {
     display: grid;
     grid-template-rows: 100%;
@@ -471,7 +474,8 @@ body {
     width: 100%;
     height: 100%;
     margin-top: 0.3rem;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-bottom: 6rem; }
     .main-con--grid--product--product-con--grid {
       width: 94.2%;
       height: 100%;
@@ -523,15 +527,40 @@ body {
             .main-con--grid--product--product-con--grid--box--sub-box--txt-con--txt {
               font-size: 1.7rem;
               font-weight: 600;
-              margin-top: 1rem;
+              margin-top: 0.5rem;
               color: #e4e6eb; }
               .main-con--grid--product--product-con--grid--box--sub-box--txt-con--txt--name {
                 font-size: 1.5rem;
                 font-weight: 400;
                 color: #e4e6eb;
-                margin-top: 0.3rem; }
+                margin-top: 0rem; }
                 .main-con--grid--product--product-con--grid--box--sub-box--txt-con--txt--name--author {
                   font-size: 1.3rem;
                   font-weight: 400;
                   color: #b0b3b8;
-                  margin-top: 0.5rem; }
+                  margin-top: 0.3rem; }
+
+@media only screen and (max-width: 1300px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 16.6% 65% 18.4%; }
+  .main-con--grid--sidebar--fixed-part--search-part--search--icon {
+    margin-left: 1.3rem; } }
+
+@media only screen and (max-width: 1200px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 17.6% 64% 18.4%; }
+  .main-con--grid--sidebar--fixed-part--search-part--search--icon {
+    margin-left: 1rem; }
+  .main-con--grid--sidebar--fixed-part--search-part--search {
+    padding-left: 4rem; } }
+
+@media only screen and (max-width: 1150px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 20.6% 61% 18.4%; }
+  .main-con--grid--sidebar--fixed-part--search-part--search {
+    padding-left: 4.5rem; } }
+
+@media only screen and (max-width: 1100px) {
+  .main-con--grid--sidebar--fixed-part--search-part--search {
+    padding-left: 4rem;
+    width: 30rem; } }

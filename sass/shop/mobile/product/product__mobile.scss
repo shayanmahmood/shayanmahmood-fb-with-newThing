@@ -1,0 +1,38 @@
+@media only screen and (max-width:1300px) {
+    .main-con--grid--product--heading-con {
+        grid-template-columns: 16.6% 65% 18.4%;
+   }
+   .main-con--grid--sidebar--fixed-part--search-part--search--icon{
+       margin-left: 1.3rem;
+   }
+}
+
+@media only screen and (max-width:1200px) {
+    .main-con--grid--product--heading-con{
+        grid-template-columns: 17.6% 64% 18.4%;
+
+    }
+    .main-con--grid--sidebar--fixed-part--search-part--search--icon{
+        margin-left: 1rem;
+    }
+    .main-con--grid--sidebar--fixed-part--search-part--search{
+        padding-left: 4rem;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .main-con--grid--product--heading-con{
+        grid-template-columns: 20.6% 61% 18.4%;
+
+    }
+    .main-con--grid--sidebar--fixed-part--search-part--search{
+        padding-left: 4.5rem;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .main-con--grid--sidebar--fixed-part--search-part--search{
+        padding-left: 4rem;
+        width: 30rem;
+    }
+}

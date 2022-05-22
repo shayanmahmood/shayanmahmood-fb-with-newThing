@@ -3,6 +3,12 @@
     height: 91.5vh;
     overflow-y: hidden;
 
+    @media only screen and (max-width:1150px) {
+        & {
+            margin-left: 0rem;
+        }
+    }
+
     &--grid {
         display: grid;
         grid-template-rows: 100%;
