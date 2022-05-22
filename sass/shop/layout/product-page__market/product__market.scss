@@ -18,6 +18,13 @@
             font-size: 2.0rem;
             font-family: 'Roboto', sans-serif;
             margin-left: 3rem;
+
+            @media only screen and (max-width:350px) {
+                & {
+                    margin-left: 1rem;
+                    font-size: 1.8rem;
+                }
+            }
         }
 
         &--location {
@@ -30,6 +37,12 @@
             align-content: center;
             display: flex;
 
+            @media only screen and (max-width:300px) {
+                & {
+                    width: 200%;
+                }
+            }
+
             &--icon {
                 -webkit-filter: invert(40%) sepia(52%) saturate(200%) saturate(200%) saturate(189%) hue-rotate(189deg) brightness(103%) contrast(102%);
             }
@@ -41,6 +54,11 @@
                 font-weight: 400;
                 font-size: 1.5rem;
                 font-family: 'Roboto', sans-serif;
+
+                @media only screen and (max-width:350px) {
+                    font-size: 1.3rem;
+
+                }
 
                 &:hover {
                     text-decoration: underline;
@@ -59,6 +77,12 @@
         overflow: hidden;
         padding-bottom: 6rem;
 
+        @media only screen and (max-width:450px) {
+            & {
+                padding-bottom: 10rem;
+            }
+        }
+
         &--grid {
             width: 94.2%;
             height: 100%;
@@ -67,6 +91,13 @@
             grid-template-columns: 100%;
             grid-template-rows: repeat(5, 38.3rem);
             overflow: scroll;
+
+            @media only screen and (max-width:700px) {
+                & {
+                    width: 98%;
+                    margin-left: 0.6rem;
+                }
+            }
 
             & {
                 scrollbar-width: auto;
@@ -99,11 +130,41 @@
                 grid-gap: 1.4rem;
                 overflow: hidden;
 
+                @media only screen and (max-width:1100px) {
+                    & {
+                        grid-template-columns: repeat(2, 50%);
+                    }
+                }
+
+                @media only screen and (max-width:900px) {
+                    & {
+                        grid-template-columns: repeat(3, 32.3%);
+                    }
+                }
+
+                @media only screen and (max-width:700px) {
+                    & {
+                        grid-template-columns: repeat(2, 50%);
+                    }
+                }
+
+                @media only screen and (max-width:350px) {
+                    & {
+                        grid-template-columns: repeat(1, 100%);
+                    }
+                }
+
                 &--sub-box {
                     display: grid;
                     grid-template-columns: 100%;
                     grid-template-rows: 80.5% 19.5%;
                     overflow: hidden;
+
+                    @media only screen and (max-width:500px) {
+                        & {
+                            grid-template-rows: 74.5% 20.5%;
+                        }
+                    }
 
                     &--img-con {
                         border-radius: 0.6rem;

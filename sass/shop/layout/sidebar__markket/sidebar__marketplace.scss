@@ -4,11 +4,17 @@
     height: 100%;
     border-top: 1px solid rgba(128, 128, 128, 0.4);
     border-right: 1px solid rgba(128, 128, 128, 0.4);
-    outline: 1px solid rgba(128,128,128,0.4);
+    outline: 1px solid rgba(128, 128, 128, 0.4);
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 17% 83%;
     position: relative;
+
+    @media only screen and (max-width:900px) {
+        & {
+            display: none;
+        }
+    }
 
     &--fixed-part {
         width: 100%;

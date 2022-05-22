@@ -59,6 +59,12 @@ body {
     grid-template-columns: 26.5% 73.4%;
     width: 100%;
     height: 100%; }
+    @media only screen and (max-width: 1100px) {
+      .main-con--grid {
+        grid-template-columns: 32.5% 67.5%; } }
+    @media only screen and (max-width: 900px) {
+      .main-con--grid {
+        grid-template-columns: 100% 0%; } }
 
 .main-con--grid--sidebar--main-part--listening-part {
   width: 100%;
@@ -215,6 +221,9 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: 17% 83%;
   position: relative; }
+  @media only screen and (max-width: 900px) {
+    .main-con--grid--sidebar {
+      display: none; } }
   .main-con--grid--sidebar--fixed-part {
     width: 100%;
     height: 10rem;
@@ -449,6 +458,10 @@ body {
       font-size: 2.0rem;
       font-family: 'Roboto', sans-serif;
       margin-left: 3rem; }
+      @media only screen and (max-width: 350px) {
+        .main-con--grid--product--heading-con--heading {
+          margin-left: 1rem;
+          font-size: 1.8rem; } }
     .main-con--grid--product--heading-con--location {
       padding-top: 0.5rem;
       text-align: center;
@@ -458,6 +471,9 @@ body {
       align-items: center;
       align-content: center;
       display: flex; }
+      @media only screen and (max-width: 300px) {
+        .main-con--grid--product--heading-con--location {
+          width: 200%; } }
       .main-con--grid--product--heading-con--location--icon {
         -webkit-filter: invert(40%) sepia(52%) saturate(200%) saturate(200%) saturate(189%) hue-rotate(189deg) brightness(103%) contrast(102%); }
       .main-con--grid--product--heading-con--location--txt {
@@ -467,6 +483,9 @@ body {
         font-weight: 400;
         font-size: 1.5rem;
         font-family: 'Roboto', sans-serif; }
+        @media only screen and (max-width: 350px) {
+          .main-con--grid--product--heading-con--location--txt {
+            font-size: 1.3rem; } }
         .main-con--grid--product--heading-con--location--txt:hover {
           text-decoration: underline;
           text-decoration-color: #2e89ff; }
@@ -476,6 +495,9 @@ body {
     margin-top: 0.3rem;
     overflow: hidden;
     padding-bottom: 6rem; }
+    @media only screen and (max-width: 450px) {
+      .main-con--grid--product--product-con {
+        padding-bottom: 10rem; } }
     .main-con--grid--product--product-con--grid {
       width: 94.2%;
       height: 100%;
@@ -485,6 +507,10 @@ body {
       grid-template-rows: repeat(5, 38.3rem);
       overflow: scroll;
       /* Chrome, Edge, and Safari */ }
+      @media only screen and (max-width: 700px) {
+        .main-con--grid--product--product-con--grid {
+          width: 98%;
+          margin-left: 0.6rem; } }
       .main-con--grid--product--product-con--grid {
         scrollbar-width: auto;
         scrollbar-color: transparent transparent; }
@@ -506,11 +532,26 @@ body {
         grid-template-columns: repeat(3, 32.3%);
         grid-gap: 1.4rem;
         overflow: hidden; }
+        @media only screen and (max-width: 1100px) {
+          .main-con--grid--product--product-con--grid--box {
+            grid-template-columns: repeat(2, 50%); } }
+        @media only screen and (max-width: 900px) {
+          .main-con--grid--product--product-con--grid--box {
+            grid-template-columns: repeat(3, 32.3%); } }
+        @media only screen and (max-width: 700px) {
+          .main-con--grid--product--product-con--grid--box {
+            grid-template-columns: repeat(2, 50%); } }
+        @media only screen and (max-width: 350px) {
+          .main-con--grid--product--product-con--grid--box {
+            grid-template-columns: repeat(1, 100%); } }
         .main-con--grid--product--product-con--grid--box--sub-box {
           display: grid;
           grid-template-columns: 100%;
           grid-template-rows: 80.5% 19.5%;
           overflow: hidden; }
+          @media only screen and (max-width: 500px) {
+            .main-con--grid--product--product-con--grid--box--sub-box {
+              grid-template-rows: 74.5% 20.5%; } }
           .main-con--grid--product--product-con--grid--box--sub-box--img-con {
             border-radius: 0.6rem;
             width: 100%;
@@ -563,4 +604,44 @@ body {
 @media only screen and (max-width: 1100px) {
   .main-con--grid--sidebar--fixed-part--search-part--search {
     padding-left: 4rem;
-    width: 30rem; } }
+    width: 35rem;
+    margin-left: 1rem; }
+  .main-con--grid--sidebar--fixed-part--search-part--search--icon {
+    margin-left: 1.5rem; }
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 20.6% 57% 22.4%; } }
+
+@media only screen and (max-width: 1000px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 23.6% 52% 24.4%; }
+  .main-con--grid--sidebar--fixed-part--search-part--search {
+    width: 31.5rem;
+    margin-left: 1.2rem; } }
+
+@media only screen and (max-width: 900px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 24.6% 56% 19.4%; } }
+
+@media only screen and (max-width: 700px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 24.6% 50% 27.4%; } }
+
+@media only screen and (max-width: 600px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 25.6% 49% 27.4%; } }
+
+@media only screen and (max-width: 500px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 30.6% 37% 27.4%; } }
+
+@media only screen and (max-width: 450px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 44.6% 19% 36.4%; } }
+
+@media only screen and (max-width: 400px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 44.6% 17% 36.4%; } }
+
+@media only screen and (max-width: 300px) {
+  .main-con--grid--product--heading-con {
+    grid-template-columns: 44.6% 12% 36.4%; } }
