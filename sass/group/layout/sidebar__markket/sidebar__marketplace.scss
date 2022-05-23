@@ -1,0 +1,154 @@
+.main-con--grid--sidebar {
+    background-color: #242526;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+    border-right: 1px solid rgba(128, 128, 128, 0.4);
+    outline: 1px solid rgba(128, 128, 128, 0.4);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 17% 83%;
+    position: relative;
+
+    @media only screen and (max-width:900px) {
+        & {
+            display: none;
+        }
+    }
+
+    &--fixed-part {
+        width: 100%;
+        height: 10rem;
+        background-color: #242526;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 50%);
+        margin-top: 0.6rem;
+
+        &--heading-part {
+            display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 84% 16%;
+            align-items: center;
+            justify-items: start;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+
+            &--heading {
+                font-size: 2.4rem;
+                font-weight: 700;
+                color: #e4e6eb;
+                margin-left: 1.4rem;
+            }
+
+            &--setting-part {
+                width: 3.6rem;
+                height: 3.6rem;
+                display: grid;
+                align-items: center;
+                justify-items: start;
+                align-content: center;
+                justify-content: center;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 50%;
+
+                &--icon {
+                    -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg);
+                }
+            }
+        }
+
+        &--search-part {
+            display: grid;
+            align-items: center;
+            justify-items: start;
+            align-content: center;
+            justify-content: center;
+            margin-top: -1.5rem;
+            margin-left: -1.2rem;
+
+            &--search {
+                width: 32.8rem;
+                height: 3.6rem;
+                border-radius: 5rem;
+                background-color: rgba(255, 255, 255, 0.1);
+                // border-radius: 50%;
+                outline: none;
+                border: none;
+                padding-left: 3.1rem;
+                color: #e4e6eb;
+                font-family: "Roboto", sans-serif;
+                font-size: 1.6rem;
+                padding-top: 0.1rem;
+
+                &::placeholder {
+                    font-family: "Roboto", sans-serif;
+                    color: #b0b3b8;
+                    font-size: 1.6rem;
+                }
+
+                &--icon {
+                    position: absolute;
+                    width: 1.6rem;
+                    height: 3.6rem;
+                    fill: #b0b3b8;
+                    margin-left: 1.7rem;
+                }
+            }
+        }
+
+        &--divider {
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 93%;
+            height: 0.1rem;
+            position: absolute;
+            margin-top: 9.5rem;
+            margin-left: 0.8rem;
+        }
+    }
+
+    &--main-part {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll !important;
+        overflow-x: hidden;
+
+        & {
+            scrollbar-width: auto;
+            scrollbar-color: transparent transparent;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: grey;
+            border-radius: 10px;
+            border: 3px solid transparent;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+
+        &--group-part {
+            width: 100%;
+            height: 35rem;
+            border: 3px solid green;
+
+            &--heading {
+                margin-left: 1.5rem;
+                margin-top: 1rem;
+                font-size: 1.7rem;
+                font-weight: 600;
+                color: #e4e6eb;
+            }
+        }
+    }
+}

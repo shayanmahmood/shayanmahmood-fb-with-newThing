@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #18191A;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Roboto', sans-serif;
+
+        & {
+    scrollbar-width: auto;
+    scrollbar-color: transparent transparent
+    }
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+    width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+    background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    }
+    @media only screen and (max-width:450px) {
+        &{
+            overflow: hidden;
+        }
+    }
+}
+
+

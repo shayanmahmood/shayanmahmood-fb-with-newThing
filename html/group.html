@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook | Groups</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/group.css">
+    <link rel="shortcut icon" href="../icons/favicon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/10c6a50922.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/10c6a50922.js" crossorigin="anonymous"></script>
+    <script src="./js/function.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="nav-responsive">
+        <div class="nav-responsive--logo-con">
+            <img src="../icons/fb-icon/mobile-logo-dark.png" alt="" class="nav-responsive--logo-con--logo">
+            <div class="nav-responsive--logo-con--search-circle">
+                <svg viewBox="0 0 16 16" width="1.4rem" height="1.4rem"
+                    class="nav-responsive--logo-con--search-circle--icon" style="user-select: auto;">
+                    <g fill-rule="evenodd" transform="translate(-448 -544)" style="user-select: auto;">
+                        <g fill-rule="nonzero" style="user-select: auto;">
+                            <path
+                                d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                                transform="translate(448 544)" style="user-select: auto;"></path>
+                            <path
+                                d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                                transform="translate(448 544)" style="user-select: auto;"></path>
+                            <path
+                                d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                                transform="translate(448 544)" style="user-select: auto;"></path>
+                            <path
+                                d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                                transform="translate(448 544)" style="user-select: auto;"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="nav-responsive--logo-con--messenger-circle">
+                <svg viewBox="0 0 28 28" alt="" class="nav-responsive--logo-con--messenger-circle--icon" height="1.6rem"
+                    width="1.6rem" style="user-select: auto;">
+                    <path
+                        d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"
+                        style="user-select: auto;"></path>
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <!--navbar bottom-->
+
+    <nav class="nav-responsive--bottom">
+        <div class="nav-responsive--bottom--icon-con">
+            <div class="nav-responsive--bottom--icon-con--icon-box">
+                <svg viewBox="0 0 28 28" class="res-active nav-responsive--botton--icon-con--icon-box--icon"
+                    height="2.8rem" width="2.8rem" style="user-select: auto;">
+                    <path
+                        d="M25.825 12.29C25.824 12.289 25.823 12.288 25.821 12.286L15.027 2.937C14.752 2.675 14.392 2.527 13.989 2.521 13.608 2.527 13.248 2.675 13.001 2.912L2.175 12.29C1.756 12.658 1.629 13.245 1.868 13.759 2.079 14.215 2.567 14.479 3.069 14.479L5 14.479 5 23.729C5 24.695 5.784 25.479 6.75 25.479L11 25.479C11.552 25.479 12 25.031 12 24.479L12 18.309C12 18.126 12.148 17.979 12.33 17.979L15.67 17.979C15.852 17.979 16 18.126 16 18.309L16 24.479C16 25.031 16.448 25.479 17 25.479L21.25 25.479C22.217 25.479 23 24.695 23 23.729L23 14.479 24.931 14.479C25.433 14.479 25.921 14.215 26.132 13.759 26.371 13.245 26.244 12.658 25.825 12.29"
+                        style="user-select: auto;"></path>
+                </svg>
+
+            </div>
+
+
+            <div class="nav-responsive--icon-con--icon-box"><svg viewBox="0 0 28 28"
+                    class="nav-responsive--bottom--icon-con--icon-box--icon" height="2.8rem" width="2.8rem"
+                    style="user-select: auto;">
+                    <path
+                        d="M8.75 25.25C8.336 25.25 8 24.914 8 24.5 8 24.086 8.336 23.75 8.75 23.75L19.25 23.75C19.664 23.75 20 24.086 20 24.5 20 24.914 19.664 25.25 19.25 25.25L8.75 25.25ZM17.163 12.846 12.055 15.923C11.591 16.202 11 15.869 11 15.327L11 9.172C11 8.631 11.591 8.297 12.055 8.576L17.163 11.654C17.612 11.924 17.612 12.575 17.163 12.846ZM21.75 20.25C22.992 20.25 24 19.242 24 18L24 6.5C24 5.258 22.992 4.25 21.75 4.25L6.25 4.25C5.008 4.25 4 5.258 4 6.5L4 18C4 19.242 5.008 20.25 6.25 20.25L21.75 20.25ZM21.75 21.75 6.25 21.75C4.179 21.75 2.5 20.071 2.5 18L2.5 6.5C2.5 4.429 4.179 2.75 6.25 2.75L21.75 2.75C23.821 2.75 25.5 4.429 25.5 6.5L25.5 18C25.5 20.071 23.821 21.75 21.75 21.75Z"
+                        style="user-select: auto;"></path>
+                </svg></div>
+            <div class="nav-responsive--icon-con--icon-box">
+                <img src="../icons/svg/marketplace.svg" alt="" class="nav-responsive--bottom--icon-con--icon-box--icon">
+            </div>
+            <div class="nav-responsive--icon-con--icon-box">
+                <img src="../icons/svg/icons8-male-user-32.svg" alt=""
+                    class="nav-responsive--bottom--icon-con--icon-box--icon">
+            </div>
+            <div class="nav-responsive--icon-con--icon-box">
+                <svg viewBox="0 0 28 28" alt=" " class="nav-responsive--bottom--icon-con--icon-box--icon"
+                    height="2.8rem" width="2.8rem" style="user-select: auto; ">
+                    <path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649
+                    25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574
+                    21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824
+                    21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z "
+                        style="user-select: auto; "></path>
+                </svg>
+
+            </div>
+            <div class="nav-responsive--icon-con--icon-box">
+                <img src="../icons/svg/icons8-hamburger-menu.svg" alt=""
+                    class="nav-responsive--bottom--icon-con--icon-box--icon">
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav">
+        <div class="nav-search-box">
+            <img src="../icons/favicon/facebook.png" alt="search-box-logo" class="nav-search-box--logo">
+            <svg viewBox="0 0 16 16" fill="#A7B1AC" width="1.5rem" height="1.5rem"
+                class="nav-search-box--logo--search-box--icon" style="user-select: auto;">
+                <g fill-rule="evenodd" transform="translate(-448 -544)" style="user-select: auto;">
+                    <g fill-rule="nonzero" style="user-select: auto;">
+                        <path
+                            d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                            transform="translate(448 544)" style="user-select: auto;"></path>
+                        <path
+                            d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                            transform="translate(448 544)" style="user-select: auto;"></path>
+                        <path
+                            d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                            transform="translate(448 544)" style="user-select: auto;"></path>
+                        <path
+                            d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                            transform="translate(448 544)" style="user-select: auto;"></path>
+                    </g>
+                </g>
+            </svg>
+            <input type="search" class="nav-search-box--logo--search-box" placeholder="Search Facebook">
+        </div>
+
+        <div class="icon-box">
+            <div class="icon-box-con">
+                <svg viewBox="0 0 28 28" class="icon-box-con--icon" fill="currentColor" height="28" width="28"
+                    style="user-select: auto;">
+                    <path
+                        d="M17.5 23.979 21.25 23.979C21.386 23.979 21.5 23.864 21.5 23.729L21.5 13.979C21.5 13.427 21.949 12.979 22.5 12.979L24.33 12.979 14.017 4.046 3.672 12.979 5.5 12.979C6.052 12.979 6.5 13.427 6.5 13.979L6.5 23.729C6.5 23.864 6.615 23.979 6.75 23.979L10.5 23.979 10.5 17.729C10.5 17.04 11.061 16.479 11.75 16.479L16.25 16.479C16.939 16.479 17.5 17.04 17.5 17.729L17.5 23.979ZM21.25 25.479 17 25.479C16.448 25.479 16 25.031 16 24.479L16 18.327C16 18.135 15.844 17.979 15.652 17.979L12.348 17.979C12.156 17.979 12 18.135 12 18.327L12 24.479C12 25.031 11.552 25.479 11 25.479L6.75 25.479C5.784 25.479 5 24.695 5 23.729L5 14.479 3.069 14.479C2.567 14.479 2.079 14.215 1.868 13.759 1.63 13.245 1.757 12.658 2.175 12.29L13.001 2.912C13.248 2.675 13.608 2.527 13.989 2.521 14.392 2.527 14.753 2.675 15.027 2.937L25.821 12.286C25.823 12.288 25.824 12.289 25.825 12.29 26.244 12.658 26.371 13.245 26.133 13.759 25.921 14.215 25.434 14.479 24.931 14.479L23 14.479 23 23.729C23 24.695 22.217 25.479 21.25 25.479Z"
+                        style="user-select: auto;"></path>
+                </svg>
+            </div>
+            <div class="icon-box-con">
+                <svg viewBox="0 0 28 28" class="icon-box-con--icon" height="28" width="28">
+                    <path
+                        d="M10.5 4.5c-2.272 0-2.75 1.768-2.75 3.25C7.75 9.542 8.983 11 10.5 11s2.75-1.458 2.75-3.25c0-1.482-.478-3.25-2.75-3.25zm0 8c-2.344 0-4.25-2.131-4.25-4.75C6.25 4.776 7.839 3 10.5 3s4.25 1.776 4.25 4.75c0 2.619-1.906 4.75-4.25 4.75zm9.5-6c-1.41 0-2.125.841-2.125 2.5 0 1.378.953 2.5 2.125 2.5 1.172 0 2.125-1.122 2.125-2.5 0-1.659-.715-2.5-2.125-2.5zm0 6.5c-1.999 0-3.625-1.794-3.625-4 0-2.467 1.389-4 3.625-4 2.236 0 3.625 1.533 3.625 4 0 2.206-1.626 4-3.625 4zm4.622 8a.887.887 0 00.878-.894c0-2.54-2.043-4.606-4.555-4.606h-1.86c-.643 0-1.265.148-1.844.413a6.226 6.226 0 011.76 4.336V21h5.621zm-7.122.562v-1.313a4.755 4.755 0 00-4.749-4.749H8.25A4.755 4.755 0 003.5 20.249v1.313c0 .518.421.938.937.938h12.125c.517 0 .938-.42.938-.938zM20.945 14C24.285 14 27 16.739 27 20.106a2.388 2.388 0 01-2.378 2.394h-5.81a2.44 2.44 0 01-2.25 1.5H4.437A2.44 2.44 0 012 21.562v-1.313A6.256 6.256 0 018.25 14h4.501a6.2 6.2 0 013.218.902A5.932 5.932 0 0119.084 14h1.861z">
+                    </path>
+                </svg>
+            </div>
+            <div class="icon-box-con">
+                <svg viewBox="0 0 28 28" class="icon-box-con--icon" height="28" width="28">
+                    <path
+                        d="M8.75 25.25C8.336 25.25 8 24.914 8 24.5 8 24.086 8.336 23.75 8.75 23.75L19.25 23.75C19.664 23.75 20 24.086 20 24.5 20 24.914 19.664 25.25 19.25 25.25L8.75 25.25ZM17.163 12.846 12.055 15.923C11.591 16.202 11 15.869 11 15.327L11 9.172C11 8.631 11.591 8.297 12.055 8.576L17.163 11.654C17.612 11.924 17.612 12.575 17.163 12.846ZM21.75 20.25C22.992 20.25 24 19.242 24 18L24 6.5C24 5.258 22.992 4.25 21.75 4.25L6.25 4.25C5.008 4.25 4 5.258 4 6.5L4 18C4 19.242 5.008 20.25 6.25 20.25L21.75 20.25ZM21.75 21.75 6.25 21.75C4.179 21.75 2.5 20.071 2.5 18L2.5 6.5C2.5 4.429 4.179 2.75 6.25 2.75L21.75 2.75C23.821 2.75 25.5 4.429 25.5 6.5L25.5 18C25.5 20.071 23.821 21.75 21.75 21.75Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="icon-box-con">
+                <svg viewBox="0 0 28 28" class="icon-box-con--icon" fill="currentColor" height="28" width="28"
+                    style="user-select: auto;">
+                    <path
+                        d="m10.995,23.625l0,-5.8c0,-0.526 0.424,-0.95 0.95,-0.95l4.09,0c0.526,0 0.95,0.424 0.95,0.95l0,5.8l4.98,0c0.43,0 0.78,-0.348 0.78,-0.78l0,-8.264c-0.124,-0.073 -0.242,-0.159 -0.35,-0.256l-0.41,-0.37c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.17,0.15c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.23,0c-0.71,0 -1.41,-0.26 -1.96,-0.75l-0.19,-0.17c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.19,0.17c-0.55,0.49 -1.25,0.76 -1.96,0.76l-0.14,0c-0.71,0 -1.4,-0.26 -1.94,-0.74l-0.22,-0.19c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.18,0.16c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.18,0c-0.72,0 -1.41,-0.26 -1.96,-0.75l-0.2,-0.17c-0.18,-0.17 -0.44,-0.17 -0.63,0l-0.48,0.43c-0.076,0.067 -0.156,0.129 -0.24,0.183l0,8.287c0,0.43 0.348,0.78 0.78,0.78l4.96,0zm13.25,-8.795l0,8.015c0,1.262 -1.023,2.28 -2.28,2.28l-15.93,0c-1.262,0 -2.28,-1.023 -2.28,-2.28l0,-7.989c-0.993,-0.139 -1.76,-1.038 -1.76,-2.131l0,-2.35c0,-0.28 0.22,-0.5 0.5,-0.5l23.01,0c0.28,0 0.5,0.22 0.5,0.5l0,2.18c0,1.124 -0.756,2.063 -1.76,2.275zm0.71,-5.955l-21.93,0c-0.35,0 -0.59,-0.36 -0.46,-0.69l1.82,-4.49c0.19,-0.49 0.65,-0.82 1.17,-0.82l16.87,0c0.52,0 0.98,0.33 1.17,0.83l1.82,4.48c0.14,0.33 -0.11,0.69 -0.46,0.69z"
+                        style="user-select: auto;"></path>
+                </svg>
+
+
+            </div>
+            <div class="active-bottom  icon-box-con">
+                <svg viewBox="0 0 28 28" class="active icon-box-con--icon" height="28" width="28" style="user-select: auto;">
+                    <path
+                        d="M25.5 14C25.5 7.649 20.351 2.5 14 2.5 7.649 2.5 2.5 7.649 2.5 14 2.5 20.351 7.649 25.5 14 25.5 20.351 25.5 25.5 20.351 25.5 14ZM27 14C27 21.18 21.18 27 14 27 6.82 27 1 21.18 1 14 1 6.82 6.82 1 14 1 21.18 1 27 6.82 27 14ZM7.479 14 7.631 14C7.933 14 8.102 14.338 7.934 14.591 7.334 15.491 6.983 16.568 6.983 17.724L6.983 18.221C6.983 18.342 6.99 18.461 7.004 18.578 7.03 18.802 6.862 19 6.637 19L6.123 19C5.228 19 4.5 18.25 4.5 17.327 4.5 15.492 5.727 14 7.479 14ZM20.521 14C22.274 14 23.5 15.492 23.5 17.327 23.5 18.25 22.772 19 21.878 19L21.364 19C21.139 19 20.97 18.802 20.997 18.578 21.01 18.461 21.017 18.342 21.017 18.221L21.017 17.724C21.017 16.568 20.667 15.491 20.067 14.591 19.899 14.338 20.067 14 20.369 14L20.521 14ZM8.25 13C7.147 13 6.25 11.991 6.25 10.75 6.25 9.384 7.035 8.5 8.25 8.5 9.465 8.5 10.25 9.384 10.25 10.75 10.25 11.991 9.353 13 8.25 13ZM19.75 13C18.647 13 17.75 11.991 17.75 10.75 17.75 9.384 18.535 8.5 19.75 8.5 20.965 8.5 21.75 9.384 21.75 10.75 21.75 11.991 20.853 13 19.75 13ZM15.172 13.5C17.558 13.5 19.5 15.395 19.5 17.724L19.5 18.221C19.5 19.202 18.683 20 17.677 20L10.323 20C9.317 20 8.5 19.202 8.5 18.221L8.5 17.724C8.5 15.395 10.441 13.5 12.828 13.5L15.172 13.5ZM16.75 9C16.75 10.655 15.517 12 14 12 12.484 12 11.25 10.655 11.25 9 11.25 7.15 12.304 6 14 6 15.697 6 16.75 7.15 16.75 9Z"
+                        style="user-select: auto;"></path>
+                </svg>
+                <div class="active-bottom-line"></div>
+
+            </div>
+        </div>
+
+        <div class="porfile-box">
+            <svg aria-hidden="true" class="porfile-box--circle" data-visualcompletion="ignore-dynamic" role="none"
+                style="height: 28px; width: 28px; user-select: auto;">
+                <mask id="jsc_c_2j" style="user-select: auto;">
+                    <circle cx="14" cy="14" fill="white" r="14" style="user-select: auto;"></circle>
+                </mask>
+                <g mask="url(#jsc_c_2j)" style="user-select: auto;">
+                    <image style="height: 28px; width: 28px; user-select: auto;" x="0" y="0" height="100%"
+                        preserveAspectRatio="xMidYMid slice" width="100%" xlink:href="../img/author/download.png">
+                    </image>
+                    <circle class="mlqo0dh0 georvekb s6kb5r3f" cx="14" cy="14" r="14" style="user-select: auto;">
+                    </circle>
+                </g>
+            </svg>
+            <span class="porfile-box--circle--name">Shayan</span>
+        </div>
+
+        <section class="user-select">
+            <input type="radio" class="hide-me" name="gender" id="open1">
+            <label for="open1">
+                <div class="user-select--menu-box">
+                    <svg viewBox="0 0 44 44" width="1em" height="1em" class="user-select--menu-box--icon">
+                        <circle cx="7" cy="7" r="6"></circle>
+                        <circle cx="22" cy="7" r="6"></circle>
+                        <circle cx="37" cy="7" r="6"></circle>
+                        <circle cx="7" cy="22" r="6"></circle>
+                        <circle cx="22" cy="22" r="6"></circle>
+                        <circle cx="37" cy="22" r="6"></circle>
+                        <circle cx="7" cy="37" r="6"></circle>
+                        <circle cx="22" cy="37" r="6"></circle>
+                        <circle cx="37" cy="37" r="6"></circle>
+                    </svg>
+                </div>
+            </label>
+
+
+            <div class="menu-con">
+                <p class="menu-con--name">
+                    Menu
+                </p>
+                <div class="menu-con--grid">
+                    <div class="social-con">
+                        <svg viewBox="0 0 16 16" fill="#A7B1AC" width="1.5rem" height="1.5rem"
+                            class="social-con--search--icon" style="user-select: auto;">
+                            <g fill-rule="evenodd" transform="translate(-448 -544)" style="user-select: auto;">
+                                <g fill-rule="nonzero" style="user-select: auto;">
+                                    <path
+                                        d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                                        transform="translate(448 544)" style="user-select: auto;"></path>
+                                    <path
+                                        d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                                        transform="translate(448 544)" style="user-select: auto;"></path>
+                                    <path
+                                        d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                                        transform="translate(448 544)" style="user-select: auto;"></path>
+                                    <path
+                                        d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                                        transform="translate(448 544)" style="user-select: auto;"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <input placeholder="Search menu" type="search" name="" class="social-con--search" id="">
+                        <p class="social-con--social-name">
+                            Social
+                        </p>
+                        <div class="social-con--social-box">
+                            <div class="social-con--social-box--container" style="user-select: auto;">
+                                <img class="social-con--social-box--container--img"
+                                    src="../icons/fb-icon/events-icon.png" alt=""
+                                    style="height: 36px; width: 36px; user-select: auto;">
+                                <p class="social-con--social-box--container--text" style="user-select: auto;"> <span
+                                        class="social-con--social-box--container--heading"
+                                        style="user-select: auto;">Events</span> Organise or find events and other
+                                    things to do online and nearby.</p>
+                            </div>
+                            <div class="social-con--social-box--container" style="user-select: auto;">
+                                <img class="social-con--social-box--container--img" src="../icons/fb-icon/find-icon.png"
+                                    alt="" style="height: 36px; width: 36px;">
+                                <p class="social-con--social-box--container--text" style="user-select: auto;"> <span
+                                        class="social-con--social-box--container--heading"
+                                        style="user-select: auto;">Find Friends
+                                    </span> Search for friends or people you may know.</p>
+                            </div>
+                            <div class="social-con--social-box--container" style="user-select: auto;">
+                                <img class="social-con--social-box--container--img"
+                                    src="../icons/fb-icon/groups-icon.png" alt="" style="height: 36px; width: 36px;">
+                                <p class="social-con--social-box--container--text" style="user-select: auto;"> <span
+                                        class="social-con--social-box--container--heading"
+                                        style="user-select: auto;">Groups</span>Connect with people who share your
+                                    interests.
+
+                                </p>
+                            </div>
+                            <div class="social-con--social-box--container" style="user-select: auto;">
+                                <img class="social-con--social-box--container--img" src="../icons/fb-icon/news-icon.png"
+                                    alt="" style="height: 36px; width: 36px;">
+                                <p class="social-con--social-box--container--text" style="user-select: auto;"> <span
+                                        class="social-con--social-box--container--heading"
+                                        style="user-select: auto;">News Feed
+                                    </span> See relevant posts from people and Pages that you follow.
+
+                                </p>
+                            </div>
+                            <div class="social-con--social-box--container" style="user-select: auto;">
+                                <img class="social-con--social-box--container--img" src="../icons/fb-icon/page-icon.png"
+                                    alt="" style="height: 36px; width: 36px;">
+                                <p class="social-con--social-box--container--text" style="user-select: auto;"> <span
+                                        class="social-con--social-box--container--heading"
+                                        style="user-select: auto;">Pages
+                                    </span>Discover and connect with businesses on Facebook.
+
+                                </p>
+                            </div>
+                            <span class="divider"></span>
+                            <div class="social-loader--con">
+                                <div class="social-loader--con--header">
+                                    <div class="social-loader--con--header--img"></div>
+                                    <div class="social-loader--con--header--detail">
+                                        <div class="social-loader--con--header--detail--name"></div>
+                                        <div class="social-loader--con--header--detail--about"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-con">
+                        <p class="create-con--name">Create</p>
+                        <div class="create-con--grid">
+                            <div class="create-con--grid-box">
+                                <div class="create-con--grid-box--con">
+                                    <i data-visualcompletion="css-img" class="create-con--grid-box--con--icon"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/IUsLKu7QZiy.png&quot;); background-position: 0px -451px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                    <p class="create-con--grid-box--con--icon--name">Post</p>
+                                </div>
+                            </div>
+                            <!-- <div class="create-con--grid-box"> -->
+                            <!-- <div class="create-con--grid-box--con"> -->
+                            <!-- <i data-visualcompletion="css-img" class="create-con--grid-box--con--icon" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/IUsLKu7QZiy.png&quot;); background-position: 0px -451px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i> -->
+                            <!-- <p class="create-con--grid-box--con--icon--name">Post</p> -->
+                            <!-- </div> -->
+                            <!-- </div> -->
+
+                            <div class="create-con--grid-box">
+                                <div class="create-con--grid-box--con">
+                                    <i data-visualcompletion="css-img" class="create-con--grid-box--con--icon"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/KT-JCP_OuLi.png&quot;); background-position: 0px -971px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                    <p class="create-con--grid-box--con--icon--name">Post</p>
+                                </div>
+                            </div>
+
+                            <div class="create-con--grid-box">
+                                <div class="create-con--grid-box--con">
+                                    <i data-visualcompletion="css-img" class="create-con--grid-box--con--icon"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/IUsLKu7QZiy.png&quot;); background-position: 0px -346px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                    <p class="create-con--grid-box--con--icon--name">Story
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="create-con--grid-box">
+                                <div class="create-con--grid-box--con">
+                                    <i data-visualcompletion="css-img" class="create-con--grid-box--con--icon"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/KT-JCP_OuLi.png&quot;); background-position: 0px -236px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                    <p class="create-con--grid-box--con--icon--name">Room</p>
+                                </div>
+                            </div>
+
+                            <div class="create-con--grid-box">
+                                <div class="create-con--grid-box--con">
+                                    <i data-visualcompletion="css-img" class="create-con--grid-box--con--icon"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/IUsLKu7QZiy.png&quot;); background-position: 0px -514px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                    <p class="create-con--grid-box--con--icon--name">Pages</p>
+                                </div>
+                            </div>
+
+                            <div class="create-con--grid-box">
+                                <div class="create-con--grid-box--con">
+                                    <i data-visualcompletion="css-img" class="create-con--grid-box--con--icon"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/bezWQZkMGaH.png&quot;); background-position: 0px -250px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                    <p class="create-con--grid-box--con--icon--name">Ads
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="create-loader-con">
+                                <div class="create-loader-con--header">
+                                    <div class="create-loader-con--header--img"></div>
+                                    <div class="create-loader-con--header--img--detail">
+                                        <div class="create-loader-con--header--img--detail--name"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="create-loader-con">
+                                <div class="create-loader-con--header">
+                                    <div class="top-prefix create-loader-con--header--img"></div>
+                                    <div class="create-loader-con--header--img--detail">
+                                        <div class="create-loader-con--header--img--detail--name"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <input type="radio" class="hide-me" name="gender" id="open2">
+            <label for="open2">
+                <div class="user-select--messenger-box">
+                    <svg viewBox="0 0 28 28" alt="" class="user-select--messenger-box--icon" height="20" width="20"
+                        style="user-select: auto;">
+                        <path
+                            d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"
+                            style="user-select: auto;"></path>
+                    </svg>
+                </div>
+            </label>
+            <div class="messenger-con">
+                <div class="messenger-con--top-grid">
+                    <p class="messenger-con--top-grid--name">Messenger</p>
+                </div>
+                <div class="messenger-con--top-grid--icon-box">
+                    <i data-visualcompletion="css-img" class="messenger-con--top-grid--icon-box--icon"
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/9ZjkTnUGFaz.png&quot;); background-position: -105px -67px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                    <i data-visualcompletion="css-img" class="messenger-con--top-grid--icon-box--icon"
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/cRKMOGY8Fy5.png&quot;); background-position: 0px -950px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <i data-visualcompletion="css-img" class="messenger-con--top-grid--icon-box--icon"
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/Po0uf_6n0OV.png&quot;); background-position: 0px -400px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <i data-visualcompletion="css-img" class="messenger-con--top-grid--icon-box--icon"
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/O06LE4vrsh-.png&quot;); background-position: 0px -1175px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                </div>
+
+                <div class="messenger-con--search-con">
+                    <svg viewBox="0 0 16 16" fill="#A7B1AC" width="1.5rem" height="1.5rem"
+                        class="messenger-con--search-con--search-bar--icon" style="user-select: auto;">
+                        <g fill-rule="evenodd" transform="translate(-448 -544)" style="user-select: auto;">
+                            <g fill-rule="nonzero" style="user-select: auto;">
+                                <path
+                                    d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                                    transform="translate(448 544)" style="user-select: auto;"></path>
+                                <path
+                                    d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                                    transform="translate(448 544)" style="user-select: auto;"></path>
+                                <path
+                                    d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                                    transform="translate(448 544)" style="user-select: auto;"></path>
+                                <path
+                                    d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                                    transform="translate(448 544)" style="user-select: auto;"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <input type="search" name="" placeholder="Search Messenger"
+                        class="messenger-con--search-con--search-bar" id="">
+                </div>
+                <div class="messenger-con--middle-grid">
+                    <div class="messenger-con--middle-grid--msg-con">
+                        <img src="../img/user/n0tificati0n-img-8.png" alt=""
+                            class="messenger-con--middle-grid--msg-con--img">
+                        <div class="messenger-con--middle-grid--msg-con--img--details">
+                            <p class="messenger-con--middle-grid--msg-con--img--details--name">Sonam Gates
+
+                            </p>
+                            <p class="messenger-con--middle-grid--msg-con--img--details--msg">
+                                Hi, What Up!! <span
+                                    class="messenger-con--middle-grid--msg-con--img--details--msg--time">.NOW!!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="margin-top-prefixer messenger-con--middle-grid--msg-con">
+                        <img src="../img/user/n0tificati0n-img-10.jfif" alt=""
+                            class="messenger-con--middle-grid--msg-con--img">
+                        <div class="messenger-con--middle-grid--msg-con--img--details">
+                            <p class="messenger-con--middle-grid--msg-con--img--details--name">Jerry NImo
+
+
+
+                            </p>
+                            <p class="messenger-con--middle-grid--msg-con--img--details--msg">
+                                Welcome2ParTY <span
+                                    class="messenger-con--middle-grid--msg-con--img--details--msg--time">.5H</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="margin-top-prefixer--two messenger-con--middle-grid--msg-con">
+                        <img src="../img/user/n0tificati0n-img-2.png" alt=""
+                            class="messenger-con--middle-grid--msg-con--img">
+                        <div class="messenger-con--middle-grid--msg-con--img--details">
+                            <p class="messenger-con--middle-grid--msg-con--img--details--name">Zoey Ana
+
+
+
+                            </p>
+                            <p class="messenger-con--middle-grid--msg-con--img--details--msg link">
+                                #londen <span
+                                    class="messenger-con--middle-grid--msg-con--img--details--msg--time">.1D</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="margin-top-prefixer--three messenger-con--middle-grid--msg-con">
+                        <img src="../img/user/n0tificati0n-img-5.png" alt=""
+                            class="messenger-con--middle-grid--msg-con--img">
+                        <div class="messenger-con--middle-grid--msg-con--img--details">
+                            <p class="messenger-con--middle-grid--msg-con--img--details--name">Milo Benhood
+
+
+                            </p>
+                            <p class="messenger-con--middle-grid--msg-con--img--details--msg">
+                                hy i was already here plz come here<span
+                                    class="messenger-con--middle-grid--msg-con--img--details--msg--time">.3D</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="margin-top-prefixer--four messenger-con--middle-grid--msg-con">
+                        <img src="../img/user/n0tificati0n-img-7.jpg" alt=""
+                            class="messenger-con--middle-grid--msg-con--img">
+                        <div class="messenger-con--middle-grid--msg-con--img--details">
+                            <p class="messenger-con--middle-grid--msg-con--img--details--name">Sophia
+
+                            </p>
+                            <p class="messenger-con--middle-grid--msg-con--img--details--msg">
+                                On mY wAY <b class="link">#AWErsOmE</b> <span
+                                    class="messenger-con--middle-grid--msg-con--img--details--msg--time">.5D
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="messenger-con--loader-con">
+                        <div class="messenger-con--loader-con--header">
+                            <div class="messenger-con--loader-con--header--img"></div>
+                            <div class="messenger-con--loader-con--header--img--details">
+                                <div class="messenger-con--loader-con--header--img--details--name"></div>
+                                <div class="messenger-con--loader-con--header--img--details--about"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <input type="radio" class="hide-me" name="gender" id="open3">
+            <label for="open3">
+                <div class="user-select--notification">
+                    <svg viewBox="0 0 28 28" alt="" class="user-select--notification--icon" height="20" width="20">
+                        <path
+                            d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z">
+                        </path>
+                    </svg>
+                </div>
+            </label>
+
+
+            <div class="notification-con">
+                <p class="notification-con--name">Notifications</p>
+                <i data-visualcompletion="css-img" class="notification-con--name--icon"
+                    style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/ksSGEBnVLNu.png&quot;); background-position: -105px -67px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+
+
+                <div class="notification-con--btn-con">
+                    <button class="notification-con--btn-con--all-btn active-btn">All</button>
+                    <button class="notification-con--btn-con--unread-btn">Unread</button>
+                </div>
+
+                <p class="notification-con--name-primary">Friend Requests</p>
+                <div class="notification-con--friend-request-con">
+                    <div class="notification-con--friend-request-con--img-con">
+                        <img src="../img/user/n0tificati0n-img-2.png" alt=""
+                            class="notification-con--friend-request-con--img-con--img">
+                        <i data-visualcompletion="css-img"
+                            class="notification-con--friend-request-con--img-con--img--text--icon"
+                            style="height: 28px; width: 28px; background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yL/r/h2iqxBqDts0.png&quot;); background-position: 0px -783px; background-size: auto; background-repeat: no-repeat; display: inline-block; position: absolute; left: 3rem; top: 3rem; user-select: auto;"></i>
+                        <p class="notification-con--friend-request-con--img-con--img--text"><b>Zoey Ana</b> send you a
+                            friend request. <span
+                                class="notification-con--friend-request-con--img-con--img--text--time">Now!!</span>
+                        </p>
+                    </div>
+                    <div class="notification-con--friend-request-con--btn-con">
+                        <button class="notification-con--friend-request-con--btn-con--conform">Confirm</button>
+                        <button class="notification-con--friend-request-con--btn-con--delete">Delete</button>
+                    </div>
+                </div>
+
+                <div class="notification-con--friend-request-con">
+                    <div class="notification-con--friend-request-con--img-con">
+                        <img src="../img/user/n0tificati0n-img-7.jpg" alt=""
+                            class="notification-con--friend-request-con--img-con--img">
+                        <i data-visualcompletion="css-img"
+                            class="notification-con--friend-request-con--img-con--img--text--icon"
+                            style="height: 28px; width: 28px; background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yL/r/h2iqxBqDts0.png&quot;); background-position: 0px -783px; background-size: auto; background-repeat: no-repeat; display: inline-block; position: absolute; left: 3rem; top: 3rem; user-select: auto;"></i>
+                        <p class="notification-con--friend-request-con--img-con--img--text"><b>Sophia</b> send you a
+                            friend request. <span
+                                class="notification-con--friend-request-con--img-con--img--text--time">5 DAYS AGO</span>
+                        </p>
+                    </div>
+                    <div class="notification-con--friend-request-con--btn-con">
+                        <button class="notification-con--friend-request-con--btn-con--conform">Confirm</button>
+                        <button class="notification-con--friend-request-con--btn-con--delete">Delete</button>
+                    </div>
+                </div>
+
+                <div class="notification-con--friend-request-con">
+                    <div class="notification-con--friend-request-con--img-con">
+                        <img src="../img/user/n0tificati0n-img-3.png" alt=""
+                            class="notification-con--friend-request-con--img-con--img">
+                        <i data-visualcompletion="css-img"
+                            class="notification-con--friend-request-con--img-con--img--text--icon"
+                            style="height: 28px; width: 28px; background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yL/r/h2iqxBqDts0.png&quot;); background-position: 0px -783px; background-size: auto; background-repeat: no-repeat; display: inline-block; position: absolute; left: 3rem; top: 3rem; user-select: auto;"></i>
+                        <p class="notification-con--friend-request-con--img-con--img--text"><b>Milo Benhood</b> send you
+                            a friend request. <span
+                                class="notification-con--friend-request-con--img-con--img--text--time">7 DAYS AGO</span>
+                        </p>
+                    </div>
+                    <div class="notification-con--friend-request-con--btn-con">
+                        <button class="notification-con--friend-request-con--btn-con--conform">Confirm</button>
+                        <button class="notification-con--friend-request-con--btn-con--delete">Delete</button>
+                    </div>
+                </div>
+                <p class="notification-con--name-primary">Earlier</p>
+
+                <div class="notification-con--earlier-post">
+
+                    <img src="../img/user/n0tificati0n-img-5.png" alt="" class="notification-con--earlier-post--img">
+                    <img class="notification-con--earlier-post--img--reaction" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16' %3e%3cdefs%3e%3clinearGradient
+                    id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25' %3e%3cstop offset='0%25' stop-color='%2318AFFF' /%3e%3cstop offset='100%25' stop-color='%230062DF' /%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25'
+                    x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox' %3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1' /%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1' /%3e%3cfeComposite
+                    in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1' /%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'
+                /%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z' /%3e%3c/defs%3e%3cg fill='none' %3e%3cuse fill='url(%23a)' xlink:href='%23b' /%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b' /%3e%3cpath
+                    fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'
+                /%3e%3c/g%3e%3c/svg%3e " alt=" " style="height: 28px; width: 28px; ">
+                    <p class="notification-con--earlier-post--img--text">
+                        <b> Pel James </b> Likes your Photos in Shayan's Collection Group. <span
+                            class="notification-con--earlier-post--img--text--time">NOW!!</span>
+                    </p>
+                </div>
+
+                <div class="notification-con--earlier-post">
+
+                    <img src="../img/user/n0tificati0n-img-3.png" alt="" class="notification-con--earlier-post--img">
+                    <img class="notification-con--earlier-post--img--reaction" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16' %3e%3cdefs%3e%3clinearGradient
+                    id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25' %3e%3cstop offset='0%25' stop-color='%2318AFFF' /%3e%3cstop offset='100%25' stop-color='%230062DF' /%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25'
+                    x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox' %3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1' /%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1' /%3e%3cfeComposite
+                    in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1' /%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'
+                /%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z' /%3e%3c/defs%3e%3cg fill='none' %3e%3cuse fill='url(%23a)' xlink:href='%23b' /%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b' /%3e%3cpath
+                    fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'
+                /%3e%3c/g%3e%3c/svg%3e " alt=" " style="height: 28px; width: 28px; ">
+                    <p class="notification-con--earlier-post--img--text">
+                        <b> Milo Benhood </b>Likes your Photos in CodeHid Group. <span
+                            class="notification-con--earlier-post--img--text--time">6 Hours</span>
+                    </p>
+                </div>
+
+                <div class="notification-con--earlier-post">
+
+                    <img src="../img/user/n0tificati0n-img-10.jfif" alt="" class="notification-con--earlier-post--img">
+                    <img class="notification-con--earlier-post--img--reaction" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16' %3e%3cdefs%3e%3clinearGradient
+                    id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25' %3e%3cstop offset='0%25' stop-color='%2318AFFF' /%3e%3cstop offset='100%25' stop-color='%230062DF' /%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25'
+                    x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox' %3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1' /%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1' /%3e%3cfeComposite
+                    in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1' /%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'
+                /%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z' /%3e%3c/defs%3e%3cg fill='none' %3e%3cuse fill='url(%23a)' xlink:href='%23b' /%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b' /%3e%3cpath
+                    fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'
+                /%3e%3c/g%3e%3c/svg%3e " alt=" " style="height: 28px; width: 28px; ">
+                    <p class="notification-con--earlier-post--img--text">
+                        <b> Jerry NImo </b> Likes your Photos in 2eyes Group. <span
+                            class="notification-con--earlier-post--img--text--time">1 DAYS AGO</span>
+                    </p>
+                </div>
+
+                <div class="notification-con--earlier-post">
+
+                    <img src="../img/user/n0tificati0n-img-8.png" alt="" class="notification-con--earlier-post--img">
+                    <img class="notification-con--earlier-post--img--reaction" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16' %3e%3cdefs%3e%3clinearGradient
+                    id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25' %3e%3cstop offset='0%25' stop-color='%2318AFFF' /%3e%3cstop offset='100%25' stop-color='%230062DF' /%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25'
+                    x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox' %3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1' /%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1' /%3e%3cfeComposite
+                    in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1' /%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'
+                /%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z' /%3e%3c/defs%3e%3cg fill='none' %3e%3cuse fill='url(%23a)' xlink:href='%23b' /%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b' /%3e%3cpath
+                    fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'
+                /%3e%3c/g%3e%3c/svg%3e " alt=" " style="height: 28px; width: 28px; ">
+                    <p class="notification-con--earlier-post--img--text">
+                        <b> Sonam Gates
+
+                        </b> Likes your Photos in BiG VIsiONN Group. <span
+                            class="notification-con--earlier-post--img--text--time">1 DAYS AGO</span>
+                    </p>
+                </div>
+
+                <div class="notification-con--earlier-post">
+
+                    <img src="../img/user/group-logo.webp" alt="" class="notification-con--earlier-post--img">
+
+                    <i data-visualcompletion="css-img"
+                        class="notification-con--friend-request-con--img-con--img--text--icon"
+                        style="height: 28px; width: 28px; background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yL/r/h2iqxBqDts0.png&quot;); background-position: 0px -870px; background-size: auto; background-repeat: no-repeat; display: inline-block; left: 3rem; top: 3rem; position: absolute; user-select: auto;"></i>
+                    <p class="notification-con--earlier-post--img--text">
+                        <b> Cholie </b> Ana Lan Posted a photo in SsS's Chess group. <span
+                            class="notification-con--earlier-post--img--text--time">2 MIN AGO</span>
+                    </p>
+                </div>
+
+                <div class="notification-con--earlier-post">
+
+                    <img src="../img/user/user-3-img.jpg" alt="" class="notification-con--earlier-post--img">
+
+                    <i data-visualcompletion="css-img"
+                        class="notification-con--friend-request-con--img-con--img--text--icon"
+                        style="height: 28px; width: 28px; background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yL/r/h2iqxBqDts0.png&quot;); background-position: 0px -377px; background-size: auto; background-repeat: no-repeat; display: inline-block; top: 3rem; position: absolute; left: 3rem; user-select: auto;"></i>
+
+
+
+                    <p class="notification-con--earlier-post--img--text">
+                        You Have A New Friend Request. ALiNA <span
+                            class="notification-con--earlier-post--img--text--time">30 SEC AGO</span>
+                    </p>
+                </div>
+
+                <div class="notification-con--earlier-post">
+
+                    <img src="../img/user/user-4-post.jpeg" alt="" class="notification-con--earlier-post--img">
+                    <i data-visualcompletion="css-img "
+                        class="notification-con--friend-request-con--img-con--img--text--icon"
+                        style="height: 28px; width: 28px; background-image: url(&quot;https://www.facebook.com/rsrc.php/v3/yL/r/h2iqxBqDts0.png&quot;); background-position: 0px -1363px; background-size: auto; background-repeat: no-repeat; display: inline-block; top: 3rem; position: absolute; left: 3rem; user-select: auto;"></i>
+                    <p class="notification-con--earlier-post--img--text">
+                        <b> OLIVIA</b> Oliva Recently Posted A Posted "Hello I am LiVe NOwW!!"" <span
+                            class="notification-con--earlier-post--img--text--time">4 DAYS AGO</span>
+                    </p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="notification-con--loader">
+                    <div class="notification-con--loader--header">
+                        <div class="notification-con--loader--header--img"></div>
+                        <div class="notification-con--loader--header--img--details">
+                            <div class="notification-con--loader--header--img--details--name"></div>
+                            <div class="notification-con--loader--header--img--details--about"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </div>
+            </div>
+
+
+            <input type="radio" name="gender" class="hide-me" id="open4">
+            <label for="open4">
+                <div class="user-select--profile">
+                    <svg viewBox="0 0 20 20" width="1em" height="1em" class="user-select--profile--icon"
+                        style="user-select: auto;">
+                        <path
+                            d="M10 14a1 1 0 0 1-.755-.349L5.329 9.182a1.367 1.367 0 0 1-.205-1.46A1.184 1.184 0 0 1 6.2 7h7.6a1.18 1.18 0 0 1 1.074.721 1.357 1.357 0 0 1-.2 1.457l-3.918 4.473A1 1 0 0 1 10 14z"
+                            style="user-select: auto;"></path>
+                    </svg>
+                </div>
+            </label>
+
+            <div class="profile-con">
+                <div class="profile-con--author-con">
+                    <img src="../img/author/download.png" alt="" class="profile-con--author-con--img">
+                    <p class="profile-con--author-con--img--caption">Shayan Mahmood </p>
+                    <p class="profile-con--author-con--img--caption--see">See your Profile </p>
+                </div>
+                <div class="profile-con--author-con--img--caption--see--divider"></div>
+                <div class="profile-con--feed-me-con">
+                    <div class="profile-con--feed-me-con--circle">
+                        <i data-visualcompletion="css-img" class="profile-con--feed-me-con--circle--icon"
+                            style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/QnBF2xVFFiX.png&quot;); background-position: 0px -25px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                    </div>
+                    <p class="profile-con--feed-me-con--circle--icon--heading">Give Feedback</p>
+                    <p class="profile-con--feed-me-con--circle--icon--description">Help us improve the new Facebook</p>
+                </div>
+                <div class="profile-con--feed-me-con--divider"></div>
+                <div class="profile-con--other-con">
+                    <div class="profile-con--other-con--circle">
+                        <i data-visualcompletion="css-img" class="profile-con--other-con--circle--icon"
+                            style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/lwBekknsaqF.png&quot;); background-position: -42px -289px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                    </div>
+                    <p class="profile-con--other-con--circle--icon--heading">Settings & privacy</p>
+                </div>
+
+
+                <div class="profile-con--other-con">
+                    <div class="profile-con--other-con--circle">
+                        <i data-visualcompletion="css-img" class="profile-con--other-con--circle--icon"
+                            style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Lv-SYgyBdrB.png&quot;); background-position: 0px -699px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                    </div>
+                    <p class="profile-con--other-con--circle--icon--heading"> Help & support
+                    </p>
+                </div>
+
+                <div class="profile-con--other-con">
+                    <div class="profile-con--other-con--circle">
+                        <i data-visualcompletion="css-img" class="profile-con--other-con--circle--icon"
+                            style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Lv-SYgyBdrB.png&quot;); background-position: 0px -615px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                    </div>
+                    <p class="profile-con--other-con--circle--icon--heading"> Display & accessibility </p>
+                </div>
+
+                <div class="profile-con--other-con">
+                    <div class="profile-con--other-con--circle">
+                        <i data-visualcompletion="css-img" class="profile-con--other-con--circle--icon"
+                            style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/QnBF2xVFFiX.png&quot;); background-position: 0px -46px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                    </div>
+                    <p class="profile-con--other-con--circle--icon--heading"> Log Out
+                    </p>
+                </div>
+
+
+
+            </div>
+        </section>
+    </nav>
+
+
+    <section class="maincon">
+        <div class="maincon--grid">
+            <div class="main-con--grid--sidebar">
+                <div class="main-con--grid--sidebar--fixed-part">
+                    <div class="main-con--grid--sidebar--fixed-part--heading-part">
+                        <p class="main-con--grid--sidebar--fixed-part--heading-part--heading">
+                            Groups
+                        </p>
+                        <div class="main-con--grid--sidebar--fixed-part--heading-part--setting-part">
+                            <i data-visualcompletion="css-img"
+                                class="main-con--grid--sidebar--fixed-part--heading-part--setting-part--icon"
+                                style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/qyJJmKM4Jh8.png&quot;); background-position: -42px -228px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                        </div>
+
+                    </div>
+                    <div class="main-con--grid--sidebar--fixed-part--search-part">
+
+                        <input type="search" placeholder="Search Groups"
+                            class="main-con--grid--sidebar--fixed-part--search-part--search" />
+                        <span class="main-con--grid--sidebar--fixed-part--search-part--search--icon"><svg
+                                fill="currentColor" viewBox="0 0 16 16" width="1.6rem" height="3.6rem"
+                                class="main-con--grid--sidebar--fixed-part--search-part--search--icon">
+                                <g fill-rule="evenodd" transform="translate(-448 -544)">
+                                    <g fill-rule="nonzero">
+                                        <path
+                                            d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                                            transform="translate(448 544)"></path>
+                                        <path
+                                            d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                                            transform="translate(448 544)"></path>
+                                        <path
+                                            d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                                            transform="translate(448 544)"></path>
+                                        <path
+                                            d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                                            transform="translate(448 544)"></path>
+                                    </g>
+                                </g>
+                            </svg></span>
+                    </div>
+                    <div class="main-con--grid--sidebar--fixed-part--divider"></div>
+                </div>
+
+                <div class="main-con--grid--sidebar--main-part">
+                    <div class="main-con--grid--sidebar--main-part--listening-part">
+                        <div class="main-con--grid--sidebar--main-part--listening-part--active-box">
+                            <div class="main-con--grid--sidebar--main-part--listening-part--active-box--icon-con">
+                                <div
+                                    class="main-con--grid--sidebar--main-part--listening-part--active-box--icon-con--circle">
+                                    <i data-visualcompletion="css-img"
+                                        class="main-con--grid--sidebar--main-part--listening-part--active-box--icon-con--circle--icon"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ym/r/NwpXv1HUXoP.png&quot;); background-position: 0px -263px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                </div>
+                            </div>
+                            <div class="main-con--grid--sidebar--main-part--listening-part--active-box--txt-con">
+                                <p class="main-con--grid--sidebar--main-part--listening-part--active-box--txt-con--txt">
+                                    Your Feed</p>
+                            </div>
+                        </div>
+                        <div class="main-con--grid--sidebar--main-part--listening-part--normal-box">
+                            <div class="main-con--grid--sidebar--main-part--listening-part--normal-box--icon-con">
+                                <div
+                                    class="main-con--grid--sidebar--main-part--listening-part--normal-box--icon-con--circle">
+                                    <i data-visualcompletion="css-img"
+                                        class="main-con--grid--sidebar--main-part--listening-part--normal-box--icon-con--circle--icon"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/4UTgYKAnnti.png&quot;); background-position: 0px -275px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block; user-select: auto;"></i>
+                                </div>
+                            </div>
+                            <div class="main-con--grid--sidebar--main-part--listening-part--normal-box--txt-con">
+                                <p class="main-con--grid--sidebar--main-part--listening-part--normal-box--txt-con--txt">
+                                    Discover</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="main-con--grid--sidebar--main-part--listening-part--create">
+                            <p class="main-con--grid--sidebar--main-part--listening-part--create--txt">
+                                <span
+                                    style="font-size: 2rem; margin-right: 0.3rem;padding-top: 4rem; font-weight: lighter;">+</span>
+                                Create
+                                new Groups
+                            </p>
+                        </div>
+                        <div class="main-con--grid--sidebar--main-part--listening-part--divider"></div>
+                    </div>
+                    <div class="main-con--grid--sidebar--main-part--group-part">
+                        <div class="main-con--grid--sidebar--main-part--group-part--heading">
+                            Groups you've joined
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="maincon--grid--box"></div>
+            <div class="maincon--grid--box"></div>
+        </div>
+    </section>
+</body>
+
+</html>
