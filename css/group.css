@@ -435,11 +435,27 @@ body {
       -o-border-radius: 10px; }
     .main-con--grid--sidebar--main-part--group-part {
       width: 100%;
-      height: 35rem;
-      border: 3px solid green; }
+      height: 35rem; }
       .main-con--grid--sidebar--main-part--group-part--heading {
         margin-left: 1.5rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         font-size: 1.7rem;
         font-weight: 600;
         color: #e4e6eb; }
+      .main-con--grid--sidebar--main-part--group-part--grid {
+        width: 100%;
+        height: 86%;
+        margin-top: 0.5rem;
+        border: 2px solid violet;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 25%); }
+        .main-con--grid--sidebar--main-part--group-part--grid--box {
+          border: 2px solid red;
+          display: grid;
+          grid-template-rows: 100%;
+          grid-template-columns: 25% 75%; }
+          .main-con--grid--sidebar--main-part--group-part--grid--box--img {
+            border: 2px solid blue; }
+          .main-con--grid--sidebar--main-part--group-part--grid--box--txt {
+            border: 4px solid green; }
