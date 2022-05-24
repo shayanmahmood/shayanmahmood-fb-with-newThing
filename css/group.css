@@ -456,6 +456,20 @@ body {
           grid-template-rows: 100%;
           grid-template-columns: 25% 75%; }
           .main-con--grid--sidebar--main-part--group-part--grid--box--img {
-            border: 2px solid blue; }
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+            justify-items: center; }
+            .main-con--grid--sidebar--main-part--group-part--grid--box--img--img {
+              width: 6rem;
+              height: 6rem; }
+              .main-con--grid--sidebar--main-part--group-part--grid--box--img--img--img {
+                border-radius: 0.6rem;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
           .main-con--grid--sidebar--main-part--group-part--grid--box--txt {
             border: 4px solid green; }
