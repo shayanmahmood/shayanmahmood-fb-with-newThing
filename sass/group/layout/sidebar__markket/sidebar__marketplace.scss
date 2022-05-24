@@ -152,18 +152,37 @@
 
             &--grid {
                 width: 100%;
-                height: 86%;
+                height: 100%;
+                padding-top: 1rem;
+                padding-left: 0.6rem;
                 margin-top: 0.5rem;
-                border: 2px solid violet;
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-rows: repeat(4, 25%);
 
+                transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
                 &--box {
-                    border: 2px solid red;
+                    border-radius: 1rem;
+                    width: 98%;
                     display: grid;
                     grid-template-rows: 100%;
                     grid-template-columns: 25% 75%;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgba(255, 255, 255, 0.1);
+
+                        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                        -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                        -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                        -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                        -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    }
 
                     &--img {
                         width: 100%;
@@ -179,7 +198,7 @@
                             height: 6rem;
 
                             &--img {
-                            border-radius:0.6rem;
+                                border-radius: 0.6rem;
 
                                 width: 100%;
                                 height: 100%;
@@ -189,7 +208,23 @@
                     }
 
                     &--txt {
-                        border: 4px solid green;
+                        display: grid;
+                        grid-template-columns: 100%;
+                        grid-template-rows: repeat(2, 50%);
+
+                        &--head {
+                            color: #e4e6eb;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            padding-top: 2.2rem;
+                        }
+
+                        &--subhead {
+
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                            color: #b0b3b8;
+                        }
                     }
                 }
             }
