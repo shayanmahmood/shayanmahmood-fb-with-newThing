@@ -689,7 +689,7 @@ body {
   height: 100%;
   display: grid; }
   .maincon--grid--ads--grid {
-    width: 100%;
+    width: 92%;
     height: 100%;
     display: grid;
     grid-template-columns: 100%;
@@ -697,7 +697,8 @@ body {
     .maincon--grid--ads--grid--ads-box {
       width: 100%;
       height: 100%;
-      border: 2px solid yellow;
+      background-color: #242526;
+      border-radius: 1rem;
       margin-left: 2rem;
       width: 92%;
       display: grid;
@@ -706,28 +707,40 @@ body {
       .maincon--grid--ads--grid--ads-box--box {
         border: 2px solid red; }
       .maincon--grid--ads--grid--ads-box--txt {
+        border: 2px solid red;
         width: 100%;
         height: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 5% 45% 50%;
-        border: 2px solid blue; }
-        .maincon--grid--ads--grid--ads-box--txt--box {
-          border: 2px solid blue; }
+        grid-template-rows: 5% 45% 50%; }
+        .maincon--grid--ads--grid--ads-box--txt--subhead {
+          align-content: center;
+          color: #b0b3b8;
+          font-size: 1.5rem;
+          font-weight: 400;
+          margin-left: 2rem;
+          margin-top: -0.6rem;
+          display: grid;
+          grid-template-rows: 100%;
+          grid-template-columns: 100%; }
         .maincon--grid--ads--grid--ads-box--txt--head {
           display: grid;
           grid-template-rows: 100%;
-          grid-template-columns: 78% 22%; }
+          grid-template-columns: 65% 35%; }
           .maincon--grid--ads--grid--ads-box--txt--head--txt {
             display: grid;
-            align-items: center;
+            /* align-items: center; */
             align-content: center;
-            justify-items: center;
-            justify-content: center;
+            /* justify-items: center; */
+            /* justify-content: center; */
             color: #e4e6eb;
             font-size: 1.7rem;
-            font-weight: 600; }
+            font-weight: 600;
+            margin-left: 2rem; }
           .maincon--grid--ads--grid--ads-box--txt--head--more {
+            height: 96%;
+            margin-top: 0.1rem;
+            border-radius: 0.2rem;
             display: grid;
             align-items: center;
             align-content: center;
@@ -735,4 +748,18 @@ body {
             justify-content: center;
             color: #4599ff;
             font-size: 1.5rem;
-            font-weight: 400; }
+            font-weight: 400;
+            margin-left: 4rem;
+            transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -webkit-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -moz-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -ms-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -o-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1); }
+            .maincon--grid--ads--grid--ads-box--txt--head--more:hover {
+              cursor: pointer;
+              background-color: rgba(77, 79, 80, 0.5);
+              transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+              -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+              -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+              -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+              -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
