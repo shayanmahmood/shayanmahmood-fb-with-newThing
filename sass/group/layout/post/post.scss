@@ -1,10 +1,52 @@
 .maincon--grid--post {
-margin-left: 2rem;
-@media only screen and (max-width:1099px) {
-    & {
-        margin-left: 10rem;
+    margin-left: 2rem;
+
+    @media only screen and (max-width:1099px) {
+        & {
+            margin-left: 10rem;
+        }
     }
-}
+
+    @media only screen and (max-width:1000px) {
+        & {
+            margin-left: 8rem;
+        }
+    }
+
+    @media only screen and (max-width:950px) {
+        & {
+            margin-left: 3rem;
+        }
+    }
+
+    @media only screen and (max-width:950px) {
+        & {
+            margin-left: 2rem;
+        }
+    }
+
+    @media only screen and (max-width:800px) {
+        & {
+            margin-left: 15rem;
+        }
+    }
+
+    @media only screen and (max-width:700px) {
+        & {
+            margin-left: 7rem;
+        }
+    }
+    @media only screen and (max-width:600px) {
+        &{
+            margin-left: 3rem;
+        }
+    }
+    @media only screen and (max-width:500px) {
+        &{
+            margin-left: 0rem;
+        }
+    }
+
     &--grid {
         padding-top: 0.5rem;
         display: grid;
@@ -48,6 +90,7 @@ margin-left: 2rem;
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: 10% 78% 12%;
+
             &--box {
                 &--header {
                     width: 100%;
@@ -55,11 +98,13 @@ margin-left: 2rem;
                     display: grid;
                     grid-template-rows: 100%;
                     grid-template-columns: 100%;
+
                     &--img-con {
                         display: flex;
                         align-items: center;
                         justify-items: center;
                         align-content: center;
+
                         &--img {
                             margin-left: 1.5rem;
                             border: 2px solid #2e89ff;
@@ -70,11 +115,13 @@ margin-left: 2rem;
                             -moz-border-radius: 50%;
                             -ms-border-radius: 50%;
                             -o-border-radius: 50%;
+
                             &--name-con {
                                 display: flex;
                                 align-items: center;
                                 justify-items: center;
                                 align-content: center;
+
                                 &--name {
                                     color: #E4E6EB;
                                     font-size: 1.4rem;
@@ -83,6 +130,7 @@ margin-left: 2rem;
                                     margin-left: 1rem;
                                     margin-top: -2rem;
                                 }
+
                                 &--time {
                                     text-decoration: none;
                                     color: #B0B3B8;
@@ -96,6 +144,7 @@ margin-left: 2rem;
                                     -moz-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
                                     -ms-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
                                     -o-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
                                     &:hover {
                                         cursor: pointer;
                                         transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -111,29 +160,35 @@ margin-left: 2rem;
                     }
                 }
             }
+
             &--main {
                 width: 100%;
                 height: 100%;
                 margin-top: -5rem;
+
                 &--img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
             }
+
             &--reaction {
                 width: 100%;
                 height: 100%;
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-rows: repeat(2, 50%);
+
                 &--reacted-con {
                     width: 100%;
                     height: 100%;
                     display: flex;
+
                     &--reacted--icon {
                         margin-left: 1.8rem;
                         margin-top: 1rem;
+
                         &--count {
                             color: #B0B3B8;
                             font-size: 1.3rem;
@@ -142,12 +197,14 @@ margin-left: 2rem;
                             margin-top: 1rem;
                         }
                     }
+
                     &--share {
                         color: #B0B3B8;
                         font-size: 1.2rem;
                         font-family: 'Roboto', sans-serif;
                         margin-left: 28rem;
                         margin-top: 1rem;
+
                         @media only screen and (max-width:1300px) {
                             & {
                                 margin-left: 27rem !important;
@@ -156,6 +213,7 @@ margin-left: 2rem;
                     }
                 }
             }
+
             &--divider {
                 background-color: rgba(128, 128, 128, 0.4);
                 height: 0.1rem;
@@ -165,6 +223,7 @@ margin-left: 2rem;
                 margin-left: 0.7rem;
                 position: relative;
             }
+
             &--reaction-con {
                 width: 93%;
                 height: 100%;
@@ -172,6 +231,7 @@ margin-left: 2rem;
                 display: grid;
                 grid-template-rows: 100%;
                 grid-template-columns: repeat(3, 33.3%);
+
                 &--box {
                     text-align: center;
                     height: 93%;
@@ -195,6 +255,7 @@ margin-left: 2rem;
                     -moz-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
                     -ms-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
                     -o-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
                     &:hover {
                         cursor: pointer;
                         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -204,6 +265,7 @@ margin-left: 2rem;
                         -o-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
                         background-color: rgba(77, 79, 80, 0.7);
                     }
+
                     &--icon {
                         -webkit-filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%);
                         width: 1.8rem;
@@ -211,6 +273,7 @@ margin-left: 2rem;
                         fill: transparent;
                         stroke-width: 3px;
                         stroke: #B0B3B8;
+
                         &--name {
                             font-size: 1.4rem;
                             color: #B0B3B8;

@@ -59,6 +59,24 @@ body {
     @media only screen and (max-width: 1099px) {
       .maincon--grid {
         grid-template-columns: 32.5% 58% 8.5%; } }
+    @media only screen and (max-width: 1000px) {
+      .maincon--grid {
+        grid-template-columns: 32.5% 60% 6.5%; } }
+    @media only screen and (max-width: 950px) {
+      .maincon--grid {
+        grid-template-columns: 32.5% 65% 1.5%; } }
+    @media only screen and (max-width: 900px) {
+      .maincon--grid {
+        grid-template-columns: 80% 0%; } }
+    @media only screen and (max-width: 700px) {
+      .maincon--grid {
+        grid-template-columns: 90% 0%; } }
+    @media only screen and (max-width: 600px) {
+      .maincon--grid {
+        grid-template-columns: 95% 0%; } }
+    @media only screen and (max-width: 500px) {
+      .maincon--grid {
+        grid-template-columns: 100% 0%; } }
     .maincon--grid--box {
       border: 2px solid red; }
 
@@ -342,7 +360,7 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: 17% 83%;
   position: relative; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 800px) {
     .main-con--grid--sidebar {
       display: none; } }
   .main-con--grid--sidebar--fixed-part {
@@ -399,6 +417,13 @@ body {
         font-family: "Roboto", sans-serif;
         font-size: 1.6rem;
         padding-top: 0.1rem; }
+        @media only screen and (max-width: 1200px) {
+          .main-con--grid--sidebar--fixed-part--search-part--search {
+            width: 30.8rem;
+            margin-left: 1.4rem; } }
+        @media only screen and (max-width: 900px) {
+          .main-con--grid--sidebar--fixed-part--search-part--search {
+            width: 28rem; } }
         .main-con--grid--sidebar--fixed-part--search-part--search::placeholder {
           font-family: "Roboto", sans-serif;
           color: #b0b3b8;
@@ -511,6 +536,27 @@ body {
   @media only screen and (max-width: 1099px) {
     .maincon--grid--post {
       margin-left: 10rem; } }
+  @media only screen and (max-width: 1000px) {
+    .maincon--grid--post {
+      margin-left: 8rem; } }
+  @media only screen and (max-width: 950px) {
+    .maincon--grid--post {
+      margin-left: 3rem; } }
+  @media only screen and (max-width: 950px) {
+    .maincon--grid--post {
+      margin-left: 2rem; } }
+  @media only screen and (max-width: 800px) {
+    .maincon--grid--post {
+      margin-left: 15rem; } }
+  @media only screen and (max-width: 700px) {
+    .maincon--grid--post {
+      margin-left: 7rem; } }
+  @media only screen and (max-width: 600px) {
+    .maincon--grid--post {
+      margin-left: 3rem; } }
+  @media only screen and (max-width: 500px) {
+    .maincon--grid--post {
+      margin-left: 0rem; } }
   .maincon--grid--post--grid {
     padding-top: 0.5rem;
     display: grid;

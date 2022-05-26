@@ -9,12 +9,12 @@
     grid-template-columns: 100%;
     grid-template-rows: 17% 83%;
     position: relative;
-
-    @media only screen and (max-width:900px) {
+    @media only screen and (max-width:800px) {
         & {
             display: none;
         }
     }
+
 
     &--fixed-part {
         width: 100%;
@@ -82,6 +82,19 @@
                 font-size: 1.6rem;
                 padding-top: 0.1rem;
 
+                @media only screen and (max-width:1200px) {
+                    & {
+                        width: 30.8rem;
+                        margin-left: 1.4rem;
+                    }
+                }
+
+                @media only screen and (max-width:900px) {
+                    & {
+                        width: 28rem;
+                    }
+                }
+
                 &::placeholder {
                     font-family: "Roboto", sans-serif;
                     color: #b0b3b8;
@@ -94,6 +107,7 @@
                     height: 3.6rem;
                     fill: #b0b3b8;
                     margin-left: 1.7rem;
+
                     @media only screen and (max-width:1300px) {
                         & {
                             margin-left: 1.4rem;

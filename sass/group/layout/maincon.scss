@@ -16,6 +16,39 @@
             }
         }
 
+        @media only screen and (max-width:1000px) {
+            & {
+                grid-template-columns: 32.5% 60% 6.5%;
+            }
+        }
+
+        @media only screen and (max-width:950px) {
+            & {
+                grid-template-columns: 32.5% 65% 1.5%;
+            }
+        }
+
+        @media only screen and (max-width:900px) {
+            & {
+                grid-template-columns:80% 0%;
+            }
+        }
+        @media only screen and (max-width:700px)  {
+            &{
+                grid-template-columns:90% 0%;
+            }
+        }
+        @media  only screen and (max-width:600px) {
+            &{
+                grid-template-columns:95% 0%;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            &{
+                grid-template-columns:100% 0%;
+            }
+        }
+
         &--box {
             border: 2px solid red;
         }
