@@ -148,7 +148,11 @@ margin-left: 2rem;
                         font-family: 'Roboto', sans-serif;
                         margin-left: 28rem;
                         margin-top: 1rem;
-                     
+                        @media only screen and (max-width:1300px) {
+                            & {
+                                margin-left: 27rem !important;
+                            }
+                        }
                     }
                 }
             }

@@ -409,6 +409,9 @@ body {
           height: 3.6rem;
           fill: #b0b3b8;
           margin-left: 1.7rem; }
+          @media only screen and (max-width: 1300px) {
+            .main-con--grid--sidebar--fixed-part--search-part--search--icon {
+              margin-left: 1.4rem; } }
     .main-con--grid--sidebar--fixed-part--divider {
       background-color: rgba(255, 255, 255, 0.1);
       width: 93%;
@@ -629,6 +632,9 @@ body {
             font-family: 'Roboto', sans-serif;
             margin-left: 28rem;
             margin-top: 1rem; }
+            @media only screen and (max-width: 1300px) {
+              .maincon--grid--post--grid--box--reaction--reacted-con--share {
+                margin-left: 27rem !important; } }
       .maincon--grid--post--grid--box--divider {
         background-color: rgba(128, 128, 128, 0.4);
         height: 0.1rem;
