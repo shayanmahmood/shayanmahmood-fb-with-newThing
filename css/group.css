@@ -80,6 +80,27 @@ body {
     .maincon--grid--box {
       border: 2px solid red; }
 
+.shorrr {
+  display: none;
+  visibility: hidden; }
+  @media only screen and (max-width: 400px) {
+    .shorrr {
+      display: inline;
+      visibility: visible; } }
+  @media only screen and (max-width: 350px) {
+    .shorrr {
+      width: 100vw;
+      height: 100vh; } }
+
+@media only screen and (max-width: 340px) {
+  .ShOo {
+    width: 2rem !important;
+    height: 2rem !important; } }
+
+.HHHe {
+  width: 100%;
+  height: 100vh; }
+
 .main-con--grid--sidebar--categories {
   width: 100%;
   height: auto;
@@ -363,6 +384,9 @@ body {
   @media only screen and (max-width: 800px) {
     .main-con--grid--sidebar {
       display: none; } }
+  @media only screen and (max-width: 400px) {
+    .main-con--grid--sidebar {
+      display: none; } }
   .main-con--grid--sidebar--fixed-part {
     width: 100%;
     height: 10rem;
@@ -557,6 +581,9 @@ body {
   @media only screen and (max-width: 500px) {
     .maincon--grid--post {
       margin-left: 0rem; } }
+  @media only screen and (max-width: 400px) {
+    .maincon--grid--post {
+      display: none; } }
   .maincon--grid--post--grid {
     padding-top: 0.5rem;
     display: grid;
@@ -747,6 +774,9 @@ body {
   height: 100%;
   display: grid; }
   @media only screen and (max-width: 1099px) {
+    .maincon--grid--ads {
+      display: none; } }
+  @media only screen and (max-width: 400px) {
     .maincon--grid--ads {
       display: none; } }
   .maincon--grid--ads--grid {

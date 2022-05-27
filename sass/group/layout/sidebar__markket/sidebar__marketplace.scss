@@ -9,12 +9,18 @@
     grid-template-columns: 100%;
     grid-template-rows: 17% 83%;
     position: relative;
+
     @media only screen and (max-width:800px) {
         & {
             display: none;
         }
     }
 
+    @media only screen and (max-width:400px) {
+        & {
+            display: none;
+        }
+    }
 
     &--fixed-part {
         width: 100%;

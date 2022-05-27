@@ -1,0 +1,199 @@
+.res-post-con {
+    width: 100vw;
+    height: 400vh;
+    margin-top: 0.5rem;
+    overflow-y: scroll;
+    visibility: hidden;
+    display: none;
+    @media only screen and (max-width: 400px) {
+        & {
+            display:inline;
+            visibility: visible;
+        }
+    }
+    &--grid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll !important;
+        & {
+            scrollbar-width: auto;
+            scrollbar-color: transparent transparent
+            }
+            /* Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
+            width: 0px;
+            }
+            &::-webkit-scrollbar-track {
+            background: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+            background-color: grey;
+            border-radius: 10px;
+            border: 3px solid transparent;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            }
+        &--post {
+margin-top: 1rem;
+            width: 96%;
+            margin-left: 0.7rem;
+            height: 44rem;
+            background-color: #242526;
+            display: grid;
+            grid-template-rows: 14% 67% 19%;
+            grid-template-columns: 100%;
+            border-radius: 0.8rem;
+
+            &--header {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-rows: 100%;
+                grid-template-columns: 15% 67% 18%;
+
+                &--img-con {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-items: center;
+                    justify-content: center;
+
+                    &--img {
+                        margin-top: -0.2rem;
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+
+                &--name-con {
+                    width: 100%;
+                    height: 100%;
+
+                    &--name {
+                        font-size: 1.4rem;
+                        color: #e3e6eb;
+                        font-weight: bold;
+                        font-family: "Roboto";
+                        margin-top: 1rem;
+
+                        &--time {
+                            color: #b0b3b8;
+                            font-size: 1.2rem;
+                            margin-top: 0.3rem;
+                        }
+                    }
+                }
+
+                &--options {
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: 100%;
+                    grid-template-columns: repeat(2, 50%);
+                    padding-top: 1rem;
+                    padding-left: 1rem;
+                }
+            }
+
+            &--main {
+                width: 100%;
+                height: 100%;
+
+                &--img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+
+                    &--img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &--footer {
+                width: 100%;
+                height: 100%;
+
+                &--grid {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: grid;
+                    grid-template-rows: 50% 3% 47%;
+                    grid-template-columns: 100%;
+
+                    &--reacted-con {
+                        display: grid;
+                        grid-template-rows: 100%;
+                        grid-template-columns: 6% 80%;
+                        padding-top: 0.8rem;
+
+                        &--icon {
+                        }
+
+                        &--txt {
+                            margin-left: 1rem;
+                            margin-top: -0.2rem;
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            font-family: "Roboto";
+                            font-weight: bold;
+                            font-size: 1.4rem;
+                            color: #e3e6eb;
+                        }
+                    }
+
+                    &--divider {
+                        background-color: rgba(128, 128, 128, 0.4);
+                        height: 0.1rem;
+                        width: 95%;
+                        margin-left: 0.8rem;
+                        margin-top: 0.2rem;
+                    }
+
+                    &--reaction {
+                        width: 100%;
+                        height: 100%;
+
+                        &--grid {
+                            width: 100%;
+                            height: 100%;
+                            display: grid;
+                            grid-template-rows: 100%;
+                            grid-template-columns: repeat(3, 33.3%);
+
+                            &--like-con {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                align-content: center;
+                                justify-items: center;
+                                justify-content: center;
+                                padding-right: 1.5rem;
+
+                                &--txt {
+                                    color: #b0b3b8;
+                                    font-size: 1.5rem;
+                                    font-weight: bold;
+                                    font-family: "Roboto";
+                                    margin-left: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

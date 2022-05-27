@@ -36,17 +36,23 @@
             margin-left: 7rem;
         }
     }
+
     @media only screen and (max-width:600px) {
-        &{
+        & {
             margin-left: 3rem;
         }
     }
+
     @media only screen and (max-width:500px) {
-        &{
+        & {
             margin-left: 0rem;
         }
     }
-
+@media only screen and (max-width:400px) {
+    &{
+        display: none;
+    }
+}
     &--grid {
         padding-top: 0.5rem;
         display: grid;
@@ -55,6 +61,8 @@
         overflow: scroll;
         grid-template-columns: 100%;
         grid-template-rows: repeat(5, 63.5rem);
+
+      
 
         & {
             scrollbar-width: auto;
