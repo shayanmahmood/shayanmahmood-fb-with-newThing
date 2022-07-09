@@ -101,11 +101,28 @@
   -o-border-radius: 25px;
   padding: 2rem;
   display: inline;
-  padding-left: 4rem;
+  padding-top: 1rem;
+  padding-left: 0rem;
   color: #E4E6EB;
   font-size: 1.5rem;
 }
+.nav-grid--box--search--search--input::placeholder{
+  color: #A7B1AC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+.nav-grid--box--search--search--input--icon{
+  color: white;
 
+}
+
+.fa-1x{
+  font-size: 1.5em !important;
+  color: #A7B1AC;
+  position: absolute;
+  margin-left: 1.3rem;
+
+}
 @media only screen and (max-width: 1100px) {
   .nav-search-box--logo--search-box {
     padding: 0%;
