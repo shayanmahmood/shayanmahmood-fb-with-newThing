@@ -1,3 +1,12 @@
+
+img{
+  cursor: pointer;
+}
+/*NAvbar basic */
+/*********************************
+**********************************
+**********************************
+*/
 .nav {
   background-color: #242526;
   width: 100vw;
@@ -7,9 +16,20 @@
   justify-items: center;
   grid-template-rows: 100%;
   box-sizing: border-box;
-  
-}
 
+}
+/*********************************
+**********************************
+**********************************
+*/
+/*NAvbar basic */
+
+/*NAvbar grid*/
+/*i make grid to fit all item systematically*/
+/*********************************
+**********************************
+**********************************
+*/
 .nav-grid {
   display: grid;
   grid-template-rows: 100%;
@@ -17,6 +37,13 @@
   width: 100%;
   height: 100%;
 }
+/*********************************
+**********************************
+**********************************
+*/
+/*NAvbar grid*/
+
+
 
 .nav-grid--box {
   width: 100%;
@@ -26,6 +53,10 @@
 
 
 /* my search box with facebook icon */
+/*********************************
+**********************************
+**********************************
+*/
 
 .nav-grid--box--search {
   width: 100%;
@@ -46,14 +77,14 @@
   margin: 0 auto;
 }
 
-.nav-grid--box--search--search{
+.nav-grid--box--search--search {
   align-items: center;
   justify-items: center;
   margin: 0 auto;
   display: flex;
 }
 
-.nav-grid--box--search--search--input{
+.nav-grid--box--search--search--input {
   background-color: #3A3B3C;
   height: 4.3rem;
   width: 23rem;
@@ -71,58 +102,235 @@
   font-size: 1.5rem;
 }
 
+/*********************************
+**********************************
+**********************************
+*/
 /* my search box with facebook icon */
 
-.nav-grid--box--nav{
-  /* border: 2px solid red; */
+
+
+.nav-grid--box--nav {
   margin-left: 16rem;
 }
-.nav-grid--box--nav--grid{
+@media only screen and (max-width:1380px) {
+  .nav-grid--box--nav{
+    margin-left: 10rem;
+  }
+}
+@media only screen and (max-width:1260px) {
+  .nav-grid--box--nav{
+    margin-left: 5rem;
+  }
+}
+.nav-grid--box--nav--grid {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-rows: 100%;
-  grid-template-columns: repeat(5,118.600px);
+  grid-template-columns: repeat(5, 118.600px);
 }
-.nav-grid--box--nav--grid--box{
-  /* border: 2px solid red; */
+
+.nav-grid--box--nav--grid--box {
   display: flex;
   align-items: center;
   justify-items: center;
   align-content: center;
   justify-content: center;
-
 }
 
-.nav-grid--box--nav--grid--box--inner{
-width: 9rem;
-height: 4rem;
-background-color: #0080ff;
+.nav-grid--box--nav--grid--box:hover{
+cursor: pointer;
 }
-.nav-grid--box--nav--grid--box--icon{
+
+
+.nav-grid--box--nav--grid--box--inner {
+  border-radius: 1rem;
+  width: 11em;
+  height: 4.7rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-grid--box--nav--grid--box--inner:hover{
+  cursor: pointer;
+  background-color: rgba(77, 79, 80,0.5);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-grid--box--nav--grid--box--icon {
   fill: #A7B1AC;
 }
-.active{
+.nav-grid--box--nav--grid--box--icon:hover{
+cursor: pointer;
+}
+.active {
   fill: #2374e1;
 }
-.active-lines{
+
+
+
+
+.active-lines {
   margin-top: 5rem;
   width: 10.5rem;
   height: 0.3rem;
   background-color: #2374e1;
   position: absolute;
 }
-.nav-grid--box--main{
-  border: 2px solid red;
+
+.nav-grid--box--main {
+  width: 18rem;
   margin-left: 29rem;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 450px) {
-  .nav {
-    display: none;
-    visibility: hidden;
+
+@media only screen and (max-width:1520px) {
+  .nav-grid--box--main{
+    margin-left: 27rem;
   }
 }
+@media only screen and (max-width:1480px) {
+  .nav-grid--box--main{
+    margin-left: 23rem;
+  }
+}
+@media only screen and (max-width:1480px) {
+  .nav-grid--box--main{
+    margin-left: 22rem;
+  }
+}
+@media only screen and (max-width:1440px) {
+  .nav-grid--box--main{
+    margin-left: 20rem;
+  }
+}
+@media only screen and (max-width:1420px) {
+  .nav-grid--box--main{
+    margin-left: 18rem;
+  }
+}
+@media only screen and (max-width:1400px) {
+  .nav-grid--box--main{
+    margin-left: 16rem;
+  }
+}
+@media only screen and (max-width:1380px) {
+  .nav-grid--box--main{
+    margin-left: 14rem;
+  }
+}
+@media only screen and (max-width:1360px) {
+  .nav-grid--box--main{
+    margin-left: 12rem;
+  }
+}
+@media only screen and (max-width:1340px) {
+  .nav-grid--box--main{
+    margin-left: 10rem;
+  }
+}
+@media only screen and (max-width:1320px) {
+  .nav-grid--box--main{
+    margin-left: 7rem;
+  }
+}
+@media only screen and (max-width:1280px) {
+  .nav-grid--box--main{
+    margin-left: 5rem;
+  }
+}
+@media only screen and (max-width:1260px) {
+  .nav-grid--box--main{
+    margin-left: 3rem;
+  }
+}
+@media only screen and (max-width:1240px) {
+  .nav-grid--box--main{
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width:1220px) {
+  .nav-grid--box--main{
+    margin-left: -2rem;
+  }
+}
+@media only screen and (max-width:1220px) {
+  .nav-grid--box--main{
+    margin-left: -4rem;
+  }
+}
+.nav-grid--box--main--grid{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(4,25%);
+}
+.nav-grid--box--main--grid--box{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: rgb(58, 59, 60);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-grid--box--main--grid--box:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-grid--box--main--grid--box--img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.nav-grid--box--main--grid--box--icon{
+  -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.nav-grid--box--main--grid--box--icon:hover{
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
 
 .nav-search-box {
   width: 24.2%;
@@ -157,49 +365,42 @@ background-color: #0080ff;
   color: #E4E6EB;
   font-size: 1.2rem;
 }
-.nav-grid--box--search--search--input::placeholder{
+
+.nav-grid--box--search--search--input::placeholder {
   color: #A7B1AC;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
 }
-.nav-grid--box--search--search--input--icon{
+@media only screen and (max-width:1180px) {
+  .nav-grid--box--search--search--input{
+    width: 4.3rem;
+    height: 4.3rem;
+    margin-left: -12rem;
+    padding: 0%;
+  }
+  .nav-grid--box--search--search--input::placeholder{
+    font-size: 0rem;
+    color: transparent;
+  }
+}
+.nav-grid--box--search--search--input--icon {
   color: white;
 }
 
-.fa-1x{
+.fa-1x {
   font-size: 1.4em !important;
   color: #A7B1AC;
   position: absolute;
   margin-left: 1.3rem;
 }
-
-
-@media only screen and (max-width: 1100px) {
-  .nav-search-box--logo--search-box {
-    padding: 0%;
-    padding-left: 4rem;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    margin-left: 0.5rem;
+@media only screen and (max-width:1180px) {
+  .fa-1x {
+    position: absolute;
+    margin-left: -10.5rem;
+    margin-top: 0.3rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
-  .nav-search-box--logo--search-box {
-    margin-left: 2rem;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .nav-search-box--logo--search-box {
-    margin-left: 2.7rem;
-  }
-}
 
 .nav-search-box--logo--search-box::placeholder {
   color: #A7B1AC;
@@ -214,54 +415,7 @@ background-color: #0080ff;
   top: 2rem;
 }
 
-@media only screen and (max-width: 1100px) {
-  .nav-search-box--logo--search-box--icon {
-    left: 7rem;
-  }
-}
 
-@media only screen and (max-width: 1000px) {
-  .nav-search-box--logo--search-box--icon {
-    left: 6.2rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .nav-search-box--logo--search-box--icon {
-    left: 6.8rem;
-    top: 1.8rem;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .nav-search-box--logo--search-box--icon {
-    left: 6.5rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .nav-search-box--logo--search-box--icon {
-    left: 6.5rem;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .nav-search-box--logo--search-box--icon {
-    left: 6.3rem;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .nav-search-box--logo--search-box--icon {
-    margin-left: 0.6rem;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .nav-search-box--logo--search-box--icon {
-    margin-left: 0.2rem;
-  }
-}
 
 .nav-search-box--logo--search-box--icon :hover {
   cursor: pointer;
@@ -276,47 +430,6 @@ background-color: #0080ff;
   grid-template-columns: repeat(5, 20%);
 }
 
-@media only screen and (max-width: 1100px) {
-  .icon-box {
-    margin-left: -3rem;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .icon-box {
-    margin-left: 0rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .icon-box {
-    margin-left: 0rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .icon-box {
-    width: 40.7rem;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .icon-box {
-    margin-left: 3rem;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .icon-box {
-    margin-left: -1rem;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .icon-box {
-    width: 33.7rem;
-  }
-}
 
 .icon-box-con {
   border-radius: 10px;
@@ -337,7 +450,7 @@ background-color: #0080ff;
 }
 
 .icon-box-con:hover {
-  cursor: pointer;
+  
   cursor: pointer;
   background-color: #4d4f50;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -420,23 +533,6 @@ background-color: #0080ff;
   grid-template-columns: repeat(4, 25%);
 }
 
-@media only screen and (max-width: 1100px) {
-  .user-select {
-    margin-left: 12rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .user-select {
-    margin-left: 8rem;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .user-select {
-    display: none;
-  }
-}
 
 .user-select--profile {
   border-radius: 50%;
@@ -453,12 +549,6 @@ background-color: #0080ff;
   align-content: center;
   justify-content: center;
   margin-top: 0.5rem;
-}
-
-@media only screen and (max-width: 700px) {
-  .user-select--profile {
-    margin-left: 0.5rem;
-  }
 }
 
 .user-select--profile--icon {
@@ -488,11 +578,7 @@ background-color: #0080ff;
   margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 700px) {
-  .user-select--notification {
-    margin-left: 0.5rem;
-  }
-}
+
 
 .user-select--notification--icon {
   fill: #E4E6EB;
@@ -521,11 +607,6 @@ background-color: #0080ff;
   margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 700px) {
-  .user-select--messenger-box {
-    margin-left: 0.5rem;
-  }
-}
 
 .user-select--messenger-box--icon {
   fill: #E4E6EB;
@@ -576,14 +657,23 @@ background-color: #0080ff;
   -o-border-radius: 7px;
   overflow-x: hidden;
   position: absolute;
-  top: 4.6REM;
-  right: 2.5Rem;
+  top: 5.3REM;
+  right: 1Rem;
   z-index: 100;
   border: 1PX solid grey;
   visibility: hidden;
+  
   /* Chrome, Edge, and Safari */
 }
-
+.vis{
+  visibility: visible !important;
+}
+.toggle{
+  color: #2e89ff;
+}
+.toggle-bg{
+  background-color: rgba(24, 119, 242,0.2);
+}
 .menu-con {
   scrollbar-width: auto;
   scrollbar-color: transparent transparent;
@@ -1082,11 +1172,11 @@ background-color: #0080ff;
   -o-border-radius: 7px;
   overflow-x: hidden;
   position: absolute;
-  top: 4.6REM;
-  right: 2.5Rem;
+  top: 5.5REM;
+  right: 1Rem;
   z-index: 100;
   border: 1PX solid grey;
-  visibility: hidden;
+ visibility: hidden;
 }
 
 .messenger-con--search-con--search-bar {
@@ -1362,8 +1452,8 @@ background-color: #0080ff;
   -o-border-radius: 7px;
   overflow-x: hidden;
   position: absolute;
-  top: 4.6REM;
-  right: 2.5Rem;
+  top: 5.4REM;
+  right: 2Rem;
   z-index: 100;
   border: 1PX solid grey;
   visibility: hidden;
@@ -1793,8 +1883,8 @@ background-color: #0080ff;
   -o-border-radius: 7px;
   overflow-x: hidden;
   position: absolute;
-  top: 4.6REM;
-  right: 2.5Rem;
+  top: 5.4REM;
+  right: 2Rem;
   z-index: 100;
   visibility: hidden;
   border: 1PX solid grey;
@@ -2026,12 +2116,6 @@ body {
   /* Chrome, Edge, and Safari */
 }
 
-@media only screen and (max-width: 450px) {
-  body {
-    overflow-y: scroll;
-    overflow: scroll;
-  }
-}
 
 body {
   scrollbar-width: auto;
